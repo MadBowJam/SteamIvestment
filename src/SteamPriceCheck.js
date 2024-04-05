@@ -1,7 +1,7 @@
 const steamprice = require('./components/Core.js');
 const itemsArray = require('./components/ItemList.js');
 const fs = require('fs').promises;
-const today = new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })
+const today = new Date().toLocaleString('en-GB', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })
   .replace(/\//g, '.')
   .replace(/[,\s:]/g, '_');
 const delay = 3500;
@@ -24,7 +24,7 @@ async function fetchData() {
     console.log('All complete');
     
     // Записуємо результати в файл
-    await fs.writeFile(`src/json/${today}.json`, JSON.stringify(results));
+    await fs.writeFile(`./json/${today}.json`, JSON.stringify(results));
   } catch (err) {
     console.log(err);
   }

@@ -8,6 +8,7 @@ exports.itemsList = [
   'Snakebite Case',
   'Revolution Case',
   'Recoil Case',
+  'Revolution Case',
   'Sticker | Natus Vincere | Katowice 2019',
   'Sticker | FaZe Clan | Katowice 2019',
   '2020 RMR Legends',

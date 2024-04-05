@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Roboto-flex;
+  src: url("./font/RobotoFlex.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #7dc2ad;
+  font-family: Roboto-flex, serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h4 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  margin: -10px 0 0;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+th {
+  padding: 5px 10px;
+}
+
+.price, .quantity, .total, .spend_on_buy, .total_spend, .total_profit {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid white;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.totalPrice {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.overAllPrice {
+  margin: 5px 0;
 }
