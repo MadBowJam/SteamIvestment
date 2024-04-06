@@ -89,7 +89,7 @@ const CustomTable = () => {
       </TableContainer>
       
       {/* Контейнер для відображення загальної ціни */}
-      <Box maxWidth={390} mx="auto" textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif' }}>
+      <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
         {/* Відображення загальної ціни по кожному турніру */}
         {Object.entries(totalPrice).map(([tournament, total]) => (
           <div key={tournament}>Total Price for {tournament}: {total.toFixed(2)}</div>
