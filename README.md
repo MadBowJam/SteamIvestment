@@ -1,10 +1,15 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To check prices run:
 
-## Available Scripts
+cd .\src\
+node SteamPriceCheck.js
 
-In the project directory, you can run:
+## Use new prices
+
+To use prices, copy filename you want from /src/json, and paste it in /src/components/dom/Table.js
+
+
 
 ### `npm start`
 
