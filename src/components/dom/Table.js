@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
 import { itemsList } from '../ItemListWithPrices'; // Імпортуємо список товарів
-import jsonData from '../../json/06.04.2024__12_15.json'; // Імпортуємо ціни товарів
+import jsonData from '../../json/11.04.2024__23_55.json'; // Імпортуємо ціни товарів
 import { styled } from '@mui/system';
 
 const StyledTableRow = styled(TableRow)({
