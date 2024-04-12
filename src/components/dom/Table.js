@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
 import { itemsList } from '../ItemListWithPrices'; // Імпортуємо список товарів
 import jsonData from '../../json/11.04.2024__23_55.json'; // Імпортуємо ціни товарів
@@ -28,40 +28,50 @@ const StyledTableRow = styled(TableRow)({
 });
 
 const CustomTable = () => {
-  const data = []; // Масив для зберігання даних таблиці
-  const totalPrice = {}; // Об'єкт для зберігання загальної ціни по кожному турніру
-  
-  // Заповнення масиву даними та обчислення загальної ціни
-  for (let i = 0; i < itemsList.length; i += 4) {
-    const tournament = itemsList[i];
-    const name = itemsList[i + 1];
-    const price = jsonData[i / 4];
-    const quantity = itemsList[i + 2];
-    const total = (price * quantity).toFixed(2);
-    const spend_on_buy = itemsList[i + 3];
-    
-    if (!totalPrice[tournament]) {
-      totalPrice[tournament] = 0;
+  const data = useMemo(() => {
+    const data = [];
+    for (let i = 0; i < itemsList.length; i += 4) {
+      const tournament = itemsList[i];
+      const name = itemsList[i + 1];
+      const price = jsonData[i / 4];
+      const quantity = itemsList[i + 2];
+      const total = (price * quantity).toFixed(2);
+      const spend_on_buy = itemsList[i + 3];
+      data.push({ tournament, name, price, quantity, total, spend_on_buy });
     }
-    totalPrice[tournament] += parseFloat(total);
-    
-    // Додавання даних до масиву
-    data.push({ tournament, name, price, quantity, total, spend_on_buy });
-  }
+    return data;
+  }, []);
   
-  // Обчислення загальної ціни всіх товарів
-  const totalAllPrice = Object.values(totalPrice).reduce((acc, curr) => acc + curr, 0);
+  const totalPrice = useMemo(() => {
+    const totalPrice = {};
+    for (let i = 0; i < itemsList.length; i += 4) {
+      const tournament = itemsList[i];
+      const price = jsonData[i / 4];
+      const quantity = itemsList[i + 2];
+      const total = (price * quantity).toFixed(2);
+      
+      if (!totalPrice[tournament]) {
+        totalPrice[tournament] = 0;
+      }
+      totalPrice[tournament] += parseFloat(total);
+    }
+    return totalPrice;
+  }, []);
+  
+  const handleClick = useCallback((event) => {
+    console.log('Clicked', event);
+  }, []);
+  
+  const totalAllPrice = useMemo(() => {
+    return Object.values(totalPrice).reduce((acc, curr) => acc + curr, 0);
+  }, [totalPrice]);
   
   return (
     <Box minWidth={390} maxWidth={900} mx="auto">
-      {/* Компонент контейнера для таблиці */}
       <TableContainer component={Paper}>
         <Table style={{ borderCollapse: 'collapse', width: '100%', boxShadow: 'none' }}>
-          {/* Заголовок таблиці */}
           <TableHead>
-            {/* Стилізований рядок заголовку */}
             <StyledTableRow>
-              {/* Комірки заголовку */}
               <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Tournament</TableCell>
               <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Name</TableCell>
               <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Price</TableCell>
@@ -70,12 +80,9 @@ const CustomTable = () => {
               <TableCell style={{ borderTop: '1px solid #ddd' }}>Spend on buy</TableCell>
             </StyledTableRow>
           </TableHead>
-          {/* Тіло таблиці */}
           <TableBody>
-            {/* Мапування елементів даних у рядки таблиці */}
             {data.map((item, index) => (
-              <StyledTableRow key={index}>
-                {/* Комірки даних */}
+              <StyledTableRow key={index} onClick={handleClick}>
                 <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.tournament}</TableCell>
                 <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.name}</TableCell>
                 <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.price}</TableCell>
@@ -87,14 +94,10 @@ const CustomTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      
-      {/* Контейнер для відображення загальної ціни */}
       <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
-        {/* Відображення загальної ціни по кожному турніру */}
         {Object.entries(totalPrice).map(([tournament, total]) => (
           <div key={tournament}>Total Price for {tournament}: {total.toFixed(2)}</div>
         ))}
-        {/* Відображення загальної ціни для всіх товарів */}
         <div>Total Price for All: {totalAllPrice.toFixed(2)}</div>
       </Box>
     </Box>
