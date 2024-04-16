@@ -1,5 +1,40 @@
-.homework {
+.MuiTypography-h1 {
     text-align: center;
-    margin: 0 auto;
-    display: inherit;
+    font-size: 2rem !important;
+    padding-bottom: 10px;
+}
+
+.MuiTableRow-root {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.MuiTableRow-root:hover {
+    background-color: #7dc2ad;
+    font-weight: bold;
+    color: red; /* Змінюємо колір тексту на червоний при наведенні на рядок */
+}
+
+.MuiTableRow-root:hover > * {
+    color: white; /* Застосовуємо стилі до всіх клітинок у рядку */
+}
+
+@media (max-width: 960px) {
+    .MuiTableRow-root > * {
+        padding: 5px !important; /* Зміна паддингу на планшетному інтерфейсі */
+    }
+}
+
+@media (max-width: 500px) {
+    .MuiTableRow-root > * {
+        padding: 3px !important; /* Зміна паддингу на мобільному інтерфейсі */
+    }
+}
+
+.MuiTableCell-root {
+    border: 2px solid #ddd !important;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    box-shadow: none !important;
 }

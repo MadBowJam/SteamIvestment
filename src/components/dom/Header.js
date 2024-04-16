@@ -4,8 +4,8 @@ import '../../font/RobotoFlex.ttf';
 
 const Header = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <Typography variant="h1" component="h1" gutterBottom style={{ fontSize: '2rem' }}>
+    <div className='Title'>
+      <Typography variant="h1" component="h1">
         Steam investments table
       </Typography>
     </div>

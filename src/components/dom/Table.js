@@ -1,66 +1,57 @@
-import React, { useMemo, useCallback } from 'react';
+import React, { useMemo } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
 import { itemsList } from '../ItemListWithPrices'; // Імпортуємо список товарів
-import jsonData from '../../json/11.04.2024__23_55.json'; // Імпортуємо ціни товарів
-import { styled } from '@mui/system';
+import jsonData from '../../json/16.04.2024__21_47.json'; // Імпортуємо ціни товарів
+import validateItemsList from './ValidationItemList';
+import validateJsonData from './ValidationJson';
 
-const StyledTableRow = styled(TableRow)({
-  transition: 'all 0.3s ease',
-  cursor: 'pointer',
-  '&:hover': {
-    backgroundColor: '#7dc2ad',
-    fontWeight: 'bold',
-    color: 'red', // Змінюємо колір тексту на червоний при наведенні на рядок
-    '& > *': { // Застосовуємо стилі до всіх клітинок у рядку
-      color: 'white',
-    },
-  },
-  '@media (max-width: 960px)': { // Media Query для планшетних пристроїв (ширина до 960px)
-    '& > *': {
-      padding: '5px !important', // Зміна паддингу на планшетному інтерфейсі
-    },
-  },
-  '@media (max-width: 500px)': { // Media Query для мобільних пристроїв (ширина до 500px)
-    '& > *': {
-      padding: '3px !important', // Зміна паддингу на мобільному інтерфейсі
-    },
-  },
-});
+const ITEMS_PER_ENTRY = 4; // Кількість елементів на кожен запис у списку товарів
+
+// Оптимізована функція для обчислення даних
+const calculateData = () => {
+  const data = [];
+  for (let i = 0; i < itemsList.length; i += 4) {
+    const tournament = itemsList[i];
+    const name = itemsList[i + 1];
+    const price = jsonData[i / 4];
+    const quantity = itemsList[i + 2];
+    const total = (price * quantity).toFixed(2);
+    const spend_on_buy = itemsList[i + 3];
+    data.push({ tournament, name, price, quantity, total, spend_on_buy });
+  }
+  return data;
+};
+
+// Оптимізована функція для обчислення загальної ціни
+const calculateTotalPrice = () => {
+  const totalPrice = {};
+  for (let i = 0; i < itemsList.length; i += ITEMS_PER_ENTRY) {
+    const tournament = itemsList[i];
+    const price = jsonData[i / ITEMS_PER_ENTRY];
+    const quantity = itemsList[i + 2];
+    const total = (price * quantity).toFixed(2);
+    
+    if (!totalPrice[tournament]) {
+      totalPrice[tournament] = 0;
+    }
+    totalPrice[tournament] += parseFloat(total);
+  }
+  return totalPrice;
+};
 
 const CustomTable = () => {
-  const data = useMemo(() => {
-    const data = [];
-    for (let i = 0; i < itemsList.length; i += 4) {
-      const tournament = itemsList[i];
-      const name = itemsList[i + 1];
-      const price = jsonData[i / 4];
-      const quantity = itemsList[i + 2];
-      const total = (price * quantity).toFixed(2);
-      const spend_on_buy = itemsList[i + 3];
-      data.push({ tournament, name, price, quantity, total, spend_on_buy });
-    }
-    return data;
-  }, []);
+  // Виклик функції перевірки itemsList
+  validateItemsList();
   
-  const totalPrice = useMemo(() => {
-    const totalPrice = {};
-    for (let i = 0; i < itemsList.length; i += 4) {
-      const tournament = itemsList[i];
-      const price = jsonData[i / 4];
-      const quantity = itemsList[i + 2];
-      const total = (price * quantity).toFixed(2);
-      
-      if (!totalPrice[tournament]) {
-        totalPrice[tournament] = 0;
-      }
-      totalPrice[tournament] += parseFloat(total);
-    }
-    return totalPrice;
-  }, []);
+  // Виклик функції перевірки jsonData
+  validateJsonData();
   
-  const handleClick = useCallback((event) => {
-    console.log('Clicked', event);
-  }, []);
+  const data = useMemo(calculateData, []);
+  const totalPrice = useMemo(calculateTotalPrice, []);
+  
+  const handleClick = (item) => {
+    console.log(`Clicked row:`, item);
+  };
   
   const totalAllPrice = useMemo(() => {
     return Object.values(totalPrice).reduce((acc, curr) => acc + curr, 0);
@@ -71,25 +62,25 @@ const CustomTable = () => {
       <TableContainer component={Paper}>
         <Table style={{ borderCollapse: 'collapse', width: '100%', boxShadow: 'none' }}>
           <TableHead>
-            <StyledTableRow>
-              <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Tournament</TableCell>
-              <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Name</TableCell>
-              <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Price</TableCell>
-              <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Quantity</TableCell>
-              <TableCell style={{ borderTop: '1px solid #ddd', borderRight: '1px solid #ddd' }}>Total</TableCell>
-              <TableCell style={{ borderTop: '1px solid #ddd' }}>Spend on buy</TableCell>
-            </StyledTableRow>
+            <TableRow>
+              <TableCell>Tournament</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Price</TableCell>
+              <TableCell>Quantity</TableCell>
+              <TableCell>Total</TableCell>
+              <TableCell>Spend on buy</TableCell>
+            </TableRow>
           </TableHead>
           <TableBody>
             {data.map((item, index) => (
-              <StyledTableRow key={index} onClick={handleClick}>
-                <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.tournament}</TableCell>
-                <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.name}</TableCell>
-                <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.price}</TableCell>
-                <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.quantity}</TableCell>
-                <TableCell style={{ borderRight: '1px solid #ddd' }}>{item.total}</TableCell>
+              <TableRow key={`${item.tournament}-${item.name}`} data-index={index} onClick={() => handleClick(index)}>
+                <TableCell>{item.tournament}</TableCell>
+                <TableCell>{item.name}</TableCell>
+                <TableCell>{item.price}</TableCell>
+                <TableCell>{item.quantity}</TableCell>
+                <TableCell>{item.total}</TableCell>
                 <TableCell>{item.spend_on_buy}</TableCell>
-              </StyledTableRow>
+              </TableRow>
             ))}
           </TableBody>
         </Table>

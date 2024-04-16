@@ -1,75 +1,53 @@
-let request = require('request');
+const axios = require('axios');
 
-exports.getprice = (appid, itemname, currency) => {
-  return new Promise((resolve, reject) => {
-    if (typeof currency !== 'number') {
-      currency = 1;
-    }
-    
-    request({
-      uri: '/market/priceoverview',
-      baseUrl: 'https://steamcommunity.com/',
-      json: true,
-      qs: {
-        currency: currency,
-        appid: appid,
-        market_hash_name: itemname
-      }
-    }, (err, res) => {
-      if(err) reject(err);
-      if(res.body.success === false) reject(`Request wasn't successful. Try checking your variables. Message: ${JSON.stringify(body)}`);
-      resolve(res.body);
-    });
+// Функція для отримання ціни конкретного предмета
+function getprice(appid, itemname, currency) {
+  return axios.get('https://steamcommunity.com/market/priceoverview', {
+    params: {
+      currency: currency,
+      appid: appid,
+      market_hash_name: itemname
+    },
+    timeout: 5000 // Таймаут в мілісекундах (в даному випадку 5 секунд)
   })
+    .then(response => {
+      if (!response.data.success) {
+        throw new Error(`Request for item '${itemname}' failed.`);
+      }
+      return response.data;
+    })
+    .catch(error => {
+      throw new Error(`Error occurred while fetching data for item '${itemname}': ${error}`);
+    });
 }
+
+exports.getprice = getprice;
 
 exports.getprices = (appid, itemnames, currency) => {
   return new Promise((resolve, reject) => {
     // Валідація вхідних параметрів
     if (typeof appid !== 'number' || isNaN(appid)) {
       reject('Appid must be a valid number.');
-      return;
+      return; // Додано return
     }
     if (typeof currency !== 'number' || isNaN(currency)) {
       reject('Currency must be a valid number.');
-      return;
+      return; // Додано return
     }
     if (!itemnames || (typeof itemnames !== 'string' && !Array.isArray(itemnames))) {
       reject('Itemnames must be a string or an array of strings.');
-      return;
+      return; // Додано return
     }
     
     // Перетворення itemnames в масив рядків, якщо вони є рядком
-    if (typeof itemnames === 'string') {
-      itemnames = [itemnames];
-    }
+    const items = (typeof itemnames === 'string') ? [itemnames] : itemnames;
     
     // Масив обіцянок для зберігання результатів запитів
-    let promises = itemnames.map(itemname => {
-      return new Promise((resolve, reject) => {
-        request({
-          uri: '/market/priceoverview',
-          baseUrl: 'https://steamcommunity.com/',
-          json: true,
-          qs: {
-            currency: currency,
-            appid: appid,
-            market_hash_name: itemname
-          }
-        }, (err, res, body) => {
-          if (err) {
-            reject(`Error occurred while fetching data for item '${itemname}': ${err}`);
-            return;
-          }
-          
-          if (res.statusCode !== 200 || !body || !body.success) {
-            reject(`Request for item '${itemname}' failed.`);
-            return;
-          }
-          
-          resolve(body);
+    const promises = items.map(itemname => {
+      return getprice(appid, itemname, currency)
+        .catch(error => {
+          reject(error);
         });
-      });
     });
     
     // Використовуємо Promise.all для паралельного виконання запитів
