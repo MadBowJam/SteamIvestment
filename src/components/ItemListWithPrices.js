@@ -6,7 +6,7 @@ exports.itemsList = [
   "Case","Clutch",2,0,
   "Case","Dreams & Nightmares",5,0,
   "Case","Snakebite",1,0,
-  "Case","Revolution",3,0,
+  "Case","Revolution",4,0,
   "Case","Recoil",36,10,
   "Katowice 2019","Natus Vincere",12,3,
   "Katowice 2019","FaZe Clan",5,1.25,

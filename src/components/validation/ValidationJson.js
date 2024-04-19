@@ -1,5 +1,5 @@
 import React from 'react';
-import jsonData from '../../json/16.04.2024__21_47.json'; // Імпортуємо ціни товарів
+import jsonData from '../../json/19.04.2024__22_08.json'; // Імпортуємо ціни товарів
 import { itemsList } from '../ItemListWithPrices'; // Імпортуємо список товарів
 
 const ITEMS_PER_ENTRY = 4;

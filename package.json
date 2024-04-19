@@ -12,8 +12,11 @@
     "axios": "^1.6.8",
     "fs": "^0.0.1-security",
     "react": "^18.2.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
+    "react-idle-timer": "^5.7.2",
     "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
     "steam-price-api": "^2.0.0",
     "web-vitals": "^2.1.4"
   },
