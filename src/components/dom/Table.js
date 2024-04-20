@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, {useMemo, useState} from 'react';
 import {
   Box,
   Button,
@@ -55,6 +55,9 @@ const calculateTotalPrice = () => {
 };
 
 const CustomTable = () => {
+  const [sortDirection, setSortDirection] = useState(null);
+  const [sortedColumn, setSortedColumn] = useState(null);
+  
   validateItemsList();
   validateJsonData();
   
@@ -76,6 +79,13 @@ const CustomTable = () => {
     return Object.values(totalPrice).reduce((acc, curr) => acc + curr, 0);
   }, []);
   
+  const handleSortAndUpdate = (column) => {
+    handleSort(column);
+    // Оновлюємо значення sortDirection і sortedColumn
+    setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    setSortedColumn(column);
+  };
+  
   return (
     <Box minWidth={390} maxWidth={900} mx="auto">
       <ToastContainer />
@@ -86,7 +96,13 @@ const CustomTable = () => {
       <TableContainer component={Paper}>
         <Table style={{ borderCollapse: 'collapse', width: '100%', boxShadow: 'none' }}>
           <TableHead>
-            <TableHeadComponent handleSort={handleSort} />
+            <TableHeadComponent
+              handleSort={handleSortAndUpdate}
+              sortDirection={sortDirection}
+              sortedColumn={sortedColumn}
+              setSortDirection={setSortDirection}
+              setSortedColumn={setSortedColumn}
+            />
           </TableHead>
           <CustomTableBody filteredData={filteredData} />
         </Table>

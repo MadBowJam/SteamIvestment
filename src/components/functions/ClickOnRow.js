@@ -8,17 +8,17 @@ const handleClick = (item) => {
   console.log(`Clicked row:`, item);
   
   // Обчислення прибутку для клікнутого рядка
-  const profit = ((item.total * 100) / item.spend_on_buy).toFixed(0);
+  const profit = ((item.total) / item.spend_on_buy).toFixed(2);
   
   // Ініціалізація змінних для відображення тексту та кольору прибутку
-  let profitText = `${profit}%`; // Текст прибутку
+  let profitText = `x${profit}`; // Текст прибутку
   let profitColor = 'inherit'; // Колір тексту
   
   // Визначення тексту та кольору прибутку в залежності від значення
   if (profit === 'Infinity') {
     profitText = 'Infinity'; // Якщо прибуток - Infinity
     profitColor = 'green'; // Зелений колір
-  } else if (profit <= 100) {
+  } else if (profit <= 1) {
     profitColor = 'red'; // Червоний колір
   } else {
     profitColor = 'green'; // Зелений колір
