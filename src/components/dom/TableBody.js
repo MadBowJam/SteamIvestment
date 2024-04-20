@@ -6,7 +6,7 @@ import handleClick from '../functions/ClickOnRow';
 const CustomTableBody = ({ filteredData }) => {
   return (
     <TableBody>
-      {filteredData.map((item, index) => (
+      {filteredData.map((item) => (
         <TableRow key={`${item.tournament}-${item.name}`} data-index={item} onClick={() => handleClick(item)}>
           <TableCell>{item.tournament}</TableCell>
           <TableCell>{item.name}</TableCell>

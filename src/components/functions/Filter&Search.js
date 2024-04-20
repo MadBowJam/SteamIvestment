@@ -1,27 +1,26 @@
 import { useMemo, useState } from 'react';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const useTableFilter = (createItemsData) => {
   const [sortDirection, setSortDirection] = useState(null);
   const [sortedColumn, setSortedColumn] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [arrowRotation, setArrowRotation] = useState(0);
   
   const handleSort = (column) => {
     const isAsc = sortedColumn === column && sortDirection === 'asc';
     setSortDirection(isAsc ? 'desc' : 'asc');
     setSortedColumn(column);
+    setArrowRotation(isAsc ? 180 : 0);
   };
   
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
   
-  const [resetIcon, setResetIcon] = useState(<KeyboardArrowRightIcon />);
-  
   const handleResetSorting = () => {
     setSortDirection(null);
     setSortedColumn(null);
-    setResetIcon(<KeyboardArrowRightIcon />);
+    setArrowRotation(0);
   };
   
   const filteredData = useMemo(() => {
@@ -46,7 +45,7 @@ const useTableFilter = (createItemsData) => {
     }
   }, [sortedColumn, sortDirection, searchTerm, createItemsData]);
   
-  return { filteredData, handleResetSorting, handleSearch, handleSort };
+  return { filteredData, handleResetSorting, handleSearch, handleSort, arrowRotation };
 };
 
 export default useTableFilter;

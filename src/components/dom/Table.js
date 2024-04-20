@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   Box,
   Button,
@@ -22,22 +22,20 @@ import CountUp from 'react-countup';
 const ITEMS_PER_ENTRY = 4;
 
 const createItemsData = () => {
-  return [...itemsList]
-    .reduce((acc, _, i) => {
-      if (i % ITEMS_PER_ENTRY === 0) {
-        const tournament = itemsList[i];
-        const name = itemsList[i + 1];
-        const price = jsonData[i / ITEMS_PER_ENTRY];
-        const quantity = itemsList[i + 2];
-        const total = (price * quantity).toFixed(2);
-        const spend_on_buy = itemsList[i + 3];
-        acc.push({ tournament, name, price, quantity, total, spend_on_buy });
-      }
-      return acc;
-    }, []);
+  return [...itemsList].reduce((acc, _, i) => {
+    if (i % ITEMS_PER_ENTRY === 0) {
+      const tournament = itemsList[i];
+      const name = itemsList[i + 1];
+      const price = jsonData[i / ITEMS_PER_ENTRY];
+      const quantity = itemsList[i + 2];
+      const total = (price * quantity).toFixed(2);
+      const spend_on_buy = itemsList[i + 3];
+      acc.push({ tournament, name, price, quantity, total, spend_on_buy });
+    }
+    return acc;
+  }, []);
 };
 
-// Функція для обчислення загальної вартості
 const calculateTotalPrice = () => {
   const totalPrice = {};
   for (let i = 0; i < itemsList.length; i += ITEMS_PER_ENTRY) {
@@ -64,24 +62,11 @@ const CustomTable = () => {
   const { filteredData, handleResetSorting, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
   
   const totalAllPrice = useMemo(() => {
-    const totalPrice = {};
-    for (let i = 0; i < itemsList.length; i += ITEMS_PER_ENTRY) {
-      const tournament = itemsList[i];
-      const price = jsonData[i / ITEMS_PER_ENTRY];
-      const quantity = itemsList[i + 2];
-      const total = (price * quantity).toFixed(2);
-      
-      if (!totalPrice[tournament]) {
-        totalPrice[tournament] = 0;
-      }
-      totalPrice[tournament] += parseFloat(total);
-    }
-    return Object.values(totalPrice).reduce((acc, curr) => acc + curr, 0);
+    return Object.values(calculateTotalPrice()).reduce((acc, curr) => acc + curr, 0);
   }, []);
   
   const handleSortAndUpdate = (column) => {
     handleSort(column);
-    // Оновлюємо значення sortDirection і sortedColumn
     setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
     setSortedColumn(column);
   };
