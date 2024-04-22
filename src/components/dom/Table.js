@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import {
   Box,
-  Button,
   Paper,
   Table,
   TableContainer,
@@ -14,7 +13,7 @@ import useTableFilter from '../functions/Filter&Search';
 import TableHeadComponent from './TableHead';
 import CustomTableBody from './TableBody';
 import { itemsList } from '../ItemListWithPrices';
-import jsonData from '../../json/19.04.2024__22_08.json';
+import jsonData from '../../json/latest.json';
 import validateItemsList from '../validation/ValidationItemList';
 import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
@@ -59,7 +58,7 @@ const CustomTable = () => {
   validateItemsList();
   validateJsonData();
   
-  const { filteredData, handleResetSorting, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
+  const { filteredData, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
   
   const totalAllPrice = useMemo(() => {
     return Object.values(calculateTotalPrice()).reduce((acc, curr) => acc + curr, 0);
@@ -76,10 +75,9 @@ const CustomTable = () => {
       <ToastContainer />
       <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
         <TextField label="Search" variant="outlined" value={searchTerm} onChange={handleSearch} />
-        <Button variant="contained" onClick={handleResetSorting}>Reset Sorting</Button>
       </Box>
-      <TableContainer component={Paper}>
-        <Table style={{ borderCollapse: 'collapse', width: '100%', boxShadow: 'none' }}>
+      <TableContainer component={Paper} sx={{ maxHeight: 800 }}>
+        <Table stickyHeader sx={{ borderCollapse: 'collapse' }}>
           <TableHead>
             <TableHeadComponent
               handleSort={handleSortAndUpdate}

@@ -5,6 +5,9 @@ const useTableFilter = (createItemsData) => {
   const [sortedColumn, setSortedColumn] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [arrowRotation, setArrowRotation] = useState(0);
+  const [selected, setSelected] = useState([]);
+  
+
   
   const handleSort = (column) => {
     const isAsc = sortedColumn === column && sortDirection === 'asc';
@@ -17,11 +20,36 @@ const useTableFilter = (createItemsData) => {
     setSearchTerm(event.target.value);
   };
   
-  const handleResetSorting = () => {
-    setSortDirection(null);
-    setSortedColumn(null);
-    setArrowRotation(0);
+  const handleSelectAllClick = (event) => {
+    if (event.target.checked) {
+      const newSelecteds = createItemsData().map((item) => item.name);
+      setSelected(newSelecteds);
+      return;
+    }
+    setSelected([]);
   };
+  
+  const handleClick = (event, name) => {
+    const selectedIndex = selected.indexOf(name);
+    let newSelected = [];
+    
+    if (selectedIndex === -1) {
+      newSelected = newSelected.concat(selected, name);
+    } else if (selectedIndex === 0) {
+      newSelected = newSelected.concat(selected.slice(1));
+    } else if (selectedIndex === selected.length - 1) {
+      newSelected = newSelected.concat(selected.slice(0, -1));
+    } else if (selectedIndex > 0) {
+      newSelected = newSelected.concat(
+        selected.slice(0, selectedIndex),
+        selected.slice(selectedIndex + 1),
+      );
+    }
+    
+    setSelected(newSelected);
+  };
+  
+  const isSelected = (name) => selected.indexOf(name) !== -1;
   
   const filteredData = useMemo(() => {
     if (sortedColumn && sortDirection) {
@@ -45,7 +73,7 @@ const useTableFilter = (createItemsData) => {
     }
   }, [sortedColumn, sortDirection, searchTerm, createItemsData]);
   
-  return { filteredData, handleResetSorting, handleSearch, handleSort, arrowRotation };
+  return { filteredData, handleSearch, handleSort, arrowRotation, selected, handleSelectAllClick, handleClick, isSelected };
 };
 
 export default useTableFilter;

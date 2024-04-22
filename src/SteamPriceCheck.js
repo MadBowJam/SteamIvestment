@@ -25,6 +25,7 @@ async function fetchData() {
     
     // Записуємо результати в файл
     await fs.writeFile(`./json/${today}.json`, JSON.stringify(results));
+    await fs.writeFile(`./json/latest.json`, JSON.stringify(results));
   } catch (err) {
     console.log(err);
   }

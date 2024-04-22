@@ -23,6 +23,7 @@
     "react-spring": "^9.7.3",
     "react-toastify": "^10.0.5",
     "steam-price-api": "^2.0.0",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
