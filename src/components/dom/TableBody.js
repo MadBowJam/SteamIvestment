@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
 import { TableBody, TableCell, TableRow, Collapse, Box } from '@mui/material';
 import CountUp from 'react-countup';
+import { calculateProfit } from '../functions/ClickOnRow'; // Імпорт функції
 
 const CustomTableBody = ({ filteredData }) => {
-  const [openRowIndex, setOpenRowIndex] = useState(null);
+  const [openRows, setOpenRows] = useState({});
   
-  const handleClickOnRow = (index) => {
-    setOpenRowIndex(openRowIndex === index ? null : index);
+  const handleClickOnRow = (tournament, itemName) => {
+    setOpenRows(prevState => {
+      const newOpenRows = {};
+      
+      Object.keys(prevState).forEach(key => {
+        const [prevTournament, prevName] = key.split('-');
+        
+        if (prevTournament !== tournament || prevName !== itemName) {
+          newOpenRows[key] = false;
+        }
+      });
+      
+      const newRowKey = `${tournament}-${itemName}`;
+      newOpenRows[newRowKey] = !prevState[newRowKey];
+      
+      return newOpenRows;
+    });
   };
-  
-  const calculateProfit = (item) => {
-    const profit = ((item.total) / item.spend_on_buy).toFixed(2);
-    let profitText = `x${profit}`
-    let profitColor;
-    
-    if (profit === 'Infinity') {
-      profitText = 'Infinity'; // Якщо прибуток - Infinity
-      profitColor = 'green'; // Зелений колір
-    } else if (profit <= 1) {
-      profitColor = 'red'; // Червоний колір
-    } else {
-      profitColor = 'green'; // Зелений колір
-    }
-    
-    return { profitText, profitColor };
-  };
+
   
   return (
     <TableBody>
-      {filteredData.map((item, index) => (
+      {filteredData.map((item) => (
         <React.Fragment key={`${item.tournament}-${item.name}`}>
-          <TableRow onClick={() => handleClickOnRow(index)}>
+          <TableRow onClick={() => handleClickOnRow(item.tournament, item.name)}>
             <TableCell>{item.tournament}</TableCell>
             <TableCell>{item.name}</TableCell>
             <TableCell><CountUp start={0} end={item.price} duration={1} decimals={2} /></TableCell>
@@ -40,8 +40,8 @@ const CustomTableBody = ({ filteredData }) => {
           </TableRow>
           <TableRow>
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
-              <Collapse in={openRowIndex === index} timeout="auto" unmountOnExit>
-                <Box margin={1}>
+              <Collapse in={openRows[`${item.tournament}-${item.name}`]} timeout="auto" unmountOnExit>
+              <Box margin={1}>
                   <div>
                     Your profit:{' '}
                     <span style={{ color: calculateProfit(item).profitColor }}>

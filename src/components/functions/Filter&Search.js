@@ -7,8 +7,6 @@ const useTableFilter = (createItemsData) => {
   const [arrowRotation, setArrowRotation] = useState(0);
   const [selected, setSelected] = useState([]);
   
-
-  
   const handleSort = (column) => {
     const isAsc = sortedColumn === column && sortDirection === 'asc';
     setSortDirection(isAsc ? 'desc' : 'asc');
@@ -45,7 +43,6 @@ const useTableFilter = (createItemsData) => {
         selected.slice(selectedIndex + 1),
       );
     }
-    
     setSelected(newSelected);
   };
   

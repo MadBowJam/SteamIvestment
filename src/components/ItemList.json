@@ -1,0 +1,415 @@
+[
+  {
+    "nameForFetch": "Prisma Case",
+    "tournament": "Case",
+    "name": "Prisma",
+    "quantity": 7,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Fracture Case",
+    "tournament": "Case",
+    "name": "Fracture",
+    "quantity": 6,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Prisma 2 Case",
+    "tournament": "Case",
+    "name": "Prisma 2",
+    "quantity": 3,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Danger Zone Case",
+    "tournament": "Case",
+    "name": "Danger Zone",
+    "quantity": 1,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Clutch Case",
+    "tournament": "Case",
+    "name": "Clutch",
+    "quantity": 2,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Dreams & Nightmares Case",
+    "tournament": "Case",
+    "name": "Dreams & Nightmares",
+    "quantity": 5,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Snakebite Case",
+    "tournament": "Case",
+    "name": "Snakebite",
+    "quantity": 1,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Revolution Case",
+    "tournament": "Case",
+    "name": "Revolution",
+    "quantity": 4,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Recoil Case",
+    "tournament": "Case",
+    "name": "Recoil",
+    "quantity": 36,
+    "spendOnBuy": 10
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere | Katowice 2019",
+    "tournament": "Katowice 2019",
+    "name": "Natus Vincere",
+    "quantity": 12,
+    "spendOnBuy": 3
+  },
+  {
+    "nameForFetch": "Sticker | FaZe Clan | Katowice 2019",
+    "tournament": "Katowice 2019",
+    "name": "FaZe Clan",
+    "quantity": 5,
+    "spendOnBuy": 1.25
+  },
+  {
+    "nameForFetch": "2020 RMR Legends",
+    "tournament": "2020 RMR",
+    "name": "Legends Sticker Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "2020 RMR Challengers",
+    "tournament": "2020 RMR",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 30,
+    "spendOnBuy": 7.5
+  },
+  {
+    "nameForFetch": "2020 RMR Contenders",
+    "tournament": "2020 RMR",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 40,
+    "spendOnBuy": 10
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
+    "tournament": "2021 Stockholm",
+    "name": "Legends Sticker Capsule",
+    "quantity": 200,
+    "spendOnBuy": 50
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Challengers Sticker Capsule",
+    "tournament": "Stockholm 2021",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Contenders Sticker Capsule",
+    "tournament": "Stockholm 2021",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Champions Autograph Capsule",
+    "tournament": "Stockholm 2021",
+    "name": "Champions Autograph Capsule",
+    "quantity": 100,
+    "spendOnBuy": 25
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Finalists Autograph Capsule",
+    "tournament": "Stockholm 2021",
+    "name": "Finalists Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Legends Patch Pack",
+    "tournament": "Stockholm 2021",
+    "name": "Legends Patch Pack",
+    "quantity": 6,
+    "spendOnBuy": 15
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Natus Vincere",
+    "quantity": 1192,
+    "spendOnBuy": 107.29
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Natus Vincere (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.5
+  },
+  {
+    "nameForFetch": "Patch | Natus Vincere | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Patch | Natus Vincere",
+    "quantity": 5,
+    "spendOnBuy": 20
+  },
+  {
+    "nameForFetch": "Sticker | Gambit Gaming (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Gambit Gaming (Holo)",
+    "quantity": 3,
+    "spendOnBuy": 0.75
+  },
+  {
+  "nameForFetch": "Sticker | FURIA (Holo) | Stockholm 2021",
+  "tournament": "Stockholm 2021",
+  "name": "FURIA (Holo)",
+  "quantity": 2,
+  "spendOnBuy": 0.5
+  },
+  {
+    "nameForFetch": "Sticker | Vitality (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Vitality (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.5
+  },
+  {
+    "nameForFetch": "Sticker | Ninjas in Pyjamas (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Ninjas in Pyjamas (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Sticker | Team Liquid (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Team Liquid (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.5
+  },
+  {
+    "nameForFetch": "Sticker | Team Liquid (Foil) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "Team Liquid (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Sticker | G2 Esports (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "G2 Esports (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Sticker | G2 Esports (Foil) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "G2 Esports (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Sticker | s1mple | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "s1mple",
+    "quantity": 210,
+    "spendOnBuy": 25.21
+  },
+  {
+    "nameForFetch": "Sticker | s1mple (Holo) | Stockholm 2021",
+    "tournament": "Stockholm 2021",
+    "name": "s1mple (Holo)",
+    "quantity": 6,
+    "spendOnBuy": 6.71
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Legends Sticker Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Legends Sticker Capsule",
+    "quantity": 120,
+    "spendOnBuy": 30
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Challengers Sticker Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Contenders Sticker Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 30,
+    "spendOnBuy": 7.5
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Legends Autograph Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Legends Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Challengers Autograph Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Challengers Autograph Capsule",
+    "quantity": 10,
+    "spendOnBuy": 2.5
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Contenders Autograph Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Contenders Autograph Capsule",
+    "quantity": 10,
+    "spendOnBuy": 2.5
+  },
+  {
+    "nameForFetch": "Antwerp 2022 Champions Autograph Capsule",
+    "tournament": "Antwerp 2022",
+    "name": "Champions Autograph Capsule",
+    "quantity": 25,
+    "spendOnBuy": 6.25
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere | Antwerp 2022",
+    "tournament": "Antwerp 2022",
+    "name": "Natus Vincere",
+    "quantity": 101,
+    "spendOnBuy": 25.25
+  },
+  {
+    "nameForFetch": "Sticker | Cloud9 | Antwerp 2022",
+    "tournament": "Antwerp 2022",
+    "name": "Cloud9",
+    "quantity": 17,
+    "spendOnBuy": 4
+  },
+  {
+    "nameForFetch": "Sticker | Cloud9 (Glitter) | Antwerp 2022",
+    "tournament": "Antwerp 2022",
+    "name": "Cloud9 (Glitter)",
+    "quantity": 3,
+    "spendOnBuy": 0.75
+  },
+  {
+    "nameForFetch": "Sticker | Cloud9 (Holo) | Antwerp 2022",
+    "tournament": "Antwerp 2022",
+    "name": "Cloud9 (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Rio 2022 Legends Sticker Capsule",
+    "tournament": "Rio 2022",
+    "name": "Legends Sticker Capsule",
+    "quantity": 60,
+    "spendOnBuy": 15
+  },
+  {
+    "nameForFetch": "Rio 2022 Challengers Sticker Capsule",
+    "tournament": "Rio 2022",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 30,
+    "spendOnBuy": 7.5
+  },
+  {
+    "nameForFetch": "Rio 2022 Contenders Sticker Capsule",
+    "tournament": "Rio 2022",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Rio 2022 Legends Autograph Capsule",
+    "tournament": "Rio 2022",
+    "name": "Legends Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Rio 2022 Challengers Autograph Capsule",
+    "tournament": "Rio 2022",
+    "name": "Challengers Autograph Capsule",
+    "quantity": 10,
+    "spendOnBuy": 2.5
+  },
+  {
+    "nameForFetch": "Rio 2022 Contenders Autograph Capsule",
+    "tournament": "Rio 2022",
+    "name": "Contenders Autograph Capsule",
+    "quantity": 10,
+    "spendOnBuy": 2.5
+  },
+  {
+    "nameForFetch": "Rio 2022 Champions Autograph Capsule",
+    "tournament": "Rio 2022",
+    "name": "Champions Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Paris 2023 Legends Sticker Capsule",
+    "tournament": "2023 Paris",
+    "name": "Legends Sticker Capsule",
+    "quantity": 288,
+    "spendOnBuy": 72
+  },
+  {
+    "nameForFetch": "Paris 2023 Challengers Sticker Capsule",
+    "tournament": "2023 Paris",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 288,
+    "spendOnBuy": 72
+  },
+  {
+    "nameForFetch": "Paris 2023 Contenders Sticker Capsule",
+    "tournament": "2023 Paris",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 286,
+    "spendOnBuy": 71.5
+  },
+  {
+    "nameForFetch": "Paris 2023 Legends Autograph Capsule",
+    "tournament": "2023 Paris",
+    "name": "Legends Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "Paris 2023 Challengers Autograph Capsule",
+    "tournament": "2023 Paris",
+    "name": "Challengers Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "Paris 2023 Contenders Autograph Capsule",
+    "tournament": "2023 Paris",
+    "name": "Contenders Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "Paris 2023 Champions Autograph Capsule",
+    "tournament": "2023 Paris",
+    "name": "Champions Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 12.5
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere (Gold) | Paris 2023",
+    "tournament": "2023 Paris",
+    "name": "Natus Vincere (Gold)",
+    "quantity": 1,
+    "spendOnBuy": 0.25
+  }
+]
