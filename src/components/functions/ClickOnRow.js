@@ -6,6 +6,8 @@ const calculateProfit = (item) => {
   let profitText = `x${profit}`
   let profitColor;
   
+  // console.log(item)
+  
   if (profit === 'Infinity') {
     profitText = 'Infinity'; // Якщо прибуток - Infinity
     profitColor = 'green'; // Зелений колір

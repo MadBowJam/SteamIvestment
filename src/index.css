@@ -53,3 +53,17 @@ svg {
 .MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root {
     background-color: red !important;
 }
+
+.ItemImage {
+    width: 200px;
+}
+
+.CollapseInner {
+    position: relative;
+}
+
+.ItemDescription {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}

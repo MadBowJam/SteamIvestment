@@ -1,24 +1,41 @@
 const axios = require('axios');
+const crypto = require('crypto');
+
+function hashString(str) {
+  return crypto.createHash('md5').update(str).digest("hex");
+}
 
 // Функція для отримання ціни конкретного предмета
-function getprice(appid, itemname, currency) {
-  return axios.get('https://steamcommunity.com/market/priceoverview', {
-    params: {
-      currency: currency,
-      appid: appid,
-      market_hash_name: itemname
-    },
-    timeout: 5000 // Таймаут в мілісекундах (в даному випадку 5 секунд)
-  })
-    .then(response => {
-      if (!response.data.success) {
-        throw new Error(`Request for item '${itemname}' failed.`);
-      }
-      return response.data;
-    })
-    .catch(error => {
-      throw new Error(`Error occurred while fetching data for item '${itemname}': ${error}`);
+async function getprice(appid, itemname, currency) {
+  try {
+    const encodedItemName = encodeURIComponent(itemname); // Кодуємо itemname
+    
+    // Запит на отримання ціни предмету
+    const priceResponse = await axios.get('https://steamcommunity.com/market/priceoverview', {
+      params: {
+        currency: currency,
+        appid: appid,
+        market_hash_name: itemname // Використовуємо закодований itemname
+      },
+      timeout: 5000
     });
+    
+    if (!priceResponse.data.success) {
+      throw new Error(`Request for item '${itemname}' failed.`);
+    }
+    
+    // Запит на отримання зображення предмету
+    const imageResponse = await axios.get(`https://api.steamapis.com/image/item/${appid}/${encodedItemName}`, {
+      responseType: 'arraybuffer' // Установлюємо тип відповіді як arraybuffer для отримання даних у бінарному форматі
+    });
+    
+    return {
+      price: priceResponse.data,
+      image: imageResponse.data
+    };
+  } catch (error) {
+    throw new Error(`Error occurred while fetching data for item '${itemname}': ${error}`);
+  }
 }
 
 exports.getprice = getprice;

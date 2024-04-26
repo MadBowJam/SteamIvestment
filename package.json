@@ -24,6 +24,7 @@
     "react-toastify": "^10.0.5",
     "steam-price-api": "^2.0.0",
     "styled-components": "^6.1.8",
+    "tinify": "^1.7.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

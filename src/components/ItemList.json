@@ -59,7 +59,7 @@
     "nameForFetch": "Recoil Case",
     "tournament": "Case",
     "name": "Recoil",
-    "quantity": 36,
+    "quantity": 37,
     "spendOnBuy": 10
   },
   {
@@ -99,7 +99,7 @@
   },
   {
     "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
-    "tournament": "2021 Stockholm",
+    "tournament": "Stockholm 2021",
     "name": "Legends Sticker Capsule",
     "quantity": 200,
     "spendOnBuy": 50
@@ -156,7 +156,7 @@
   {
     "nameForFetch": "Patch | Natus Vincere | Stockholm 2021",
     "tournament": "Stockholm 2021",
-    "name": "Patch | Natus Vincere",
+    "name": "Patch Natus Vincere",
     "quantity": 5,
     "spendOnBuy": 20
   },
@@ -411,5 +411,355 @@
     "name": "Natus Vincere (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.25
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Legends Sticker Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Legends Sticker Capsule",
+    "quantity": 60,
+    "spendOnBuy": 15
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Challengers Sticker Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 120,
+    "spendOnBuy": 30
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Contenders Sticker Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 180,
+    "spendOnBuy": 45
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Legends Autograph Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Legends Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Challengers Autograph Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Challengers Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Contenders Autograph Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Contenders Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Copenhagen 2024 Champions Autograph Capsule",
+    "tournament": "Copenhagen 2024",
+    "name": "Champions Autograph Capsule",
+    "quantity": 20,
+    "spendOnBuy": 5
+  },
+  {
+    "nameForFetch": "Sticker | AMKAL ESPORTS | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "AMKAL ESPORTS",
+    "quantity": 5,
+    "spendOnBuy": 1.1
+  },
+  {
+    "nameForFetch": "Sticker | PGL | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "PGL",
+    "quantity": 9,
+    "spendOnBuy": 2.43
+  },
+  {
+    "nameForFetch": "Sticker | PGL (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "PGL (Glitter)",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | PGL (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "PGL (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | KOI | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "KOI",
+    "quantity": 6,
+    "spendOnBuy": 1.62
+  },
+  {
+    "nameForFetch": "Sticker | KOI (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "KOI (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | KOI (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "KOI (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | paiN Gaming | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "paiN Gaming",
+    "quantity": 5,
+    "spendOnBuy": 1.35
+  },
+  {
+    "nameForFetch": "Sticker | paiN Gaming (Gold) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "paiN Gaming (Gold)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | The MongolZ | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "The MongolZ",
+    "quantity": 7,
+    "spendOnBuy": 1.89
+  },
+  {
+    "nameForFetch": "Sticker | The MongolZ (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "The MongolZ (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Lynn Vision | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Lynn Vision",
+    "quantity": 8,
+    "spendOnBuy": 2.16
+  },
+  {
+    "nameForFetch": "Sticker | Lynn Vision (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Lynn Vision (Glitter) ",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Eternal Fire | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Eternal Fire",
+    "quantity": 6,
+    "spendOnBuy": 1.62
+  },
+  {
+    "nameForFetch": "Sticker | Imperial Esports | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Imperial Esports",
+    "quantity": 5,
+    "spendOnBuy": 1.35
+  },
+  {
+    "nameForFetch": "Sticker | Imperial Esports (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Imperial Esports (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | ECSTATIC | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "ECSTATIC",
+    "quantity": 5,
+    "spendOnBuy": 1.35
+  },
+  {
+    "nameForFetch": "Sticker | ECSTATIC (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "ECSTATIC (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | SAW | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "SAW",
+    "quantity": 4,
+    "spendOnBuy": 1.08
+  },
+  {
+    "nameForFetch": "Sticker | SAW (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "SAW (Glitter)",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | Legacy | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Legacy",
+    "quantity": 3,
+    "spendOnBuy": 0.81
+  },
+  {
+    "nameForFetch": "Sticker | Legacy (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Legacy (Glitter)",
+    "quantity": 3,
+    "spendOnBuy": 0.81
+  },
+  {
+    "nameForFetch": "Sticker | Virtus.pro | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Virtus.pro",
+    "quantity": 3,
+    "spendOnBuy": 0.81
+  },
+  {
+    "nameForFetch": "Sticker | Virtus.pro (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Virtus.pro (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | GamerLegion | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "GamerLegion",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | GamerLegion (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "GamerLegion (Glitter)",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | Team Spirit | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Team Spirit",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | Team Spirit (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Team Spirit (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Natus Vincere",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Natus Vincere (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Heroic | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Heroic",
+    "quantity": 3,
+    "spendOnBuy": 0.81
+  },
+  {
+    "nameForFetch": "Sticker | Heroic (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Heroic (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Vitality | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Vitality",
+    "quantity": 2,
+    "spendOnBuy": 0.54
+  },
+  {
+    "nameForFetch": "Sticker | Vitality (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Vitality (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | MOUZ (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "MOUZ (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | G2 Esports | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "G2 Esports",
+    "quantity": 3,
+    "spendOnBuy": 0.81
+  },
+  {
+    "nameForFetch": "Sticker | ENCE (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "ENCE (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | ENCE (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "ENCE (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Apeks (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Apeks (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Complexity Gaming | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Complexity Gaming",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | FaZe Clan | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "FaZe Clan",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Cloud9 | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Cloud9",
+    "quantity": 1,
+    "spendOnBuy": 0.27
+  },
+  {
+    "nameForFetch": "Sticker | Cloud9 (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Cloud9 (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27
   }
 ]

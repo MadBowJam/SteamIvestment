@@ -1,0 +1,65 @@
+[
+  {
+    "nameForFetch": "Prisma Case",
+    "tournament": "Case",
+    "name": "Prisma",
+    "quantity": 7,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Fracture Case",
+    "tournament": "Case",
+    "name": "Fracture",
+    "quantity": 6,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Prisma 2 Case",
+    "tournament": "Case",
+    "name": "Prisma 2",
+    "quantity": 3,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Danger Zone Case",
+    "tournament": "Case",
+    "name": "Danger Zone",
+    "quantity": 1,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Clutch Case",
+    "tournament": "Case",
+    "name": "Clutch",
+    "quantity": 2,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Dreams & Nightmares Case",
+    "tournament": "Case",
+    "name": "Dreams & Nightmares",
+    "quantity": 5,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Snakebite Case",
+    "tournament": "Case",
+    "name": "Snakebite",
+    "quantity": 1,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Revolution Case",
+    "tournament": "Case",
+    "name": "Revolution",
+    "quantity": 4,
+    "spendOnBuy": 0
+  },
+  {
+    "nameForFetch": "Recoil Case",
+    "tournament": "Case",
+    "name": "Recoil",
+    "quantity": 37,
+    "spendOnBuy": 10
+  }
+]

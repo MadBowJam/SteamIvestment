@@ -1,5 +1,5 @@
 import React from 'react';
-import { itemsList } from '../ItemListWithPrices';
+import itemsList from '../ItemList.json';
 
 // Функція для перевірки наявності та формату itemsList
 const validateItemsList = () => {
