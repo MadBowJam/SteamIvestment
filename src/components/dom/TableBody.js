@@ -60,7 +60,20 @@ const CustomTableBody = ({ filteredData }) => {
               <Collapse in={openRows[`${item.tournament}-${item.name}`]} timeout="auto" unmountOnExit>
                 <Box margin={1}>
                   <div className="CollapseInner">
-                    {imgSrc && <img src={imgSrc} alt={`${item.tournament}-${item.name}`} className="ItemImage" />}
+                    {imgSrc ? (
+                      <img
+                        src={imgSrc}
+                        alt={`${item.tournament}-${item.name}`}
+                        className="ItemImage"
+                      />
+                    ) : (
+                      <img
+                        src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" // Посилання на гіф анімацію
+                        alt="Loading..."
+                        className="ItemImage"
+                      />
+                    )}
+
                     <span className="ItemDescription">
                       Your profit:{' '}
                       <span style={{color: calculateProfit(item).profitColor}}>
