@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
+    "express": "^4.19.2",
     "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",

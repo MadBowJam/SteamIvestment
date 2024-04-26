@@ -67,3 +67,11 @@ svg {
     left: 50%;
     top: 45%;
 }
+
+.CollapseInner {
+    transition: height 0.3s ease;
+}
+
+.CollapseInner.open {
+    height: auto; /* Застосування auto розміру для плавного розгортання */
+}

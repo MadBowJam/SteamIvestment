@@ -18,6 +18,7 @@ const imagesKeys = Object.keys(images).map(key => key.slice(2, -4));
 const CustomTableBody = ({ filteredData }) => {
   const [openRows, setOpenRows] = useState({});
   const [imgSrc, setImgSrc] = useState(null); // Стан для збереження URL зображення
+  const [isExpanded] = useState(false);
   
   const imgURL = (tournament, itemName) => {
     const key = `${tournament}-${itemName}`;
@@ -43,6 +44,11 @@ const CustomTableBody = ({ filteredData }) => {
     });
   };
   
+  
+  const collapseStyles = {
+    height: isExpanded ? '0' : '150px',
+  };
+  
   return (
     <TableBody>
       {filteredData.map((item) => (
@@ -59,21 +65,8 @@ const CustomTableBody = ({ filteredData }) => {
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
               <Collapse in={openRows[`${item.tournament}-${item.name}`]} timeout="auto" unmountOnExit>
                 <Box margin={1}>
-                  <div className="CollapseInner">
-                    {imgSrc ? (
-                      <img
-                        src={imgSrc}
-                        alt={`${item.tournament}-${item.name}`}
-                        className="ItemImage"
-                      />
-                    ) : (
-                      <img
-                        src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" // Посилання на гіф анімацію
-                        alt="Loading..."
-                        className="ItemImage"
-                      />
-                    )}
-
+                  <div className="CollapseInner"  style={collapseStyles}>
+                    {imgSrc && <img src={imgSrc} alt={`${item.tournament}-${item.name}`} className="ItemImage" />}
                     <span className="ItemDescription">
                       Your profit:{' '}
                       <span style={{color: calculateProfit(item).profitColor}}>
