@@ -16,13 +16,12 @@ const RenewData = () => {
         
         const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
         
-        // Шукаємо співпадіння зі списком предметів
-        const matchingItem = response.lowest_price;
+
         
         console.log(response)
         // if (matchingItem) {
           // Оновлюємо ціну у списку предметів, видаляючи перший символ
-          itemsList[i].price = parseFloat(matchingItem.sell_price_text.slice(1));
+          itemsList[i].price = parseFloat(response.data.lowest_price.slice(1));
           console.log(itemsList[i].price)
         // }
         
