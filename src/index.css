@@ -55,7 +55,8 @@ svg {
 }
 
 .ItemImage {
-    width: 200px;
+    width: 150px;
+    margin: 25px;
 }
 
 .CollapseInner {

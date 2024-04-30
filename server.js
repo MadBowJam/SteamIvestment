@@ -1,19 +1,21 @@
 const express = require('express');
-const { fetchData } = require('./src/SteamPriceCheck'); // Замініть 'SteamPriceCheck' на шлях до вашого файлу, де знаходиться код fetchData
-const app = express();
-const PORT = process.env.PORT || 3000;
+const steamMarketSearch = require('steam-market-search');
+const { searchCSGO } = require('./test_steam_market_search');
 
-// Маршрут для запуску функції fetchData
-app.get('/api/fetch-data', async (req, res) => {
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.get('/search-csgo', async (req, res) => {
   try {
-    await fetchData();
-    res.json({ message: 'Data fetched successfully' });
+    const term = req.query.term;
+    const results = await searchCSGO(term); // Передаємо значення term в функцію searchCSGO
+    res.json(results);
   } catch (error) {
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('Error searching on Steam Market:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
-// Запускаємо сервер
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

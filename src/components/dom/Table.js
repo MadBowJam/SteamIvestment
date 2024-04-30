@@ -10,6 +10,8 @@ import jsonData from '../../json/latest.json';
 import validateItemsList from '../validation/ValidationItemList';
 import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
+import SteamMarketSearch from '../functions/SteamMarketSearch';
+import RenewData from '../functions/RenewData';
 
 const DEFAULT_ITEMS_PER_PAGE = 10;
 const ITEMS_PER_PAGE_OPTIONS = [10, 25, 50, 75, 100];
@@ -18,7 +20,7 @@ const createItemsData = () => {
   return [...itemsList].reduce((acc, _, i) => {
       const tournament = itemsList[i].tournament;
       const name = itemsList[i].name;
-      const price = jsonData[i];
+      const price = itemsList[i].price;
       const quantity = itemsList[i].quantity;
       const total = (price * quantity).toFixed(2);
       const spend_on_buy = itemsList[i]["spendOnBuy"];
@@ -31,7 +33,7 @@ const calculateTotalPrice = () => {
   const totalPrice = {};
   for (let i = 0; i < itemsList.length; i++) {
     const tournament = itemsList[i].tournament;
-    const price = jsonData[i];
+    const price = itemsList[i].price;
     const quantity = itemsList[i].quantity;
     const total = (price * quantity).toFixed(2);
     
@@ -87,10 +89,19 @@ const CustomTable = () => {
   }, [filteredData, page, rowsPerPage]);
   
   return (
-    <Box minWidth={390} maxWidth={900} mx="auto">
-      <ToastContainer />
-      <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-        <TextField label="Search" variant="outlined" value={searchTerm} onChange={handleSearch} />
+    <Box minWidth={390}
+         maxWidth={900}
+         mx="auto">
+      <ToastContainer/>
+      <Box display="flex"
+           alignItems="center"
+           justifyContent="space-between"
+           mb={2}>
+        <TextField label="Search"
+                   variant="outlined"
+                   value={searchTerm}
+                   onChange={handleSearch}/>
+        <RenewData />
       </Box>
       <TablePagination
         component="div"
@@ -102,7 +113,7 @@ const CustomTable = () => {
         rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
       />
       <TableContainer component={Paper}>
-        <Table sx={{ borderCollapse: 'collapse' }}>
+        <Table sx={{borderCollapse: 'collapse'}}>
           <TableHead>
             <TableHeadComponent
               handleSort={handleSortAndUpdate}
@@ -112,7 +123,9 @@ const CustomTable = () => {
               setSortedColumn={setSortedColumn}
             />
           </TableHead>
-          <CustomTableBody filteredData={paginatedData} openRows={openRows} setOpenRows={setOpenRows} />
+          <CustomTableBody filteredData={paginatedData}
+                           openRows={openRows}
+                           setOpenRows={setOpenRows}/>
         </Table>
       </TableContainer>
       <TablePagination
@@ -125,12 +138,22 @@ const CustomTable = () => {
         rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
       />
       
-      <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
+      <Box maxWidth={390}
+           textAlign="center"
+           sx={{fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto'}}>
         {Object.entries(calculateTotalPrice()).map(([tournament, total]) => (
-          <div key={tournament}>Total Price for {tournament}: <CountUp start={0} end={total.toFixed(2)} duration={1} decimals={2} /></div>
+          <div key={tournament}>Total Price for {tournament}: <CountUp start={0}
+                                                                       end={total.toFixed(2)}
+                                                                       duration={1}
+                                                                       decimals={2}/></div>
         ))}
-        <div>Total Price for All: <CountUp start={0} end={totalAllPrice.toFixed(2)} duration={1} decimals={2} /></div>
+        <div>Total Price for All: <CountUp start={0}
+                                           end={totalAllPrice.toFixed(2)}
+                                           duration={1}
+                                           decimals={2}/></div>
       </Box>
+      
+      <SteamMarketSearch />
     </Box>
   );
 }

@@ -9,7 +9,7 @@ const delay = 3500;
 
 // Встановлюємо API ключ TinyPNG
 const tinify = require("tinify");
-tinify.key = "YOUR_API_KEY";
+tinify.key = "V8Z3lKrs5BhT0Nhyks6Html7QMBS7zX8";
 
 async function optimizeAndSaveImage(imageBuffer, imageName) {
   try {
@@ -27,7 +27,6 @@ async function optimizeAndSaveImage(imageBuffer, imageName) {
 
 async function fetchData() {
   try {
-    let results = [];
     console.log(itemsArray.length);
     
     for (let i = 0; i < itemsArray.length; i++) {
@@ -42,9 +41,10 @@ async function fetchData() {
         });
         
         const imageName = `${item.tournament}-${item.name}.png`; // Ім'я файлу для збереження
-        await optimizeAndSaveImage(imageResponse.data, imageName);
+        // await optimizeAndSaveImage(imageResponse.data, imageName);
         
-        results.push(price);
+        // Оновлюємо об'єкт елементу в itemsArray, додаючи ключ "price"
+        item.price = price;
         
         console.log(`${i + 1} complete`);
       } catch (error) {
@@ -66,13 +66,15 @@ async function fetchData() {
     
     console.log('All complete');
     
-    // Записуємо результати в файл
-    await fs.writeFile(`./json/${today}.json`, JSON.stringify(results));
-    await fs.writeFile(`./json/latest.json`, JSON.stringify(results));
+    // Записуємо оновлений itemsArray з цінами у файл
+    await fs.writeFile('./components/ItemList.json', JSON.stringify(itemsArray));
+    await fs.writeFile(`./json/${today}.json`, JSON.stringify(itemsArray));
+    
   } catch (err) {
     console.error(`Помилка: ${err.message}`);
   }
 }
+
 
 
 

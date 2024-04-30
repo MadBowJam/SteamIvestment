@@ -7,6 +7,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  resolve: {
+    fallback: {
+      "https": require.resolve("https-browserify"),
+      "http": require.resolve("http-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "crypto": require.resolve("crypto-browserify")
+    }
+  },
   module: {
     rules: [
       {
