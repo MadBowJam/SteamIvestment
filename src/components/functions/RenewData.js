@@ -19,7 +19,7 @@ const RenewData = () => {
         // Шукаємо співпадіння зі списком предметів
         const matchingItem = response.lowest_price;
         
-        console.log(matchingItem)
+        console.log(response)
         // if (matchingItem) {
           // Оновлюємо ціну у списку предметів, видаляючи перший символ
           itemsList[i].price = parseFloat(matchingItem.sell_price_text.slice(1));
