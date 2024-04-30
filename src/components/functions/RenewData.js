@@ -8,7 +8,7 @@ const RenewData = () => {
     try {
       // Проходимося по всіх елементах списку itemsList
       for (let i = 0; i < itemsList.length; i++) {
-        const term = itemsList[5].nameForFetch;
+        const term = itemsList[i].nameForFetch;
         
         const encodedTerm = encodeURIComponent(term);
         
