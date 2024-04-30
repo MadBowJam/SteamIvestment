@@ -17,7 +17,7 @@ const RenewData = () => {
         const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
         
         // Шукаємо співпадіння зі списком предметів
-        const matchingItem = response.data.find(item => item.hash_name === term);
+        const matchingItem = response.lowest_price;
         if (matchingItem) {
           // Оновлюємо ціну у списку предметів, видаляючи перший символ
           itemsList[i].price = parseFloat(matchingItem.sell_price_text.slice(1));
