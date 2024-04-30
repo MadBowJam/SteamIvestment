@@ -6,7 +6,7 @@ import useTableFilter from '../functions/Filter&Search';
 import TableHeadComponent from './TableHead';
 import CustomTableBody from './TableBody';
 import itemsList from '../ItemList.json';
-import jsonData from '../../json/latest.json';
+// import jsonData from '../../json/latest.json';
 import validateItemsList from '../validation/ValidationItemList';
 import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
