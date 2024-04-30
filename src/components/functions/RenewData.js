@@ -18,11 +18,13 @@ const RenewData = () => {
         
         // Шукаємо співпадіння зі списком предметів
         const matchingItem = response.lowest_price;
-        if (matchingItem) {
+        
+        console.log(matchingItem)
+        // if (matchingItem) {
           // Оновлюємо ціну у списку предметів, видаляючи перший символ
           itemsList[i].price = parseFloat(matchingItem.sell_price_text.slice(1));
           console.log(itemsList[i].price)
-        }
+        // }
         
         // Затримка перед наступним запитом
         await new Promise(resolve => setTimeout(resolve, 4000));
