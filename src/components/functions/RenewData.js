@@ -38,7 +38,7 @@ const RenewData = () => {
     }
     
     try {
-      const response = await axios.post('/update-items-list', itemsList); // Виконання POST-запиту на сервер
+      const response = await axios.post('http://localhost:5000/update-items-list', itemsList); // Виконання POST-запиту на сервер
       
       // Отримання повідомлення про успішну операцію від сервера
       toast.success(response.data.message, { autoClose: 3000 });
