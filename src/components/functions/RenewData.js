@@ -15,8 +15,8 @@ const RenewData = () => {
         
         console.log(encodedTerm)
         
-        // const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
-        const response = await axios.get(`https://steamcommunity.com/market/listings/730/${encodedTerm}`);
+        const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
+        // const response = await axios.get(`https://steamcommunity.com/market/listings/730/${encodedTerm}`);
         
 
         
