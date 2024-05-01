@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, Button } from '@mui/material';
 import axios from 'axios';
 import itemsList from '../ItemList.json';
+import { toast } from 'react-toastify'; // Імпортуємо функції toast з бібліотеки react-toastify
+import 'react-toastify/dist/ReactToastify.css'; // Імпортуємо стилі для Toastify
 
 const RenewData = () => {
   const handleSearchClick = async () => {
@@ -25,6 +27,7 @@ const RenewData = () => {
           // Оновлюємо ціну у списку предметів, видаляючи перший символ
           itemsList[i].price = parseFloat(response.data.lowest_price.slice(1));
           console.log(itemsList[i].price)
+        toast.success(`Price for ${term}: ${itemsList[i].price}`, { autoClose: 3000 }); // autoClose: 3000 означає, що сповіщення буде закрите через 3 секунди
         // }
         
         // Затримка перед наступним запитом
