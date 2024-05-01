@@ -23,7 +23,7 @@ const createItemsData = () => {
       const price = itemsList[i].price;
       const quantity = itemsList[i].quantity;
       const total = (price * quantity).toFixed(2);
-      const spend_on_buy = itemsList[i]["spendOnBuy"];
+      const spend_on_buy = itemsList[i].spendOnBuy * quantity;
       acc.push({ tournament, name, price, quantity, total, spend_on_buy });
     return acc;
   }, []);

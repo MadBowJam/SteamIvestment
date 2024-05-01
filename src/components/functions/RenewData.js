@@ -7,14 +7,16 @@ const RenewData = () => {
   const handleSearchClick = async () => {
     try {
       // Проходимося по всіх елементах списку itemsList
-      for (let i = 0; i < itemsList.length; i++) {
+      // for (let i = 0; i < itemsList.length; i++) {
+      for (let i = 0; i < 5; i++) {
         const term = itemsList[i].nameForFetch;
         
         const encodedTerm = encodeURIComponent(term);
         
         console.log(encodedTerm)
         
-        const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
+        // const response = await axios.get(`https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name=${encodedTerm}`);
+        const response = await axios.get(`https://steamcommunity.com/market/listings/730/${encodedTerm}`);
         
 
         

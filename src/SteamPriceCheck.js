@@ -41,10 +41,10 @@ async function fetchData() {
         });
         
         const imageName = `${item.tournament}-${item.name}.png`; // Ім'я файлу для збереження
-        // await optimizeAndSaveImage(imageResponse.data, imageName);
+        await optimizeAndSaveImage(imageResponse.data, imageName);
         
         // Оновлюємо об'єкт елементу в itemsArray, додаючи ключ "price"
-        item.price = price;
+        item.price = Number(price);
         
         console.log(`${i + 1} complete`);
       } catch (error) {
