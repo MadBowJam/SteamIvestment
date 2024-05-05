@@ -27,7 +27,7 @@ const SteamMarketSearch = () => {
       name: result.name,
       quantity: 1,
       spendOnBuy: 0,
-      price: result.sell_price_text
+      price: parseFloat(result.sell_price_text.slice(1).replace(',', ''))
     };
 
   // Додавання нового елемента до масиву
