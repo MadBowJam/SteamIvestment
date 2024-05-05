@@ -7,6 +7,7 @@ export const updateItemsList = async (itemsList) => {
     toast.success(response.data.message, { autoClose: 5000 });
   } catch (error) {
     console.error('Error updating item list:', error);
+    toast.error(`Error occurred`, { autoClose: 5000 });
     // Додайте логіку обробки помилок тут
   }
 };

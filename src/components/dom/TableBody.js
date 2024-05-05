@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TableBody, TableCell, TableRow, Collapse, Box, IconButton } from '@mui/material';
+import { TableBody, TableCell, TableRow, Collapse, Box, IconButton, Modal, Button } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material'; // Імпорт іконок Delete і Edit
 import CountUp from 'react-countup';
 import { calculateProfit } from '../functions/ClickOnRow'; // Імпорт функції
@@ -22,7 +22,8 @@ const imagesKeys = Object.keys(images).map(key => key.slice(2, -4));
 const CustomTableBody = ({ filteredData }) => {
   const [openRows, setOpenRows] = useState({});
   const [imgSrc, setImgSrc] = useState(null); // Стан для збереження URL зображення
-  const [isExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [itemToDelete, setItemToDelete] = useState(null); // Стан для збереження елемента, який буде видалено
   
   const imgURL = (tournament, itemName) => {
     const key = `${tournament}-${itemName}`;
@@ -48,15 +49,22 @@ const CustomTableBody = ({ filteredData }) => {
     });
   };
   
-  const handleDeleteClick = async (tournament, itemName) => {
+  const handleDeleteClick = (tournament, itemName) => {
+    setItemToDelete({ tournament, itemName });
+    setIsExpanded(false); // Закрити вікно підтвердження видалення
+  };
+  
+  const handleConfirmDelete = async () => {
+    const { tournament, itemName } = itemToDelete;
     console.log(`Deleting row with tournament: ${tournament} and item name: ${itemName}`);
     // Оновлення itemList: фільтрація та видалення елемента
     const updatedItemList = itemsList.filter(item => !(item.tournament === tournament && item.name === itemName));
     console.log(updatedItemList);
     
     await updateItemsList(updatedItemList);
+    setItemToDelete(null); // Скидання стану елемента для видалення
   };
-
+  
   
   const collapseStyles = {
     height: isExpanded ? '0' : '150px',
@@ -94,12 +102,26 @@ const CustomTableBody = ({ filteredData }) => {
                         <Edit color="disabled" /> {/* Іконка Edit */}
                       </IconButton>
                     </div>
-
+                  
                   </div>
                 </Box>
               </Collapse>
             </TableCell>
           </TableRow>
+          {/* Модальне вікно для підтвердження видалення */}
+          <Modal
+            open={!!itemToDelete}
+            onClose={() => setItemToDelete(null)}
+            aria-labelledby="confirm-delete-modal"
+            aria-describedby="confirm-delete-description"
+          >
+            <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', bgcolor: 'background.paper', boxShadow: 24, p: 4, width: 400 }}>
+              <h2 id="confirm-delete-modal">Confirm Delete</h2>
+              <p id="confirm-delete-description">Are you sure you want to delete this item?</p>
+              <Button onClick={handleConfirmDelete}>Yes</Button>
+              <Button onClick={() => setItemToDelete(null)}>No</Button>
+            </Box>
+          </Modal>
         </React.Fragment>
       ))}
     </TableBody>
