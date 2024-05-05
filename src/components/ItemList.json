@@ -13,7 +13,7 @@
     "name": "Fracture",
     "quantity": 6,
     "spendOnBuy": 0,
-    "price": 0.26
+    "price": 0.25
   },
   {
     "nameForFetch": "Prisma 2 Case",
@@ -21,7 +21,7 @@
     "name": "Prisma 2",
     "quantity": 3,
     "spendOnBuy": 0,
-    "price": 0.73
+    "price": 0.71
   },
   {
     "nameForFetch": "Danger Zone Case",
@@ -29,7 +29,7 @@
     "name": "Danger Zone",
     "quantity": 1,
     "spendOnBuy": 0,
-    "price": 0.75
+    "price": 0.73
   },
   {
     "nameForFetch": "Clutch Case",
@@ -37,7 +37,7 @@
     "name": "Clutch",
     "quantity": 2,
     "spendOnBuy": 0,
-    "price": 0.51
+    "price": 0.5
   },
   {
     "nameForFetch": "Dreams & Nightmares Case",
@@ -53,7 +53,7 @@
     "name": "Snakebite",
     "quantity": 1,
     "spendOnBuy": 0,
-    "price": 0.27
+    "price": 0.26
   },
   {
     "nameForFetch": "Revolution Case",
@@ -61,7 +61,7 @@
     "name": "Revolution",
     "quantity": 4,
     "spendOnBuy": 0,
-    "price": 0.35
+    "price": 0.32
   },
   {
     "nameForFetch": "Recoil Case",
@@ -69,7 +69,7 @@
     "name": "Recoil",
     "quantity": 37,
     "spendOnBuy": 0.27,
-    "price": 0.18
+    "price": 0.17
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Katowice 2019",
@@ -966,5 +966,29 @@
     "quantity": 1,
     "spendOnBuy": 0.27,
     "price": 9.43
+  },
+  {
+    "nameForFetch": "Sticker | niko (Gold)  | London 2018",
+    "tournament": "Sticker | niko (Gold)  | London 2018",
+    "name": "Sticker | niko (Gold)  | London 2018",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": "$1,935.14"
+  },
+  {
+    "nameForFetch": "Sticker | NiKo | Atlanta 2017",
+    "tournament": "Sticker | NiKo | Atlanta 2017",
+    "name": "Sticker | NiKo | Atlanta 2017",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": "$34.38"
+  },
+  {
+    "nameForFetch": "Sticker | s1mple (Holo) | Stockholm 2021",
+    "tournament": "Sticker | s1mple (Holo) | Stockholm 2021",
+    "name": "Sticker | s1mple (Holo) | Stockholm 2021",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": "$1.86"
   }
 ]

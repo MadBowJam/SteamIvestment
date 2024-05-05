@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Box, Button } from '@mui/material';
 import axios from 'axios';
+import itemsList from "../ItemList.json";
+import {toast} from "react-toastify";
 
 const SteamMarketSearch = () => {
   const [searchValue, setSearchValue] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  // const [itemsList, setItemsList] = useState([]);
   
   const handleSearchClick = async () => {
     try {
@@ -12,9 +15,36 @@ const SteamMarketSearch = () => {
       setSearchResults(response.data);
     } catch (error) {
       console.error('Error searching:', error);
-      // Додайте логіку обробки помилок тут
+      toast.error(`Error occurred while fetching`, { autoClose: 5000 });
     }
   };
+  
+  
+  const handleAddClick = (result) => {
+    const newItem = {
+      nameForFetch: result.hash_name,
+      tournament: result.hash_name,
+      name: result.name,
+      quantity: 1,
+      spendOnBuy: 0,
+      price: result.sell_price_text
+    };
+
+  // Додавання нового елемента до масиву
+    itemsList.push(newItem);
+    
+    // Виклик серверного маршруту для оновлення файлу ItemList.json
+    axios.post('http://localhost:5000/update-items-list', itemsList)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error('Error updating item list:', error);
+        // Додайте логіку обробки помилок тут
+      });
+  };
+
+  
   
   return (
     <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
@@ -29,7 +59,7 @@ const SteamMarketSearch = () => {
           {searchResults.map((result, index) => (
             <li key={index}>
               {result.asset_description.name}
-              <Button variant="contained" color="primary">Add</Button>
+              <Button variant="contained" color="primary" onClick={() => handleAddClick(result)}>Add</Button>
             </li>
           ))}
         </ul>
