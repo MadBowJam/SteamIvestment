@@ -151,9 +151,13 @@ const CustomTable = () => {
                                            end={totalAllPrice.toFixed(2)}
                                            duration={1}
                                            decimals={2}/></div>
+        <div>Total IRL Price: <CountUp start={0}
+                                           end={(totalAllPrice * 0.55).toFixed(2)}
+                                           duration={1}
+                                           decimals={2}/></div>
       </Box>
       
-      <SteamMarketSearch />
+      <SteamMarketSearch/>
     </Box>
   );
 }

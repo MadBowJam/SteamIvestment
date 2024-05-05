@@ -3,6 +3,7 @@ import { Box, Button } from '@mui/material';
 import axios from 'axios';
 import itemsList from "../ItemList.json";
 import {toast} from "react-toastify";
+import { updateItemsList } from './SaveItemsList'; // Імпорт функції
 
 const SteamMarketSearch = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -12,7 +13,11 @@ const SteamMarketSearch = () => {
   const handleSearchClick = async () => {
     try {
       const response = await axios.get(`http://localhost:5000/search-csgo?term=${searchValue}`);
-      setSearchResults(response.data);
+      if (response.data.length === 0) {
+        toast.error(`No data found`, { autoClose: 5000 });
+      } else {
+        setSearchResults(response.data);
+      }
     } catch (error) {
       console.error('Error searching:', error);
       toast.error(`Error occurred while fetching`, { autoClose: 5000 });
@@ -20,7 +25,8 @@ const SteamMarketSearch = () => {
   };
   
   
-  const handleAddClick = (result) => {
+  
+  const handleAddClick = async (result) => {
     const newItem = {
       nameForFetch: result.hash_name,
       tournament: result.hash_name,
@@ -29,20 +35,14 @@ const SteamMarketSearch = () => {
       spendOnBuy: 0,
       price: parseFloat(result.sell_price_text.slice(1).replace(',', ''))
     };
-
-  // Додавання нового елемента до масиву
+    
+    // Додавання нового елемента до масиву
     itemsList.push(newItem);
     
     // Виклик серверного маршруту для оновлення файлу ItemList.json
-    axios.post('http://localhost:5000/update-items-list', itemsList)
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(error => {
-        console.error('Error updating item list:', error);
-        // Додайте логіку обробки помилок тут
-      });
+    await updateItemsList(itemsList);
   };
+
 
   
   

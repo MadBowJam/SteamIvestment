@@ -5,6 +5,7 @@ import itemsList from '../ItemList.json';
 import { toast } from 'react-toastify'; // Імпортуємо функції toast з бібліотеки react-toastify
 import 'react-toastify/dist/ReactToastify.css'; // Імпортуємо стилі для Toastify
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+import { updateItemsList } from './SaveItemsList'; // Імпорт функції
 
 const Countdown = 10;
 
@@ -61,13 +62,7 @@ const RenewData = () => {
     }
     
     try {
-      const response = await axios.post('http://localhost:5000/update-items-list', itemsList); // Виконання POST-запиту на сервер
-      
-      // Отримання повідомлення про успішну операцію від сервера
-      toast.success(response.data.message, { autoClose: 5000 });
-    } catch (error) {
-      console.error('Error updating item list:', error);
-      // Додайте логіку обробки помилок тут
+      await updateItemsList(itemsList);
     } finally {
       setLoading(false);
       setCountdown(itemsList.length * Countdown); // Reset countdown

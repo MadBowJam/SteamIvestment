@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import { TableBody, TableCell, TableRow, Collapse, Box } from '@mui/material';
+import { TableBody, TableCell, TableRow, Collapse, Box, IconButton } from '@mui/material';
+import { Delete, Edit } from '@mui/icons-material'; // Імпорт іконок Delete і Edit
 import CountUp from 'react-countup';
 import { calculateProfit } from '../functions/ClickOnRow'; // Імпорт функції
+import itemsList from '../ItemList.json';
+import 'react-toastify/dist/ReactToastify.css'; // Імпортуємо стилі для Toastify
+import { updateItemsList } from '../functions/SaveItemsList'; // Імпорт функції
 
 function importAllImages(r) {
   const images = {};
@@ -44,6 +48,15 @@ const CustomTableBody = ({ filteredData }) => {
     });
   };
   
+  const handleDeleteClick = async (tournament, itemName) => {
+    console.log(`Deleting row with tournament: ${tournament} and item name: ${itemName}`);
+    // Оновлення itemList: фільтрація та видалення елемента
+    const updatedItemList = itemsList.filter(item => !(item.tournament === tournament && item.name === itemName));
+    console.log(updatedItemList);
+    
+    await updateItemsList(updatedItemList);
+  };
+
   
   const collapseStyles = {
     height: isExpanded ? '0' : '150px',
@@ -73,6 +86,15 @@ const CustomTableBody = ({ filteredData }) => {
                         {calculateProfit(item).profitText}
                       </span>
                     </span>
+                    <div className="IconsInRow">
+                      <IconButton onClick={() => handleDeleteClick(item.tournament, item.name)}>
+                        <Delete color="error" /> {/* Іконка Delete */}
+                      </IconButton>
+                      <IconButton>
+                        <Edit color="disabled" /> {/* Іконка Edit */}
+                      </IconButton>
+                    </div>
+
                   </div>
                 </Box>
               </Collapse>

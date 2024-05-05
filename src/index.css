@@ -56,7 +56,7 @@
 
 .ItemImage {
     width: 150px;
-    margin: 25px;
+    margin: 17px;
 }
 
 .CollapseInner {
@@ -80,4 +80,10 @@
 .timer {
     font-size: 10px;
     color: #7dc2ad;
+}
+
+.IconsInRow {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
