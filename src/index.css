@@ -96,7 +96,7 @@
     background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-.MuiInputLabel-root, .MuiOutlinedInput-input {
+.EditField div input, .EditField label  {
     color: white !important;
 }
 
@@ -104,9 +104,9 @@
     border-color: rgba(136, 136, 136, 0.2) !important;
 }
 
-.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: white !important;
-}
+/*.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {*/
+/*    color: white !important;*/
+/*}*/
 
 .MuiInputBase-input {
     color: rgba(136, 136, 136, 0);
@@ -119,12 +119,22 @@
 .EditItems {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
-    margin: 20% auto 0;
+    width: 320px;
     height: 350px;
     justify-content: space-around;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 160px);
 }
 
 .EditField {
     margin-bottom: 10px;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    color: gray !important;
+ }
+
+.SearchField label {
+    color: gray !important;
 }

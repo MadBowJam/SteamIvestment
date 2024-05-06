@@ -12,7 +12,8 @@ import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
 import SteamMarketSearch from '../functions/SteamMarketSearch';
 import RenewData from '../functions/RenewData';
-// import NBU from '../NBU.json';
+import NBU from '../NBU.json';
+import {updateItemsList} from "../functions/SaveItemsList";
 
 const DEFAULT_ITEMS_PER_PAGE = 10;
 const ITEMS_PER_PAGE_OPTIONS = [10, 25, 50, 75, 100];
@@ -30,7 +31,7 @@ const createItemsData = () => {
   }, []);
 };
 
-const calculateTotalPrice = () => {
+export const calculateTotalPrice = () => {
   const totalPrice = {};
   for (let i = 0; i < itemsList.length; i++) {
     const tournament = itemsList[i].tournament;
@@ -55,7 +56,11 @@ const CustomTable = () => {
   const [sortDirection, setSortDirection] = useState(null);
   const [sortedColumn, setSortedColumn] = useState(null);
   const [openRows, setOpenRows] = useState({}); // Зберігатиме стан відкритих рядків між сторінками
-  const [currency] = useState('dollar'); // Зберігаємо обраний тип валюти
+  
+  // Знайдіть першу валюту у списку
+  const initialCurrency = itemsList.length > 0 ? itemsList[0].currency : 'USD';
+  
+  const [currency, setCurrency] = useState(initialCurrency) // Зберігаємо обраний тип валюти
   
   
   validateItemsList();
@@ -138,6 +143,50 @@ const CustomTable = () => {
   //   return price * currencyRate;
   // };
   
+  const handleCurrencyChange = async (event) => {
+    const selectedCurrency = event.target.value;
+    setCurrency(selectedCurrency);
+    
+    // Отримання курсу гривні (приклад, замість реальних даних)
+    const hryvniaRate = NBU[0].rate; // Приклад значення курсу гривні до долара
+    
+    // Зміна цін на валюту
+    const updatedItemsList = itemsList.map(item => {
+      let updatedPrice = item.price;
+      let updatedSpendOnBuy = item.spendOnBuy;
+      let currency = 'USD';
+      
+      // Перевірка вибраної валюти
+      switch (selectedCurrency) {
+        case 'USD':
+          // Нічого не змінюємо, оскільки залишаємо ціни в доларах
+          updatedPrice /= hryvniaRate;
+          updatedSpendOnBuy /= hryvniaRate;
+          currency = 'USD';
+          break;
+        case 'Uah':
+          // Зміна цін на гривні
+          updatedPrice *= hryvniaRate;
+          updatedSpendOnBuy *= hryvniaRate;
+          currency = 'Uah';
+          break;
+        default:
+          // Не відома валюта, не змінюємо ціни
+          break;
+      }
+      
+      return { ...item, price: updatedPrice, spendOnBuy: updatedSpendOnBuy, currency: currency };
+    });
+    await updateItemsList(updatedItemsList);
+    // Показати оновлені ціни в консолі (для перевірки)
+    console.log('Оновлені ціни:', updatedItemsList);
+  };
+  
+
+
+
+  
+  
   // Останній рядок до завершення компонента CustomTable
   
   return (
@@ -149,18 +198,19 @@ const CustomTable = () => {
            alignItems="center"
            justifyContent="space-between"
            mb={2}>
-        <TextField label="Search"
+        <TextField className="SearchField"
+                   label="Search"
                    variant="outlined"
                    value={searchTerm}
                    onChange={handleSearch}/>
         <Select
           label="Currency"
           value={currency}
-          // onChange={handleChangeCurrency}
+          onChange={handleCurrencyChange}
           variant="outlined"
         >
-          <MenuItem value="dollar">Dollar</MenuItem>
-          <MenuItem value="hryvnia">Hryvnia</MenuItem>
+          <MenuItem value="USD">USD $</MenuItem>
+          <MenuItem value="Uah">Uah ₴</MenuItem>
         </Select>
         <RenewData />
       </Box>
