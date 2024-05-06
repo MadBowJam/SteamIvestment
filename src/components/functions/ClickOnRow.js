@@ -2,7 +2,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // Функція для обробки кліку по рядку таблиці
 const calculateProfit = (item) => {
-  const profit = ((item.total) / item.spend_on_buy).toFixed(2);
+  const profit = ((item.total) / item.spendOnBuy).toFixed(2);
   let profitText = `x${profit}`
   let profitColor;
   

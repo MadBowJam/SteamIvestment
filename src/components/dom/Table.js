@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Box, Paper, Table, TableContainer, TableHead, TablePagination, TextField } from '@mui/material';
+import { Box, Paper, Table, TableContainer, TableHead, TablePagination, TextField, MenuItem, Select } from '@mui/material';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useTableFilter from '../functions/Filter&Search';
@@ -12,19 +12,20 @@ import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
 import SteamMarketSearch from '../functions/SteamMarketSearch';
 import RenewData from '../functions/RenewData';
+// import NBU from '../NBU.json';
 
 const DEFAULT_ITEMS_PER_PAGE = 10;
 const ITEMS_PER_PAGE_OPTIONS = [10, 25, 50, 75, 100];
 
 const createItemsData = () => {
   return [...itemsList].reduce((acc, _, i) => {
-      const tournament = itemsList[i].tournament;
-      const name = itemsList[i].name;
-      const price = itemsList[i].price;
-      const quantity = itemsList[i].quantity;
-      const total = (price * quantity).toFixed(2);
-      const spend_on_buy = itemsList[i].spendOnBuy * quantity;
-      acc.push({ tournament, name, price, quantity, total, spend_on_buy });
+    const tournament = itemsList[i].tournament;
+    const name = itemsList[i].name;
+    const price = itemsList[i].price;
+    const quantity = itemsList[i].quantity;
+    const total = (price * quantity).toFixed(2);
+    const spendOnBuy = itemsList[i].spendOnBuy * quantity;
+    acc.push({ tournament, name, price, quantity, total, spendOnBuy });
     return acc;
   }, []);
 };
@@ -45,12 +46,17 @@ const calculateTotalPrice = () => {
   return totalPrice;
 };
 
+
+
+
 const CustomTable = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
   const [sortDirection, setSortDirection] = useState(null);
   const [sortedColumn, setSortedColumn] = useState(null);
   const [openRows, setOpenRows] = useState({}); // Зберігатиме стан відкритих рядків між сторінками
+  const [currency] = useState('dollar'); // Зберігаємо обраний тип валюти
+  
   
   validateItemsList();
   validateJsonData();
@@ -60,6 +66,8 @@ const CustomTable = () => {
   const totalAllPrice = useMemo(() => {
     return Object.values(calculateTotalPrice()).reduce((acc, curr) => acc + curr, 0);
   }, []);
+  
+  
   
   const handleSortAndUpdate = (column) => {
     handleSort(column);
@@ -88,6 +96,50 @@ const CustomTable = () => {
     return filteredData.slice(startIndex, endIndex);
   }, [filteredData, page, rowsPerPage]);
   
+  // const handleCurrencyChange = (event) => {
+  //   const selectedCurrency = event.target.value;
+  //   setCurrency(selectedCurrency);
+  //
+  //   // Формуємо шаблон пошуку залежно від обраної валюти
+  //   let searchTemplate = '';
+  //   switch (selectedCurrency) {
+  //     case 'euro':
+  //       searchTemplate = 'Євро';
+  //       break;
+  //     case 'zloty':
+  //       searchTemplate = 'Злотий';
+  //       break;
+  //     default:
+  //       searchTemplate = 'Долар США';
+  //       break;
+  //   }
+  //
+  //   // Знаходимо об'єкт в масиві NBU зі встановленою валютою
+  //   const currencyObject = NBU.find(item => item.txt === searchTemplate);
+  //   if (currencyObject) {
+  //     // Виводимо знайдений об'єкт в консоль
+  //     console.log(currencyObject);
+  //   } else {
+  //     console.log('Об\'єкт не знайдено в масиві NBU');
+  //   }
+  // };
+  
+  // const handleCurrencyChange = (event) => {
+  //   const selectedCurrency = event.target.value;
+  //   setCurrency(selectedCurrency);
+  //   // Оновлюємо курс валют, коли змінюється валюта
+  //   RenewData().then(newRate => {
+  //     setCurrencyRate(newRate);
+  //   });
+  // };
+  //
+  // // Функція для перерахунку цін з урахуванням курсу валют
+  // const convertCurrency = (price) => {
+  //   return price * currencyRate;
+  // };
+  
+  // Останній рядок до завершення компонента CustomTable
+  
   return (
     <Box minWidth={390}
          maxWidth={900}
@@ -101,6 +153,15 @@ const CustomTable = () => {
                    variant="outlined"
                    value={searchTerm}
                    onChange={handleSearch}/>
+        <Select
+          label="Currency"
+          value={currency}
+          // onChange={handleChangeCurrency}
+          variant="outlined"
+        >
+          <MenuItem value="dollar">Dollar</MenuItem>
+          <MenuItem value="hryvnia">Hryvnia</MenuItem>
+        </Select>
         <RenewData />
       </Box>
       <TablePagination
@@ -152,9 +213,9 @@ const CustomTable = () => {
                                            duration={1}
                                            decimals={2}/></div>
         <div>Total IRL Price: <CountUp start={0}
-                                           end={(totalAllPrice * 0.55).toFixed(2)}
-                                           duration={1}
-                                           decimals={2}/></div>
+                                       end={(totalAllPrice * 0.55).toFixed(2)}
+                                       duration={1}
+                                       decimals={2}/></div>
       </Box>
       
       <SteamMarketSearch/>

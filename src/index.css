@@ -87,3 +87,44 @@
     top: 0;
     right: 0;
 }
+
+/*.ModalBody {*/
+/*    background-color: red !important;*/
+/*}*/
+
+.MuiModal-backdrop {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiInputLabel-root, .MuiOutlinedInput-input {
+    color: white !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: rgba(136, 136, 136, 0.2) !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: white !important;
+}
+
+.MuiInputBase-input {
+    color: rgba(136, 136, 136, 0);
+}
+
+.EditWrapper {
+    display: contents;
+}
+
+.EditItems {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 20% auto 0;
+    height: 350px;
+    justify-content: space-around;
+}
+
+.EditField {
+    margin-bottom: 10px;
+}

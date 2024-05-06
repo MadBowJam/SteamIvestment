@@ -1,19 +1,12 @@
 [
   {
-    "nameForFetch": "Prisma Case",
-    "tournament": "Case",
-    "name": "Prisma",
-    "quantity": 7,
-    "spendOnBuy": 0,
-    "price": 0.64
-  },
-  {
     "nameForFetch": "Fracture Case",
     "tournament": "Case",
     "name": "Fracture",
     "quantity": 6,
     "spendOnBuy": 0,
-    "price": 0.25
+    "price": 0.25,
+    "total": "1.50"
   },
   {
     "nameForFetch": "Prisma 2 Case",
@@ -32,12 +25,13 @@
     "price": 0.73
   },
   {
-    "nameForFetch": "Clutch Case",
+    "nameForFetch": "Dreams & Nightmares Case",
     "tournament": "Case",
-    "name": "Clutch",
-    "quantity": 2,
-    "spendOnBuy": 0,
-    "price": 0.5
+    "name": "Dreams & Nightmares",
+    "quantity": 5,
+    "spendOnBuy": 10,
+    "price": 0.88,
+    "total": "4.40"
   },
   {
     "nameForFetch": "Snakebite Case",
@@ -53,7 +47,8 @@
     "name": "Revolution",
     "quantity": 4,
     "spendOnBuy": 0,
-    "price": 0.32
+    "price": 0.32,
+    "total": "1.28"
   },
   {
     "nameForFetch": "Recoil Case",
