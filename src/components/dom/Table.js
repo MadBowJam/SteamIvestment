@@ -37,15 +37,24 @@ export const calculateTotalPrice = () => {
     const tournament = itemsList[i].tournament;
     const price = itemsList[i].price;
     const quantity = itemsList[i].quantity;
+    const spendOnBuy = itemsList[i].spendOnBuy;
     const total = (price * quantity).toFixed(2);
+    const totalSpend = (spendOnBuy * quantity).toFixed(2);
     
     if (!totalPrice[tournament]) {
-      totalPrice[tournament] = 0;
+      totalPrice[tournament] = {
+        price: 0,
+        spend: 0
+      };
     }
-    totalPrice[tournament] += parseFloat(total);
+    totalPrice[tournament].price += parseFloat(total);
+    totalPrice[tournament].spend += parseFloat(totalSpend);
   }
+  console.log(totalPrice)
   return totalPrice;
 };
+
+
 
 
 
@@ -69,8 +78,12 @@ const CustomTable = () => {
   const { filteredData, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
   
   const totalAllPrice = useMemo(() => {
-    return Object.values(calculateTotalPrice()).reduce((acc, curr) => acc + curr, 0);
+    const totalPriceObj = calculateTotalPrice();
+    const total = Object.values(totalPriceObj).reduce((acc, curr) => acc + curr.price, 0);
+    console.log(total)
+    return total.toFixed(2); // Округлення до двох знаків після коми
   }, []);
+
   
   
   
@@ -252,18 +265,18 @@ const CustomTable = () => {
       <Box maxWidth={390}
            textAlign="center"
            sx={{fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto'}}>
-        {Object.entries(calculateTotalPrice()).map(([tournament, total]) => (
+        {Object.entries(calculateTotalPrice()).map(([tournament, { price }]) => (
           <div key={tournament}>Total Price for {tournament}: <CountUp start={0}
-                                                                       end={total.toFixed(2)}
+                                                                       end={price.toFixed(2)}
                                                                        duration={1}
                                                                        decimals={2}/></div>
         ))}
         <div>Total Price for All: <CountUp start={0}
-                                           end={totalAllPrice.toFixed(2)}
+                                           end={totalAllPrice}
                                            duration={1}
                                            decimals={2}/></div>
         <div>Total IRL Price: <CountUp start={0}
-                                       end={(totalAllPrice * 0.55).toFixed(2)}
+                                       end={(totalAllPrice * 0.55)}
                                        duration={1}
                                        decimals={2}/></div>
       </Box>

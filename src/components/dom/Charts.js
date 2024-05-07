@@ -1,8 +1,7 @@
 import React from 'react';
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
-// import itemsList from "../ItemList.json";
-import {calculateTotalPrice} from './Table';
+import { calculateTotalPrice } from './Table';
 
 // Реєстрація необхідних модулів для Chart.js
 Chart.register(...registerables);
@@ -11,12 +10,14 @@ const ChartPage = () => {
   // Отримання даних для графіка з результату функції calculateTotalPrice
   const totalPriceData = calculateTotalPrice();
   const labels = Object.keys(totalPriceData); // Використовуємо ключі як мітки
-  const data = Object.values(totalPriceData); // Використовуємо значення як дані
+  const earning = Object.values(totalPriceData).map(item => item.price); // Витягуємо значення price з кожного об'єкту
+  const spent = Object.values(totalPriceData).map(item => item.spend);
   
   // Налаштування опцій графіка
   const options = {
     scales: {
       y: {
+        stacked: false, // Встановлюємо опцію stacked для стекованого графіка
         type: 'linear',
         beginAtZero: true,
       },
@@ -27,16 +28,19 @@ const ChartPage = () => {
     <div>
       <h1>Chart Page</h1>
       <div>
-        <Line
+        <Bar
           data={{
             labels: labels, // Використовуємо мітки з labels
             datasets: [
               {
-                label: 'Total Sales (in USD)',
-                data: data, // Використовуємо дані з total
-                fill: false,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1,
+                label: 'Earning', // Назва першого датасету
+                data: earning, // Використовуємо дані з earning
+                backgroundColor: 'rgb(75, 192, 192)',
+              },
+              {
+                label: 'Spent', // Назва другого датасету
+                data: spent, // Використовуємо дані з spent
+                backgroundColor: 'rgb(255, 99, 132)',
               },
             ],
           }}
