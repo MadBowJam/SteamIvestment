@@ -36,12 +36,12 @@ async function fetchData() {
       
       try {
         // Записуємо зображення на диск
-        const imageResponse = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
-          responseType: 'arraybuffer'
-        });
-        
-        const imageName = `${item.tournament}-${item.name}.png`; // Ім'я файлу для збереження
-        await optimizeAndSaveImage(imageResponse.data, imageName);
+        // const imageResponse = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
+        //   responseType: 'arraybuffer'
+        // });
+        //
+        // const imageName = `${item.tournament}-${item.name}.png`; // Ім'я файлу для збереження
+        // await optimizeAndSaveImage(imageResponse.data, imageName);
         
         // Оновлюємо об'єкт елементу в itemsArray, додаючи ключ "price"
         item.price = Number(price);
