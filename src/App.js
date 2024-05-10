@@ -11,11 +11,10 @@ const App = () => {
     <Router>
       <div>
         <Header />
-        {/*<Table />*/}
         <Routes>
           <Route path="/" element={<Table />} /> {/* Основна таблиця */}
           <Route path="/chart" element={<ChartPage totalPriceData={calculateTotalPrice()} />} />{/* Сторінка з графіком */}
-          {/* Додайте інші маршрути тут */}
+
         </Routes>
       </div>
     </Router>

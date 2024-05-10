@@ -6,9 +6,7 @@ import useTableFilter from '../functions/Filter&Search';
 import TableHeadComponent from './TableHead';
 import CustomTableBody from './TableBody';
 import itemsList from '../ItemList.json';
-// import jsonData from '../../json/latest.json';
 import validateItemsList from '../validation/ValidationItemList';
-import validateJsonData from '../validation/ValidationJson';
 import CountUp from 'react-countup';
 import SteamMarketSearch from '../functions/SteamMarketSearch';
 import RenewData from '../functions/RenewData';
@@ -54,11 +52,6 @@ export const calculateTotalPrice = () => {
   return totalPrice;
 };
 
-
-
-
-
-
 const CustomTable = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
@@ -71,9 +64,7 @@ const CustomTable = () => {
   
   const [currency, setCurrency] = useState(initialCurrency) // Зберігаємо обраний тип валюти
   
-  
   validateItemsList();
-  validateJsonData();
   
   const { filteredData, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
   
@@ -83,9 +74,6 @@ const CustomTable = () => {
     console.log(total)
     return total.toFixed(2); // Округлення до двох знаків після коми
   }, []);
-
-  
-  
   
   const handleSortAndUpdate = (column) => {
     handleSort(column);
@@ -113,48 +101,6 @@ const CustomTable = () => {
     const endIndex = startIndex + rowsPerPage;
     return filteredData.slice(startIndex, endIndex);
   }, [filteredData, page, rowsPerPage]);
-  
-  // const handleCurrencyChange = (event) => {
-  //   const selectedCurrency = event.target.value;
-  //   setCurrency(selectedCurrency);
-  //
-  //   // Формуємо шаблон пошуку залежно від обраної валюти
-  //   let searchTemplate = '';
-  //   switch (selectedCurrency) {
-  //     case 'euro':
-  //       searchTemplate = 'Євро';
-  //       break;
-  //     case 'zloty':
-  //       searchTemplate = 'Злотий';
-  //       break;
-  //     default:
-  //       searchTemplate = 'Долар США';
-  //       break;
-  //   }
-  //
-  //   // Знаходимо об'єкт в масиві NBU зі встановленою валютою
-  //   const currencyObject = NBU.find(item => item.txt === searchTemplate);
-  //   if (currencyObject) {
-  //     // Виводимо знайдений об'єкт в консоль
-  //     console.log(currencyObject);
-  //   } else {
-  //     console.log('Об\'єкт не знайдено в масиві NBU');
-  //   }
-  // };
-  
-  // const handleCurrencyChange = (event) => {
-  //   const selectedCurrency = event.target.value;
-  //   setCurrency(selectedCurrency);
-  //   // Оновлюємо курс валют, коли змінюється валюта
-  //   RenewData().then(newRate => {
-  //     setCurrencyRate(newRate);
-  //   });
-  // };
-  //
-  // // Функція для перерахунку цін з урахуванням курсу валют
-  // const convertCurrency = (price) => {
-  //   return price * currencyRate;
-  // };
   
   const handleCurrencyChange = async (event) => {
     const selectedCurrency = event.target.value;
@@ -194,11 +140,6 @@ const CustomTable = () => {
     // Показати оновлені ціни в консолі (для перевірки)
     console.log('Оновлені ціни:', updatedItemsList);
   };
-  
-
-
-
-  
   
   // Останній рядок до завершення компонента CustomTable
   

@@ -19,7 +19,7 @@ const RenewData = () => {
       // setShowTimer(true); // Показуємо таймер
       setCountdown(itemsList.length * 10); // Скидуємо лічильник таймера
       // Проходимося по всіх елементах списку itemsList
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < itemsList.length; i++) {
         const term = itemsList[i].nameForFetch;
         const encodedTerm = encodeURIComponent(term);
         
@@ -29,9 +29,7 @@ const RenewData = () => {
         // for local
         const response = await axios.get(`http://localhost:5000/search-csgo?term=${encodedTerm}`);
         
-        
         console.log(response.data)
-
         
         // for web
         // itemsList[i].price = parseFloat(response.data[i].lowest_price.slice(1));
@@ -44,13 +42,12 @@ const RenewData = () => {
         if (matchingItem) {
           itemsList[i].price = parseFloat(matchingItem.sell_price_text.slice(1));
           console.log(itemsList[i].price);
+          itemsList[i].currency = "USD";
           toast.success(`Price for ${term}: ${itemsList[i].price}`, { autoClose: 5000 });
         } else {
           // If the response array is empty, show a message indicating that prices were not found
           toast.error(`Prices not found for ${term}`, { autoClose: 5000 });
         }
-        
-        
         
         // Затримка перед наступним запитом
         await new Promise(resolve => setTimeout(resolve, (Countdown*500)));
@@ -58,7 +55,6 @@ const RenewData = () => {
       console.log('Updated item list:', itemsList);
     } catch (error) {
       console.error('Error renewing data:', error);
-      // Додайте логіку обробки помилок тут
     }
     
     try {
@@ -76,13 +72,11 @@ const RenewData = () => {
     
     return (
       <div className="timer">
-        {/*<div className="text">Remaining</div>*/}
         <div className="value">{remainingTime}</div>
         <div className="text">seconds</div>
       </div>
     );
   };
-  
   
   return (
     <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif'}}>

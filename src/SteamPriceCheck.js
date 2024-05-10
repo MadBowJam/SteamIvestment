@@ -1,4 +1,4 @@
-const steamprice = require('./components/Core.js');
+const steamprice = require('./Core.js');
 const itemsArray = require('./components/ItemList.json');
 const fs = require('fs').promises;
 const axios = require('axios');
@@ -9,8 +9,9 @@ const delay = 3500;
 
 // Встановлюємо API ключ TinyPNG
 const tinify = require("tinify");
-tinify.key = "V8Z3lKrs5BhT0Nhyks6Html7QMBS7zX8";
+tinify.key = "hVShtTHbfHHZ4r06QqGfggT4l6Z5xm45";
 
+// Функція для оптимізації та збереження зображення
 async function optimizeAndSaveImage(imageBuffer, imageName) {
   try {
     // Оптимізуємо зображення через TinyPNG
@@ -25,36 +26,42 @@ async function optimizeAndSaveImage(imageBuffer, imageName) {
   }
 }
 
+// Функція для отримання даних з інтернету та обробки їх
 async function fetchData() {
   try {
     console.log(itemsArray.length);
     
+    // Ітеруємося по всіх елементах масиву itemsArray
     for (let i = 0; i < itemsArray.length; i++) {
       const item = itemsArray[i];
-      const data = await steamprice.getprice(730, item.nameForFetch, '1');
-      const price = data.price["lowest_price"].substring(1);
+      
+      // Отримуємо ціни з інтернету
+      const { price } = (await steamprice.getprice(730, item.nameForFetch, '1'));
       
       try {
-        // Записуємо зображення на диск
-        // const imageResponse = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
-        //   responseType: 'arraybuffer'
-        // });
-        //
-        // const imageName = `${item.tournament}-${item.name}.png`; // Ім'я файлу для збереження
-        // await optimizeAndSaveImage(imageResponse.data, imageName);
+        // Отримуємо зображення з інтернету
+        const { data: imageBuffer } = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
+          responseType: 'arraybuffer'
+        });
+        
+        // Зберігаємо та оптимізуємо зображення
+        const imageName = `${item.tournament}-${item.name}.png`;
+        await optimizeAndSaveImage(imageBuffer, imageName);
         
         // Оновлюємо об'єкт елементу в itemsArray, додаючи ключ "price"
-        item.price = Number(price);
+        item.price = Number(price.lowest_price.substring(1));
+        item.currency = "USD";
         
         console.log(`${i + 1} complete`);
       } catch (error) {
+        // Обробляємо помилки під час обробки зображення
         if (error.response && error.response.status === 429) {
           console.error(`Отримано помилку 429 Too Many Requests для ${item.nameForFetch}. Продовжуємо виконання...`);
         } else {
           console.error(`Помилка при обробці ${item.nameForFetch}: ${error.message}`);
         }
         
-        // Додаємо return, щоб повернутися до виклику fetchData()
+        // Використовуємо return, щоб зупинити виконання в разі помилки
         return;
       }
       
@@ -75,7 +82,5 @@ async function fetchData() {
   }
 }
 
-
-
-
+// Викликаємо функцію для отримання даних
 fetchData();

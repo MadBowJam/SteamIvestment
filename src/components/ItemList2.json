@@ -5,7 +5,8 @@
     "name": "Prisma",
     "quantity": 7,
     "spendOnBuy": 0,
-    "price": 0.64
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Fracture Case",
@@ -13,7 +14,8 @@
     "name": "Fracture",
     "quantity": 6,
     "spendOnBuy": 0,
-    "price": 0.25
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Prisma 2 Case",
@@ -21,7 +23,8 @@
     "name": "Prisma 2",
     "quantity": 3,
     "spendOnBuy": 0,
-    "price": 0.71
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Danger Zone Case",
@@ -29,7 +32,8 @@
     "name": "Danger Zone",
     "quantity": 1,
     "spendOnBuy": 0,
-    "price": 0.73
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Clutch Case",
@@ -37,7 +41,8 @@
     "name": "Clutch",
     "quantity": 2,
     "spendOnBuy": 0,
-    "price": 0.5
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Dreams & Nightmares Case",
@@ -45,7 +50,8 @@
     "name": "Dreams & Nightmares",
     "quantity": 5,
     "spendOnBuy": 0,
-    "price": 0.88
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Snakebite Case",
@@ -53,7 +59,8 @@
     "name": "Snakebite",
     "quantity": 1,
     "spendOnBuy": 0,
-    "price": 0.26
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Revolution Case",
@@ -61,7 +68,8 @@
     "name": "Revolution",
     "quantity": 4,
     "spendOnBuy": 0,
-    "price": 0.32
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Recoil Case",
@@ -69,7 +77,17 @@
     "name": "Recoil",
     "quantity": 37,
     "spendOnBuy": 0.27,
-    "price": 0.17
+    "price": null,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Kilowatt Case",
+    "tournament": "Case",
+    "name": "Kilowatt",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Katowice 2019",
@@ -77,7 +95,8 @@
     "name": "Natus Vincere",
     "quantity": 12,
     "spendOnBuy": 0.25,
-    "price": 1.11
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | FaZe Clan | Katowice 2019",
@@ -85,7 +104,8 @@
     "name": "FaZe Clan",
     "quantity": 5,
     "spendOnBuy": 0.25,
-    "price": 2.69
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "2020 RMR Legends",
@@ -93,7 +113,8 @@
     "name": "Legends Sticker Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.23
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "2020 RMR Challengers",
@@ -101,7 +122,8 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 30,
     "spendOnBuy": 0.25,
-    "price": 0.24
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "2020 RMR Contenders",
@@ -109,7 +131,8 @@
     "name": "Contenders Sticker Capsule",
     "quantity": 40,
     "spendOnBuy": 0.25,
-    "price": 0.3
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
@@ -117,7 +140,8 @@
     "name": "Legends Sticker Capsule",
     "quantity": 200,
     "spendOnBuy": 0.25,
-    "price": 1.11
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Challengers Sticker Capsule",
@@ -125,7 +149,8 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 3.22
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Contenders Sticker Capsule",
@@ -133,7 +158,8 @@
     "name": "Contenders Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 3.17
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Champions Autograph Capsule",
@@ -141,7 +167,8 @@
     "name": "Champions Autograph Capsule",
     "quantity": 100,
     "spendOnBuy": 0.25,
-    "price": 0.63
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Finalists Autograph Capsule",
@@ -149,7 +176,8 @@
     "name": "Finalists Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.65
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Stockholm 2021 Legends Patch Pack",
@@ -157,7 +185,8 @@
     "name": "Legends Patch Pack",
     "quantity": 6,
     "spendOnBuy": 2.5,
-    "price": 5.86
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Stockholm 2021",
@@ -165,7 +194,8 @@
     "name": "Natus Vincere",
     "quantity": 1192,
     "spendOnBuy": 0.09,
-    "price": 0.08
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere (Holo) | Stockholm 2021",
@@ -173,7 +203,8 @@
     "name": "Natus Vincere (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 2.21
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Patch | Natus Vincere | Stockholm 2021",
@@ -181,7 +212,8 @@
     "name": "Patch Natus Vincere",
     "quantity": 5,
     "spendOnBuy": 4,
-    "price": 4.95
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Gambit Gaming (Holo) | Stockholm 2021",
@@ -189,7 +221,8 @@
     "name": "Gambit Gaming (Holo)",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 2.55
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | FURIA (Holo) | Stockholm 2021",
@@ -197,7 +230,8 @@
     "name": "FURIA (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 6.16
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Vitality (Holo) | Stockholm 2021",
@@ -205,7 +239,8 @@
     "name": "Vitality (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 2.34
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Ninjas in Pyjamas (Holo) | Stockholm 2021",
@@ -213,7 +248,8 @@
     "name": "Ninjas in Pyjamas (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 0.63
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Team Liquid (Holo) | Stockholm 2021",
@@ -221,7 +257,8 @@
     "name": "Team Liquid (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 4.14
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Team Liquid (Foil) | Stockholm 2021",
@@ -229,7 +266,8 @@
     "name": "Team Liquid (Foil)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.15
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | G2 Esports (Holo) | Stockholm 2021",
@@ -237,7 +275,8 @@
     "name": "G2 Esports (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 4.05
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | G2 Esports (Foil) | Stockholm 2021",
@@ -245,7 +284,8 @@
     "name": "G2 Esports (Foil)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.53
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | s1mple | Stockholm 2021",
@@ -253,7 +293,8 @@
     "name": "s1mple",
     "quantity": 210,
     "spendOnBuy": 0.12,
-    "price": 0.08
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | s1mple (Holo) | Stockholm 2021",
@@ -261,7 +302,8 @@
     "name": "s1mple (Holo)",
     "quantity": 6,
     "spendOnBuy": 1.2,
-    "price": 1.81
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Legends Sticker Capsule",
@@ -269,7 +311,8 @@
     "name": "Legends Sticker Capsule",
     "quantity": 120,
     "spendOnBuy": 0.25,
-    "price": 0.65
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Challengers Sticker Capsule",
@@ -277,7 +320,8 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.4
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Contenders Sticker Capsule",
@@ -285,7 +329,8 @@
     "name": "Contenders Sticker Capsule",
     "quantity": 30,
     "spendOnBuy": 0.25,
-    "price": 0.54
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Legends Autograph Capsule",
@@ -293,7 +338,8 @@
     "name": "Legends Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.36
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Challengers Autograph Capsule",
@@ -301,7 +347,8 @@
     "name": "Challengers Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.42
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Contenders Autograph Capsule",
@@ -309,7 +356,8 @@
     "name": "Contenders Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.58
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Antwerp 2022 Champions Autograph Capsule",
@@ -317,7 +365,8 @@
     "name": "Champions Autograph Capsule",
     "quantity": 25,
     "spendOnBuy": 0.25,
-    "price": 0.34
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Antwerp 2022",
@@ -325,7 +374,8 @@
     "name": "Natus Vincere",
     "quantity": 101,
     "spendOnBuy": 0.25,
-    "price": 0.05
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 | Antwerp 2022",
@@ -333,7 +383,8 @@
     "name": "Cloud9",
     "quantity": 17,
     "spendOnBuy": 0.24,
-    "price": 0.1
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 (Glitter) | Antwerp 2022",
@@ -341,7 +392,8 @@
     "name": "Cloud9 (Glitter)",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 1.21
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 (Holo) | Antwerp 2022",
@@ -349,7 +401,8 @@
     "name": "Cloud9 (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 20.25
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Legends Sticker Capsule",
@@ -357,7 +410,8 @@
     "name": "Legends Sticker Capsule",
     "quantity": 60,
     "spendOnBuy": 0.25,
-    "price": 0.29
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Challengers Sticker Capsule",
@@ -365,7 +419,8 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 30,
     "spendOnBuy": 0.25,
-    "price": 0.28
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Contenders Sticker Capsule",
@@ -373,7 +428,8 @@
     "name": "Contenders Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.34
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Legends Autograph Capsule",
@@ -381,7 +437,8 @@
     "name": "Legends Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.32
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Challengers Autograph Capsule",
@@ -389,7 +446,8 @@
     "name": "Challengers Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.38
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Contenders Autograph Capsule",
@@ -397,7 +455,8 @@
     "name": "Contenders Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.34
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Rio 2022 Champions Autograph Capsule",
@@ -405,31 +464,35 @@
     "name": "Champions Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.32
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Legends Sticker Capsule",
     "tournament": "2023 Paris",
     "name": "Legends Sticker Capsule",
-    "quantity": 288,
+    "quantity": 400,
     "spendOnBuy": 0.25,
-    "price": 0.18
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Challengers Sticker Capsule",
     "tournament": "2023 Paris",
     "name": "Challengers Sticker Capsule",
-    "quantity": 288,
+    "quantity": 420,
     "spendOnBuy": 0.25,
-    "price": 0.17
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Contenders Sticker Capsule",
     "tournament": "2023 Paris",
     "name": "Contenders Sticker Capsule",
-    "quantity": 286,
+    "quantity": 300,
     "spendOnBuy": 0.25,
-    "price": 0.18
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Legends Autograph Capsule",
@@ -437,7 +500,8 @@
     "name": "Legends Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.21
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Challengers Autograph Capsule",
@@ -445,7 +509,8 @@
     "name": "Challengers Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.23
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Contenders Autograph Capsule",
@@ -453,7 +518,8 @@
     "name": "Contenders Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.19
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Paris 2023 Champions Autograph Capsule",
@@ -461,7 +527,8 @@
     "name": "Champions Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.21
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere (Gold) | Paris 2023",
@@ -469,7 +536,8 @@
     "name": "Natus Vincere (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 2.79
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Legends Sticker Capsule",
@@ -477,7 +545,8 @@
     "name": "Legends Sticker Capsule",
     "quantity": 60,
     "spendOnBuy": 0.25,
-    "price": 0.63
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Challengers Sticker Capsule",
@@ -485,7 +554,8 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 140,
     "spendOnBuy": 0.25,
-    "price": 0.92
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Contenders Sticker Capsule",
@@ -493,7 +563,8 @@
     "name": "Contenders Sticker Capsule",
     "quantity": 200,
     "spendOnBuy": 0.25,
-    "price": 0.71
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Legends Autograph Capsule",
@@ -501,7 +572,8 @@
     "name": "Legends Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.6
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Challengers Autograph Capsule",
@@ -509,7 +581,8 @@
     "name": "Challengers Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.6
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Contenders Autograph Capsule",
@@ -517,7 +590,8 @@
     "name": "Contenders Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.77
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Copenhagen 2024 Champions Autograph Capsule",
@@ -525,15 +599,17 @@
     "name": "Champions Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.57
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | AMKAL ESPORTS | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "AMKAL ESPORTS",
-    "quantity": 12,
+    "quantity": 14,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | AMKAL ESPORTS (Glitter) | Copenhagen 2024",
@@ -541,23 +617,26 @@
     "name": "AMKAL ESPORTS (Glitter)",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.08
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | PGL | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "PGL",
-    "quantity": 26,
+    "quantity": 27,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | PGL (Glitter) | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "PGL (Glitter)",
-    "quantity": 3,
+    "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.04
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | PGL (Holo) | Copenhagen 2024",
@@ -565,7 +644,8 @@
     "name": "PGL (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.57
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | PGL (Gold) | Copenhagen 2024",
@@ -573,7 +653,8 @@
     "name": "PGL (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | KOI | Copenhagen 2024",
@@ -581,7 +662,8 @@
     "name": "KOI",
     "quantity": 15,
     "spendOnBuy": 0.27,
-    "price": 0.04
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | KOI (Glitter) | Copenhagen 2024",
@@ -589,7 +671,8 @@
     "name": "KOI (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.41
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | KOI (Holo) | Copenhagen 2024",
@@ -597,15 +680,17 @@
     "name": "KOI (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 11.64
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | paiN Gaming | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "paiN Gaming",
-    "quantity": 10,
+    "quantity": 11,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | paiN Gaming (Glitter) | Copenhagen 2024",
@@ -613,7 +698,8 @@
     "name": "paiN Gaming (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.07
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | paiN Gaming (Gold) | Copenhagen 2024",
@@ -621,7 +707,8 @@
     "name": "paiN Gaming (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 1.93
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | The MongolZ | Copenhagen 2024",
@@ -629,7 +716,8 @@
     "name": "The MongolZ",
     "quantity": 11,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | The MongolZ (Holo) | Copenhagen 2024",
@@ -637,7 +725,8 @@
     "name": "The MongolZ (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.42
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Lynn Vision | Copenhagen 2024",
@@ -645,7 +734,8 @@
     "name": "Lynn Vision",
     "quantity": 11,
     "spendOnBuy": 0.27,
-    "price": 0.11
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Lynn Vision (Glitter) | Copenhagen 2024",
@@ -653,7 +743,8 @@
     "name": "Lynn Vision (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.8
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Lynn Vision (Holo) | Copenhagen 2024",
@@ -661,7 +752,8 @@
     "name": "Lynn Vision (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 7.38
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Eternal Fire | Copenhagen 2024",
@@ -669,7 +761,8 @@
     "name": "Eternal Fire",
     "quantity": 10,
     "spendOnBuy": 0.27,
-    "price": 0.05
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Eternal Fire (Glitter) | Copenhagen 2024",
@@ -677,15 +770,17 @@
     "name": "Eternal Fire (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.54
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Imperial Esports | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Imperial Esports",
-    "quantity": 10,
+    "quantity": 12,
     "spendOnBuy": 0.27,
-    "price": 0.04
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Imperial Esports (Glitter) | Copenhagen 2024",
@@ -693,15 +788,26 @@
     "name": "Imperial Esports (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.37
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | ECSTATIC | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "ECSTATIC",
-    "quantity": 8,
+    "quantity": 9,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | ECSTATIC (Glitter) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "ECSTATIC (Glitter)",
+    "quantity": 1,
+    "spendOnBuy": 0.27,
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | ECSTATIC (Holo) | Copenhagen 2024",
@@ -709,7 +815,8 @@
     "name": "ECSTATIC (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 1.15
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | FURIA | Copenhagen 2024",
@@ -717,23 +824,26 @@
     "name": "FURIA",
     "quantity": 6,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | FURIA (Glitter) | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "FURIA (Glitter)",
-    "quantity": 1,
+    "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.1
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | SAW | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "SAW",
-    "quantity": 9,
+    "quantity": 11,
     "spendOnBuy": 0.27,
-    "price": 0.07
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | SAW (Glitter) | Copenhagen 2024",
@@ -741,7 +851,8 @@
     "name": "SAW (Glitter)",
     "quantity": 5,
     "spendOnBuy": 0.27,
-    "price": 0.29
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | SAW (Holo) | Copenhagen 2024",
@@ -749,31 +860,35 @@
     "name": "SAW (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 1.7
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Legacy | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Legacy",
-    "quantity": 12,
+    "quantity": 13,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Legacy (Glitter) | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Legacy (Glitter)",
-    "quantity": 6,
+    "quantity": 7,
     "spendOnBuy": 0.27,
-    "price": 0.11
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Virtus.pro | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Virtus.pro",
-    "quantity": 3,
+    "quantity": 4,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Virtus.pro (Glitter) | Copenhagen 2024",
@@ -781,15 +896,17 @@
     "name": "Virtus.pro (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.14
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | GamerLegion | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "GamerLegion",
-    "quantity": 5,
+    "quantity": 6,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | GamerLegion (Glitter) | Copenhagen 2024",
@@ -797,15 +914,17 @@
     "name": "GamerLegion (Glitter)",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.12
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Team Spirit | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Team Spirit",
-    "quantity": 2,
+    "quantity": 4,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Team Spirit (Glitter) | Copenhagen 2024",
@@ -813,7 +932,17 @@
     "name": "Team Spirit (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.16
+    "price": null,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Team Spirit (Holo) | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "Team Spirit (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.27,
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Copenhagen 2024",
@@ -821,7 +950,8 @@
     "name": "Natus Vincere",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.05
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Natus Vincere (Glitter) | Copenhagen 2024",
@@ -829,23 +959,26 @@
     "name": "Natus Vincere (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.19
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Heroic | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Heroic",
-    "quantity": 7,
+    "quantity": 8,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Heroic (Glitter) | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Heroic (Glitter)",
-    "quantity": 3,
+    "quantity": 4,
     "spendOnBuy": 0.27,
-    "price": 0.06
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Vitality | Copenhagen 2024",
@@ -853,7 +986,8 @@
     "name": "Vitality",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Vitality (Glitter) | Copenhagen 2024",
@@ -861,7 +995,17 @@
     "name": "Vitality (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.06
+    "price": null,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MOUZ | Copenhagen 2024",
+    "tournament": "Copenhagen 2024",
+    "name": "MOUZ",
+    "quantity": 1,
+    "spendOnBuy": 0.27,
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | MOUZ (Glitter) | Copenhagen 2024",
@@ -869,7 +1013,8 @@
     "name": "MOUZ (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.28
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | G2 Esports | Copenhagen 2024",
@@ -877,7 +1022,8 @@
     "name": "G2 Esports",
     "quantity": 3,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | ENCE | Copenhagen 2024",
@@ -885,7 +1031,8 @@
     "name": "ENCE",
     "quantity": 7,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | ENCE (Glitter) | Copenhagen 2024",
@@ -893,7 +1040,8 @@
     "name": "ENCE (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.04
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | ENCE (Holo) | Copenhagen 2024",
@@ -901,7 +1049,8 @@
     "name": "ENCE (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.47
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Apeks | Copenhagen 2024",
@@ -909,7 +1058,8 @@
     "name": "Apeks ",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Apeks (Glitter) | Copenhagen 2024",
@@ -917,7 +1067,8 @@
     "name": "Apeks (Glitter)",
     "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.14
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Apeks (Holo) | Copenhagen 2024",
@@ -925,15 +1076,17 @@
     "name": "Apeks (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Complexity Gaming | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Complexity Gaming",
-    "quantity": 1,
+    "quantity": 2,
     "spendOnBuy": 0.27,
-    "price": 0.03
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | FaZe Clan | Copenhagen 2024",
@@ -941,15 +1094,17 @@
     "name": "FaZe Clan",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0.04
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 | Copenhagen 2024",
     "tournament": "Copenhagen 2024",
     "name": "Cloud9",
-    "quantity": 9,
+    "quantity": 10,
     "spendOnBuy": 0.27,
-    "price": 0.08
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 (Glitter) | Copenhagen 2024",
@@ -957,7 +1112,8 @@
     "name": "Cloud9 (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 0
+    "price": null,
+    "currency": "USD"
   },
   {
     "nameForFetch": "Sticker | Cloud9 (Holo) | Copenhagen 2024",
@@ -965,6 +1121,7 @@
     "name": "Cloud9 (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.27,
-    "price": 9.43
+    "price": null,
+    "currency": "USD"
   }
 ]

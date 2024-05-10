@@ -1,9 +1,4 @@
 const axios = require('axios');
-const crypto = require('crypto');
-
-function hashString(str) {
-  return crypto.createHash('md5').update(str).digest("hex");
-}
 
 // Функція для отримання ціни конкретного предмета
 async function getprice(appid, itemname, currency) {
@@ -21,7 +16,7 @@ async function getprice(appid, itemname, currency) {
     });
     
     if (!priceResponse.data.success) {
-      throw new Error(`Request for item '${itemname}' failed.`);
+      return Promise.reject(new Error(`Request for item '${itemname}' failed.`)); // Повертаємо помилку зовні
     }
     
     // Запит на отримання зображення предмету
@@ -34,7 +29,7 @@ async function getprice(appid, itemname, currency) {
       image: imageResponse.data
     };
   } catch (error) {
-    throw new Error(`Error occurred while fetching data for item '${itemname}': ${error}`);
+    return Promise.reject(new Error(`Error occurred while fetching data for item '${itemname}': ${error}`)); // Повертаємо помилку зовні
   }
 }
 

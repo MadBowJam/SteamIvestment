@@ -8,7 +8,6 @@ import { updateItemsList } from './SaveItemsList'; // Імпорт функці�
 const SteamMarketSearch = () => {
   const [searchValue, setSearchValue] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  // const [itemsList, setItemsList] = useState([]);
   
   const handleSearchClick = async () => {
     try {
@@ -24,8 +23,6 @@ const SteamMarketSearch = () => {
     }
   };
   
-  
-  
   const handleAddClick = async (result) => {
     const newItem = {
       nameForFetch: result.hash_name,
@@ -36,15 +33,8 @@ const SteamMarketSearch = () => {
       price: parseFloat(result.sell_price_text.slice(1).replace(',', ''))
     };
     
-    // Додавання нового елемента до масиву
-    itemsList.push(newItem);
-    
-    // Виклик серверного маршруту для оновлення файлу ItemList.json
-    await updateItemsList(itemsList);
+    await updateItemsList([...itemsList, newItem]);
   };
-
-
-  
   
   return (
     <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
@@ -56,10 +46,10 @@ const SteamMarketSearch = () => {
         />
         <button onClick={handleSearchClick}>Search</button>
         <ul>
-          {searchResults.map((result, index) => (
+          {searchResults.map(({asset_description, hash_name, name, sell_price_text}, index) => (
             <li key={index}>
-              {result.asset_description.name}
-              <Button variant="contained" color="primary" onClick={() => handleAddClick(result)}>Add</Button>
+              {asset_description.name}
+              <Button variant="contained" color="primary" onClick={() => handleAddClick({hash_name, name, sell_price_text})}>Add</Button>
             </li>
           ))}
         </ul>

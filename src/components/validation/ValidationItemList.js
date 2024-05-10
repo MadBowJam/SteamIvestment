@@ -16,7 +16,8 @@ const validateItemsList = () => {
       typeof item.name !== 'string' ||
       typeof item.quantity !== 'number' ||
       typeof item.spendOnBuy !== 'number' ||
-      typeof item.price !== 'number'
+      typeof item.price !== 'number' ||
+      typeof item.currency !== 'string'
     ) {
       return (
         <div>
