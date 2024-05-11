@@ -42,8 +42,6 @@ const CustomTableBody = ({ filteredData }) => {
       }
       return item;
     });
-    console.log(editedValues)
-    console.log(updatedItemList);
     await updateItemsList(updatedItemList);
     dispatch(saveEditedValues());
   };
@@ -73,6 +71,23 @@ const CustomTableBody = ({ filteredData }) => {
   const collapseStyles = {
     height: isExpanded ? '0' : '150px',
   };
+  
+  const fields = [
+    { label: 'Tournament', name: 'tournament' },
+    { label: 'Name', name: 'name' },
+    { label: 'Quantity', name: 'quantity' },
+    { label: 'Spend on 1 item', name: 'spendOnBuy' },
+  ];
+  
+  const renderTextField = (field) => (
+    <TextField
+      className="EditField"
+      label={field.label}
+      name={field.name}
+      value={editedValues[field.name] || ''}
+      onChange={handleChangeLocal}
+    />
+  );
   
   return (
     <TableBody>
@@ -133,30 +148,11 @@ const CustomTableBody = ({ filteredData }) => {
             <Box className="EditWrapper">
               {editedItem && (
                 <div className="EditItems">
-                  <TextField className="EditField"
-                             label="Tournament"
-                             name="tournament"
-                             value={editedValues.tournament || ''}
-                             onChange={handleChangeLocal}
-                  />
-                  <TextField className="EditField"
-                             label="Name"
-                             name="name"
-                             value={editedValues.name || ''}
-                             onChange={handleChangeLocal}
-                  />
-                  <TextField className="EditField"
-                             label="Quantity"
-                             name="quantity"
-                             value={editedValues.quantity || ''}
-                             onChange={handleChangeLocal}
-                  />
-                  <TextField className="EditField"
-                             label="Spend on 1 item"
-                             name="spendOnBuy"
-                             value={editedValues.spendOnBuy || ''}
-                             onChange={handleChangeLocal}
-                  />
+                  {fields.map((field, index) => (
+                    <React.Fragment key={index}>
+                      {renderTextField(field)}
+                    </React.Fragment>
+                  ))}
                   <IconButton onClick={handleSaveEdit}>
                     <Save color="primary" />
                   </IconButton>

@@ -79,7 +79,7 @@ const RenewData = () => {
   };
   
   return (
-    <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif'}}>
+    <Box className="RenewWrapper">
       <div>
         <Button disabled={loading} onClick={handleSearchClick}>
           {loading ? (
@@ -95,7 +95,7 @@ const RenewData = () => {
               {renderTime}
             </CountdownCircleTimer>
           ) : (
-              "Renew"
+              "Renew data"
           )}
         </Button>
       </div>

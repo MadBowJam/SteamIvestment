@@ -5,10 +5,9 @@ import editItemReducer from './components/slices/EditItemSlice';
 
 const store = configureStore({
   reducer: {
-    table: openRowSlice, // Додаємо ваш редуктор до кореневого редуктора
+    table: openRowSlice,
     deleteItem: deleteItemReducer,
     editItem: editItemReducer,
-    // Інші редуктори, якщо вони є
   },
 });
 

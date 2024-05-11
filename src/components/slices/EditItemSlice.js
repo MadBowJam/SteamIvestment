@@ -20,11 +20,10 @@ const EditItemSlice = createSlice({
       state.editedItem = null;
       state.editedValues = {};
     },
-    saveEditedValues: (state, action) => {
+    saveEditedValues: (state) => {
       state.openEditModal = false;
       state.editedItem = null;
       state.editedValues = {};
-      // додаткова логіка для збереження редагованого елемента
     },
     handleChange: (state, action) => {
       const { name, value } = action.payload;

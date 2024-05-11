@@ -1,8 +1,50 @@
-.MuiTypography-h1 {
-    text-align: center;
-    font-size: 2rem !important;
-    padding-bottom: 10px;
+a {
+    text-decoration: none;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1.5rem !important;
+    color: #7dc2ad;
 }
+
+.Title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ChartsWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.RenewWrapper {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Pagination div div button, .Pagination div .MuiTablePagination-displayedRows {
+    display: none;
+}
+
+.Pagination {
+    display: contents;
+}
+
+.Pagination div div {
+    margin: unset;
+}
+
+.SearchField, .Pagination, .Currency {
+    width: 250px;
+}
+
+.TableHead th span svg {
+    vertical-align: bottom;
+}
+
+
+
+
+
+
 
 .MuiTableRow-root {
     transition: all 0.3s ease;
@@ -44,11 +86,7 @@
     box-shadow: none !important;
 }
 
-/*svg {*/
-/*    font-size: 1rem !important;*/
-/*    height: 50% !important;*/
-/*    vertical-align: text-top !important;*/
-/*}*/
+
 
 /*.MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root {*/
 /*    background-color: red !important;*/
@@ -103,10 +141,6 @@
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
     border-color: rgba(136, 136, 136, 0.2) !important;
 }
-
-/*.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {*/
-/*    color: white !important;*/
-/*}*/
 
 .MuiInputBase-input {
     color: rgba(136, 136, 136, 0);

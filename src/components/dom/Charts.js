@@ -22,12 +22,14 @@ const ChartPage = () => {
         beginAtZero: true,
       },
     },
+    animation: {
+      duration: 2000, // Тривалість анімації у мілісекундах
+      easing: 'easeInOutQuart', // Функція для плавного переходу
+    },
   };
   
   return (
-    <div>
-      <h1>Chart Page</h1>
-      <div>
+    <div className="ChartsWrapper">
         <Bar
           data={{
             labels: labels, // Використовуємо мітки з labels
@@ -46,7 +48,6 @@ const ChartPage = () => {
           }}
           options={options}
         />
-      </div>
     </div>
   );
 };

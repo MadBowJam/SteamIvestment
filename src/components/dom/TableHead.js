@@ -46,7 +46,7 @@ const TableHeadComponent = ({ handleSort, sortedColumn }) => {
   ];
   
   return (
-    <TableRow>
+    <TableRow className="TableHead">
       {columns.map((column) => (
         <TableCell
           key={column}

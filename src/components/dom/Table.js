@@ -1,5 +1,16 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Box, Paper, Table, TableContainer, TableHead, TablePagination, TextField, MenuItem, Select } from '@mui/material';
+import React, { useMemo, useState } from 'react';
+import {
+  Box,
+  Paper,
+  Table,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TextField,
+  MenuItem,
+  Select,
+  Pagination
+} from '@mui/material';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useTableFilter from '../functions/Filter&Search';
@@ -10,11 +21,12 @@ import validateItemsList from '../validation/ValidationItemList';
 import CountUp from 'react-countup';
 import SteamMarketSearch from '../functions/SteamMarketSearch';
 import RenewData from '../functions/RenewData';
-import NBU from '../NBU.json';
-import {updateItemsList} from "../functions/SaveItemsList";
+import { handleCurrencyChange } from '../functions/Currency';
+import Stack from '@mui/material/Stack';
 
 const DEFAULT_ITEMS_PER_PAGE = 10;
 const ITEMS_PER_PAGE_OPTIONS = [10, 25, 50, 75, 100];
+const IRL_MONEY = 0.55 // in real life money koef
 
 const createItemsData = () => {
   return [...itemsList].reduce((acc, _, i) => {
@@ -48,7 +60,6 @@ export const calculateTotalPrice = () => {
     totalPrice[tournament].price += parseFloat(total);
     totalPrice[tournament].spend += parseFloat(totalSpend);
   }
-  console.log(totalPrice)
   return totalPrice;
 };
 
@@ -69,10 +80,7 @@ const CustomTable = () => {
   const { filteredData, handleSearch, handleSort, searchTerm } = useTableFilter(createItemsData);
   
   const totalAllPrice = useMemo(() => {
-    const totalPriceObj = calculateTotalPrice();
-    const total = Object.values(totalPriceObj).reduce((acc, curr) => acc + curr.price, 0);
-    console.log(total)
-    return total.toFixed(2); // Округлення до двох знаків після коми
+    return Object.values(calculateTotalPrice()).reduce((acc, curr) => acc + curr.price, 0).toFixed(2);
   }, []);
   
   const handleSortAndUpdate = (column) => {
@@ -83,7 +91,6 @@ const CustomTable = () => {
   
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
-    setOpenRows({})
   };
   
   const handleChangeRowsPerPage = (event) => {
@@ -91,57 +98,17 @@ const CustomTable = () => {
     setPage(0);
   };
   
-  useEffect(() => {
-    // При зміні сторінки скидаємо стан відкритих рядків
-    setOpenRows({});
-  }, [page]);
-  
   const paginatedData = useMemo(() => {
     const startIndex = page * rowsPerPage;
     const endIndex = startIndex + rowsPerPage;
     return filteredData.slice(startIndex, endIndex);
   }, [filteredData, page, rowsPerPage]);
   
-  const handleCurrencyChange = async (event) => {
+  const handleCurrency = async (event) => {
     const selectedCurrency = event.target.value;
     setCurrency(selectedCurrency);
-    
-    // Отримання курсу гривні (приклад, замість реальних даних)
-    const hryvniaRate = NBU[0].rate; // Приклад значення курсу гривні до долара
-    
-    // Зміна цін на валюту
-    const updatedItemsList = itemsList.map(item => {
-      let updatedPrice = item.price;
-      let updatedSpendOnBuy = item.spendOnBuy;
-      let currency = 'USD';
-      
-      // Перевірка вибраної валюти
-      switch (selectedCurrency) {
-        case 'USD':
-          // Нічого не змінюємо, оскільки залишаємо ціни в доларах
-          updatedPrice /= hryvniaRate;
-          updatedSpendOnBuy /= hryvniaRate;
-          currency = 'USD';
-          break;
-        case 'Uah':
-          // Зміна цін на гривні
-          updatedPrice *= hryvniaRate;
-          updatedSpendOnBuy *= hryvniaRate;
-          currency = 'Uah';
-          break;
-        default:
-          // Не відома валюта, не змінюємо ціни
-          break;
-      }
-      
-      return { ...item, price: updatedPrice, spendOnBuy: updatedSpendOnBuy, currency: currency };
-    });
-    await updateItemsList(updatedItemsList);
-    // Показати оновлені ціни в консолі (для перевірки)
-    console.log('Оновлені ціни:', updatedItemsList);
+    await handleCurrencyChange(selectedCurrency, itemsList); // Передавання itemsList
   };
-  
-  // Останній рядок до завершення компонента CustomTable
   
   return (
     <Box minWidth={390}
@@ -157,26 +124,31 @@ const CustomTable = () => {
                    variant="outlined"
                    value={searchTerm}
                    onChange={handleSearch}/>
+        
+        <Stack>
+          <TablePagination
+            className="Pagination"
+            component="div"
+            count={filteredData.length}
+            page={page}
+            onPageChange={handleChangePage}
+            rowsPerPage={rowsPerPage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
+            rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
+          />
+        </Stack>
+        
         <Select
-          label="Currency"
+          className="Currency"
           value={currency}
-          onChange={handleCurrencyChange}
+          onChange={handleCurrency}
           variant="outlined"
         >
           <MenuItem value="USD">USD $</MenuItem>
           <MenuItem value="Uah">Uah ₴</MenuItem>
         </Select>
-        <RenewData />
+        
       </Box>
-      <TablePagination
-        component="div"
-        count={filteredData.length}
-        page={page}
-        onPageChange={handleChangePage}
-        rowsPerPage={rowsPerPage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-        rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
-      />
       <TableContainer component={Paper}>
         <Table sx={{borderCollapse: 'collapse'}}>
           <TableHead>
@@ -193,17 +165,25 @@ const CustomTable = () => {
                            setOpenRows={setOpenRows}/>
         </Table>
       </TableContainer>
-      <TablePagination
-        component="div"
-        count={filteredData.length}
-        page={page}
-        onPageChange={handleChangePage}
-        rowsPerPage={rowsPerPage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-        rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
-      />
+      <RenewData />
+
       
-      <Box maxWidth={390}
+      <Stack spacing={2} mt={2} alignItems="center">
+        <Pagination
+          count={Math.ceil(filteredData.length / rowsPerPage)}
+          page={page + 1}
+          onChange={(event, value) => handleChangePage(event, value - 1)} // Відніміть 1 від value перед передачею назад
+          color="primary"
+          boundaryCount={1}
+          siblingCount={1}
+          showFirstButton // Показати кнопку "Перша сторінка"
+          showLastButton // Показати кнопку "Остання сторінка"
+        />
+      </Stack>
+
+      
+      <Box className="TotalPrices"
+           maxWidth={390}
            textAlign="center"
            sx={{fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto'}}>
         {Object.entries(calculateTotalPrice()).map(([tournament, { price }]) => (
@@ -217,7 +197,7 @@ const CustomTable = () => {
                                            duration={1}
                                            decimals={2}/></div>
         <div>Total IRL Price: <CountUp start={0}
-                                       end={(totalAllPrice * 0.55)}
+                                       end={(totalAllPrice * IRL_MONEY)}
                                        duration={1}
                                        decimals={2}/></div>
       </Box>

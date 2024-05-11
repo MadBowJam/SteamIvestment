@@ -6,7 +6,8 @@
     "quantity": 7,
     "spendOnBuy": 0,
     "price": 0.7,
-    "currency": "USD"
+    "currency": "USD",
+    "total": "4.90"
   },
   {
     "nameForFetch": "Fracture Case",
@@ -149,7 +150,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 3.64,
+    "price": 3.6399999999999997,
     "currency": "USD"
   },
   {
@@ -230,7 +231,7 @@
     "name": "FURIA (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 6.63,
+    "price": 6.630000000000001,
     "currency": "USD"
   },
   {
@@ -266,7 +267,7 @@
     "name": "Team Liquid (Foil)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.24,
+    "price": 3.2400000000000007,
     "currency": "USD"
   },
   {
@@ -284,7 +285,7 @@
     "name": "G2 Esports (Foil)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.53,
+    "price": 3.5299999999999994,
     "currency": "USD"
   },
   {
@@ -347,7 +348,7 @@
     "name": "Challengers Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.41,
+    "price": 0.4099999999999999,
     "currency": "USD"
   },
   {
@@ -707,7 +708,7 @@
     "name": "paiN Gaming (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 1.64,
+    "price": 1.6399999999999997,
     "currency": "USD"
   },
   {
@@ -959,7 +960,7 @@
     "name": "Team Spirit (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 1.86,
+    "price": 1.8599999999999999,
     "currency": "USD"
   },
   {
