@@ -1,8 +1,30 @@
+:root {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./font/RobotoFlex.ttf') format('truetype');
+    /* Додаткові стилі, якщо потрібно */
+}
+
 a {
     text-decoration: none;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1.5rem !important;
     color: #7dc2ad;
+}
+
+.GlobalWrapper {
+    min-width: 390px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.TableFunctions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .Title {
@@ -11,7 +33,7 @@ a {
 }
 
 .ChartsWrapper {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -39,6 +61,117 @@ a {
 .TableHead th span svg {
     vertical-align: bottom;
 }
+
+.PaginationBottom {
+    margin: 20px 0;
+    align-items: center;
+}
+
+.TotalPrices {
+    max-width: 380px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #7dc2ad;
+}
+
+.RowInner {
+    margin: 10px;
+}
+
+.ItemImage {
+    width: 150px;
+    margin: 17px;
+}
+
+.CollapseInner {
+    position: relative;
+}
+
+.ItemDescription {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}
+
+.DeleteModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7d83c2;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.YesButton {
+    color: tomato !important;
+}
+
+.NoButton {
+    color: greenyellow !important;
+}
+
+.EditWrapper {
+    display: contents;
+}
+
+.EditItems {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 350px;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 160px);
+}
+
+.EditItems button {
+    border-radius: 5px;
+}
+
+.EditItems button:hover {
+    background-color: rgb(103 243 65 / 13%);
+}
+
+.EditField {
+    margin-bottom: 10px;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    color: gray !important;
+}
+
+.SteamMarketSearch {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SteamMarketSearchInput, .SteamMarketSearchButton {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    outline: none;
+}
+
+.SteamMarketSearchList {
+    list-style: none;
+    padding: unset;
+}
+
+.SteamMarketSearchItem {
+    width: 390px;
+    margin: 0 auto 10px;
+    text-align: left;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 
 
 
@@ -92,28 +225,13 @@ a {
 /*    background-color: red !important;*/
 /*}*/
 
-.ItemImage {
-    width: 150px;
-    margin: 17px;
-}
 
-.CollapseInner {
-    position: relative;
-}
 
-.ItemDescription {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-}
 
-.CollapseInner {
-    transition: height 0.3s ease;
-}
 
-.CollapseInner.open {
-    height: auto; /* Застосування auto розміру для плавного розгортання */
-}
+
+
+
 
 .timer {
     font-size: 10px;
@@ -146,28 +264,7 @@ a {
     color: rgba(136, 136, 136, 0);
 }
 
-.EditWrapper {
-    display: contents;
-}
 
-.EditItems {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 350px;
-    justify-content: space-around;
-    position: absolute;
-    top: calc(50% - 175px);
-    left: calc(50% - 160px);
-}
-
-.EditField {
-    margin-bottom: 10px;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-    color: gray !important;
- }
 
 .SearchField label {
     color: gray !important;

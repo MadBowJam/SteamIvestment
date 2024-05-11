@@ -104,7 +104,7 @@ const CustomTableBody = ({ filteredData }) => {
           <TableRow>
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
               <Collapse in={openRows[`${item.tournament}-${item.name}`]} timeout="auto" unmountOnExit>
-                <Box margin={1}>
+                <Box className="RowInner">
                   <div className="CollapseInner"  style={collapseStyles}>
                     {imgSrc && <img src={imgSrc} alt={`${item.tournament}-${item.name}`} className="ItemImage" />}
                     <span className="ItemDescription">
@@ -132,11 +132,11 @@ const CustomTableBody = ({ filteredData }) => {
             aria-labelledby="confirm-delete-modal"
             aria-describedby="confirm-delete-description"
           >
-            <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', bgcolor: 'background.paper', boxShadow: 24, p: 4, width: 400 }}>
+            <Box className="DeleteModal">
               <h2 id="confirm-delete-modal">Confirm Delete</h2>
               <p id="confirm-delete-description">Are you sure you want to delete this item?</p>
-              <Button onClick={handleConfirmDelete}>Yes</Button>
-              <Button onClick={() => dispatch(clearItemToDelete())}>No</Button>
+              <Button className="YesButton" onClick={handleConfirmDelete}>Yes</Button>
+              <Button className="NoButton" onClick={() => dispatch(clearItemToDelete())}>No</Button>
             </Box>
           </Modal>
           <Modal

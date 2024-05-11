@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import {
   Box,
-  Paper,
   Table,
   TableContainer,
   TableHead,
@@ -111,20 +110,15 @@ const CustomTable = () => {
   };
   
   return (
-    <Box minWidth={390}
-         maxWidth={900}
-         mx="auto">
+    <Box className="GlobalWrapper">
       <ToastContainer/>
-      <Box display="flex"
-           alignItems="center"
-           justifyContent="space-between"
-           mb={2}>
+      <RenewData />
+      <Box className="TableFunctions">
         <TextField className="SearchField"
                    label="Search"
                    variant="outlined"
                    value={searchTerm}
                    onChange={handleSearch}/>
-        
         <Stack>
           <TablePagination
             className="Pagination"
@@ -137,7 +131,6 @@ const CustomTable = () => {
             rowsPerPageOptions={ITEMS_PER_PAGE_OPTIONS}
           />
         </Stack>
-        
         <Select
           className="Currency"
           value={currency}
@@ -149,8 +142,8 @@ const CustomTable = () => {
         </Select>
         
       </Box>
-      <TableContainer component={Paper}>
-        <Table sx={{borderCollapse: 'collapse'}}>
+      <TableContainer>
+        <Table>
           <TableHead>
             <TableHeadComponent
               handleSort={handleSortAndUpdate}
@@ -165,10 +158,10 @@ const CustomTable = () => {
                            setOpenRows={setOpenRows}/>
         </Table>
       </TableContainer>
-      <RenewData />
+      
 
       
-      <Stack spacing={2} mt={2} alignItems="center">
+      <Stack className="PaginationBottom">
         <Pagination
           count={Math.ceil(filteredData.length / rowsPerPage)}
           page={page + 1}
@@ -182,10 +175,7 @@ const CustomTable = () => {
       </Stack>
 
       
-      <Box className="TotalPrices"
-           maxWidth={390}
-           textAlign="center"
-           sx={{fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto'}}>
+      <Box className="TotalPrices">
         {Object.entries(calculateTotalPrice()).map(([tournament, { price }]) => (
           <div key={tournament}>Total Price for {tournament}: <CountUp start={0}
                                                                        end={price.toFixed(2)}

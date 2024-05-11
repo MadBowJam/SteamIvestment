@@ -37,19 +37,28 @@ const SteamMarketSearch = () => {
   };
   
   return (
-    <Box maxWidth={390} textAlign="center" sx={{ fontFamily: 'RobotoFlex, sans-serif', margin: '10px auto' }}>
+    <Box className="SteamMarketSearch">
       <div>
         <input
+          className="SteamMarketSearchInput"
           type="text"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleSearchClick();
+            }
+          }}
         />
-        <button onClick={handleSearchClick}>Search</button>
-        <ul>
+        
+        <button className="SteamMarketSearchButton" onClick={handleSearchClick}>Search</button>
+        <ul className="SteamMarketSearchList">
           {searchResults.map(({asset_description, hash_name, name, sell_price_text}, index) => (
-            <li key={index}>
+            <li className="SteamMarketSearchItem" key={index}>
               {asset_description.name}
-              <Button variant="contained" color="primary" onClick={() => handleAddClick({hash_name, name, sell_price_text})}>Add</Button>
+              <Button variant="contained"
+                      color="primary"
+                      onClick={() => handleAddClick({hash_name, name, sell_price_text})}>Add</Button>
             </li>
           ))}
         </ul>
