@@ -1151,13 +1151,5 @@
     "spendOnBuy": 0.25,
     "price": 9.14,
     "currency": "USD"
-  },
-  {
-    "nameForFetch": "Sticker | niko (Gold)  | London 2018",
-    "tournament": "Sticker | niko (Gold)  | London 2018",
-    "name": "Sticker | niko (Gold)  | London 2018",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 1938.37
   }
 ]
