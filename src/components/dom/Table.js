@@ -159,8 +159,6 @@ const CustomTable = () => {
         </Table>
       </TableContainer>
       
-
-      
       <Stack className="PaginationBottom">
         <Pagination
           count={Math.ceil(filteredData.length / rowsPerPage)}
@@ -173,8 +171,7 @@ const CustomTable = () => {
           showLastButton // Показати кнопку "Остання сторінка"
         />
       </Stack>
-
-      
+      <SteamMarketSearch/>
       <Box className="TotalPrices">
         {Object.entries(calculateTotalPrice()).map(([tournament, { price }]) => (
           <div key={tournament}>Total Price for {tournament}: <CountUp start={0}
@@ -191,8 +188,6 @@ const CustomTable = () => {
                                        duration={1}
                                        decimals={2}/></div>
       </Box>
-      
-      <SteamMarketSearch/>
     </Box>
   );
 }

@@ -30,4 +30,3 @@ export const handleCurrencyChange = async (selectedCurrency, itemsList) => {
   await updateItemsList(updatedItemsList);
   console.log('Updated prices:', updatedItemsList);
 };
-

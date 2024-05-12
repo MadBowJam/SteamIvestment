@@ -93,13 +93,13 @@ const CustomTableBody = ({ filteredData }) => {
     <TableBody>
       {filteredData.map((item) => (
         <React.Fragment key={`${item.tournament}-${item.name}`}>
-          <TableRow onClick={() => handleClickOnRow(item.tournament, item.name)}>
-            <TableCell>{item.tournament}</TableCell>
-            <TableCell>{item.name}</TableCell>
-            <TableCell><CountUp start={0} end={item.price} duration={1} decimals={2} /></TableCell>
-            <TableCell><CountUp start={0} end={item.quantity} duration={2} decimals={0} /></TableCell>
-            <TableCell><CountUp start={0} end={item.total} duration={1} decimals={2} /></TableCell>
-            <TableCell><CountUp start={0} end={item.spendOnBuy} duration={1} decimals={2} /></TableCell>
+          <TableRow className="TableRow" onClick={() => handleClickOnRow(item.tournament, item.name)}>
+            <TableCell className="TableCell">{item.tournament}</TableCell>
+            <TableCell className="TableCell">{item.name}</TableCell>
+            <TableCell className="TableCell"><CountUp start={0} end={item.price} duration={1} decimals={2} /></TableCell>
+            <TableCell className="TableCell"><CountUp start={0} end={item.quantity} duration={2} decimals={0} /></TableCell>
+            <TableCell className="TableCell"><CountUp start={0} end={item.total} duration={1} decimals={2} /></TableCell>
+            <TableCell className="TableCell"><CountUp start={0} end={item.spendOnBuy} duration={1} decimals={2} /></TableCell>
           </TableRow>
           <TableRow>
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -127,6 +127,7 @@ const CustomTableBody = ({ filteredData }) => {
             </TableCell>
           </TableRow>
           <Modal
+            className="ModalWindow"
             open={!!itemToDelete}
             onClose={() => dispatch(clearItemToDelete())}
             aria-labelledby="confirm-delete-modal"
@@ -140,6 +141,7 @@ const CustomTableBody = ({ filteredData }) => {
             </Box>
           </Modal>
           <Modal
+            className="ModalWindow"
             open={openEditModalState}
             onClose={handleCloseEditModal}
             aria-labelledby="edit-modal"

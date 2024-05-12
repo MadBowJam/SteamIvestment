@@ -1,11 +1,10 @@
-:root {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-}
-
 @font-face {
     font-family: 'Roboto';
     src: url('./font/RobotoFlex.ttf') format('truetype');
-    /* Додаткові стилі, якщо потрібно */
+}
+
+:root {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 a {
@@ -150,10 +149,15 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-inp
 }
 
 .SteamMarketSearchInput, .SteamMarketSearchButton {
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid tomato;
     outline: none;
+    font-size: 1rem;
+}
+
+.SteamMarketSearchInput {
+    width: 250px;
 }
 
 .SteamMarketSearchList {
@@ -170,34 +174,46 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-inp
     align-items: center;
 }
 
+tr {
+    background-color: rgba(125, 194, 173, 0.11);
+}
 
-
-
-
-
-
-
-
-
-.MuiTableRow-root {
-    transition: all 0.3s ease;
+.TableRow, .TableHead {
     cursor: pointer;
 }
 
-.MuiTableRow-root:hover {
-    /*background-color: #7dc2ad;*/
-    font-weight: bold;
+.TableHead {
+    background-color: #7dc2ad !important;
 }
 
-.MuiTableCell-head {
-    background-color: #7dc2ad !important;
+.TableHead th {
     color: white !important;
 }
 
-/*.MuiTableRow-root:hover > * {*/
-/*    color: white; !* Застосовуємо стилі до всіх клітинок у рядку *!*/
-/*    background-color: #7dc2ad;*/
-/*}*/
+.timer {
+    font-size: 10px;
+    color: #7dc2ad;
+}
+
+.IconsInRow {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.MuiModal-backdrop {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.EditField div input, .EditField label  {
+    color: white !important;
+    border-color: rgba(136, 136, 136, 0.2) !important;
+    color: rgba(136, 136, 136, 0);
+}
+
+.SearchField label {
+    color: gray !important;
+}
 
 @media (max-width: 960px) {
     .MuiTableRow-root > * {
@@ -213,59 +229,4 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-inp
 
 .MuiTableCell-root {
     border: 1px solid #ddd !important;
-}
-
-.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
-    box-shadow: none !important;
-}
-
-
-
-/*.MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root {*/
-/*    background-color: red !important;*/
-/*}*/
-
-
-
-
-
-
-
-
-
-.timer {
-    font-size: 10px;
-    color: #7dc2ad;
-}
-
-.IconsInRow {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/*.ModalBody {*/
-/*    background-color: red !important;*/
-/*}*/
-
-.MuiModal-backdrop {
-    background-color: rgba(0, 0, 0, 0.15) !important;
-}
-
-.EditField div input, .EditField label  {
-    color: white !important;
-}
-
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-    border-color: rgba(136, 136, 136, 0.2) !important;
-}
-
-.MuiInputBase-input {
-    color: rgba(136, 136, 136, 0);
-}
-
-
-
-.SearchField label {
-    color: gray !important;
 }
