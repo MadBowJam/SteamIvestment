@@ -1,0 +1,93 @@
+<div class="header-mobile-wrapper">
+    <div class="header-mobile-inner">
+        <a class="header-mobile-wrapper-logo-link" href="https://www.otpusk.ua">
+            <img class="header-mobile-wrapper-logo" src="{{ asset('icons/svg/16px/otpusk2024/16-logo.svg') }}" alt="logo">
+        </a>
+
+        <div class="header-mobile-nav">
+            <ul class="header-mobile-list">
+                <li class="header-mobile-item">
+                    <div class="i16px i16-empty-heart"></div>
+                </li>
+                <li class="header-mobile-item" id="burgerWrapper">
+                    <div class="header-mobile-burger" id="burger"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-mobile-breadcombs">
+        <span class="header-mobile-breadcombs-text">{Поточна сторінка}</span>
+    </div>
+
+    <div class="header-mobile-menu-wrapper">
+        <div class="header-mobile-menu">
+            <ul class="header-mobile-menu-list">
+                <li class="header-mobile-menu-item">
+                    <img  class="header-menu-personalInfo-img" src="" alt="profile-image">
+                    <div class="header-menu-personalInfo-text">
+                        <span class="header-menu-personalInfo-name">{Імʼя}</span>
+                        <span class="header-menu-personalInfo-phone">{Телефон}</span>
+                    </div>
+                </li>
+
+                <li class="header-mobile-menu-item">
+                    <ul class="header-mobile-menu-list-main">
+                        <li class="header-mobile-menu-item-main">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/bookings' }}" id="myBookingsLink-mobile">
+                                <div class="i16px i16-booking"></div>
+                                <span class="header-mobile-wrapper-text" id="myBookings-mobile">Мої бронювання</span>
+                            </a>
+                        </li>
+
+                        <li class="header-mobile-menu-item-main">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/charters' }}" id="myChartersLink-mobile">
+                                <div class="i16px i16-ticket"></div>
+                                <span class="header-mobile-wrapper-text" id="myCharters-mobile">Мої чартерні квитки</span>
+                            </a>
+                        </li>
+
+                        <li class="header-mobile-menu-item-main">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/favourites' }}" id="myFavouritesLink-mobile">
+                                <div class="i16px i16-favourite"></div>
+                                <span class="header-mobile-wrapper-text" id="myFavourites-mobile">Обране</span>
+                            </a>
+                        </li>
+
+                        <li class="header-mobile-menu-item-main">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/support' }}" id="mySupportLink-mobile">
+                                <div class="i16px i16-support"></div>
+                                <span class="header-mobile-wrapper-text" id="mySupport-mobile">Служба підтримки</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header-mobile-menu-item additional">
+                    <ul class="header-mobile-wrapper-list">
+                        <li class="header-mobile-wrapper-item">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/profile' }}" id="myProfileLink-mobile">
+                                <div class="i16px i16-user"></div>
+                                <span class="header-mobile-wrapper-text" id="myProfile-mobile">Профіль</span>
+                            </a>
+                        </li>
+                        <li class="header-mobile-wrapper-item">
+                            <a class="header-mobile-wrapper-link" href="{{ domain ~ '/me/setting' }}" id="mySettingLink-mobile">
+                                <div class="i16px i16-setting"></div>
+                                <span class="header-mobile-wrapper-text" id="mySetting-mobile">Налаштування</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header-mobile-menu-item">
+                    <a class="header-mobile-wrapper-link">
+                        <div class="i16px i16-exit"></div>
+                        <span class="header-mobile-wrapper-text">Вихід</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
