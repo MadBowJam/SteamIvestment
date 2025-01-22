@@ -1,0 +1,133 @@
+{
+  "code": 5,
+  "message": "Ціна актуальна",
+  "offer": {
+    "master_vendor": "merlinx",
+    "v": "toptur",
+    "i": "3631626640852145",
+    "hi": 8317,
+    "oi": 3456,
+    "os": {
+      "code": "XTOP",
+      "name": "TOP Touristik"
+    },
+    "ti": 0,
+    "tn": " ",
+    "o": [
+      "transfer",
+      "insurance",
+      "touristax",
+      "luggagerequest"
+    ],
+    "s": "",
+    "c": 1517,
+    "d": "2025-06-12",
+    "dt": "2025-06-19",
+    "y": "dbl",
+    "a": 2,
+    "h": 0,
+    "ha": "",
+    "ci": 834,
+    "l": 8,
+    "n": 7,
+    "nh": 7,
+    "f": "bb",
+    "fn": "Breakfast",
+    "ri": 4940,
+    "r": "Pokój, Superior, Widok Na Morze, Balkon",
+    "p": 16785.1,
+    "pl": 16785.1,
+    "plo": 178257.76,
+    "pto": 16785.1,
+    "u": "pln",
+    "ul": "pln",
+    "uto": "pln",
+    "ur": 1,
+    "uo": 1,
+    "t": "air",
+    "to": {
+      "from": [
+        {
+          "code": "9265",
+          "line": "",
+          "portFr": "WRO",
+          "portTo": "PFO",
+          "begin": "2025-06-12 08:50",
+          "end": "2025-06-12 13:05",
+          "place": 9,
+          "seats": "yes",
+          "luggage": {
+            "hand": "10 kg"
+          },
+          "portFrDetails": {
+            "name": "Copernicus Airport",
+            "timezone": "Europe/Warsaw",
+            "cityId": 1517,
+            "cityName": "Вроцлав",
+            "countryId": 98,
+            "countryName": "Польща"
+          },
+          "portToDetails": {
+            "name": "International",
+            "timezone": "Asia/Nicosia",
+            "cityId": 835,
+            "cityName": "Пафос",
+            "countryId": 54,
+            "countryName": "Кіпр"
+          }
+        }
+      ],
+      "to": [
+        {
+          "code": "9264",
+          "line": "",
+          "portFr": "PFO",
+          "portTo": "WRO",
+          "begin": "2025-06-19 13:30",
+          "end": "2025-06-19 16:00",
+          "place": 9,
+          "seats": "yes",
+          "luggage": {
+            "hand": "10 kg"
+          },
+          "portFrDetails": {
+            "name": "International",
+            "timezone": "Asia/Nicosia",
+            "cityId": 835,
+            "cityName": "Пафос",
+            "countryId": 54,
+            "countryName": "Кіпр"
+          },
+          "portToDetails": {
+            "name": "Copernicus Airport",
+            "timezone": "Europe/Warsaw",
+            "cityId": 1517,
+            "cityName": "Вроцлав",
+            "countryId": 98,
+            "countryName": "Польща"
+          }
+        }
+      ]
+    },
+    "ss": {
+      "avia": 8,
+      "aviaBack": 8,
+      "hotel": 8
+    },
+    "b": "https://b2b.merlinx.eu/dl/trip/reserve.php?hash=XTOP29f2fbX_wYAAHNOYVBwWQH2AQChAh9xCpABCgYIgOsGEAESBgj4wggQARp-TVBVVzJHRjIzTjFWNkpNVzVLSUdTQTJXQ01MRUNJTFoyVllTQ1FMM0NZMEYxVE5SRkZLSUoySldMM1pEQ0JKMVlITUJZQVJDWElWQlFGVjcyQUxXWlc3VTdWNUkwVktOTUVET0pNV0E4ODZGNzNGOEZOMFZQMUpBS1ZKVDhTCn8KBgidrhEQAhIGCOuZWhABGm1PNTQ1NDRkNTMyZjQxNGQ1NDUzNDM1OTMxNWE0MjU3MmY1MjRkNTM1MDMwMzA1MzU2NDIzMDJmNDI0MjJmMzcyZjMyMzAzMjM1MzAzNjMxMzIyZjMwMzEzMjMzMzQzNTM2MzczODM5MzAzMTMyCmAKBQjQQRACEgYI-9QCEAEaT081NDU0NGQ1MzJmMzUzMTM3MzgyZjUwNDY0ZjJmMmYzNzJmMzIzMDMyMzUzMDM2MzEzMjJmMzAzMTMyMzMzNDM1MzYzNzM4MzkzMDMxMzIKIgoFCJgqEAESBQjQMhABGhJEU1JNLTEyMjktNDZyMjIxMDIKIQoFCIgnEAESBQjwLhABGhFEU1JNLTEyMjktMnIyMjEwMQojCgUIoB8QARIFCJAmEAEaE0RTUlUtMTIyOS1VQkVaQkFTSUMYzQkojh8yBgiuuWYQATgC|XTOP|Mnx8&info=2||",
+    "bh": "XTOP29f2fbX_wYAAHNOYVBwWQH2AQChAh9xCpABCgYIgOsGEAESBgj4wggQARp-TVBVVzJHRjIzTjFWNkpNVzVLSUdTQTJXQ01MRUNJTFoyVllTQ1FMM0NZMEYxVE5SRkZLSUoySldMM1pEQ0JKMVlITUJZQVJDWElWQlFGVjcyQUxXWlc3VTdWNUkwVktOTUVET0pNV0E4ODZGNzNGOEZOMFZQMUpBS1ZKVDhTCn8KBgidrhEQAhIGCOuZWhABGm1PNTQ1NDRkNTMyZjQxNGQ1NDUzNDM1OTMxNWE0MjU3MmY1MjRkNTM1MDMwMzA1MzU2NDIzMDJmNDI0MjJmMzcyZjMyMzAzMjM1MzAzNjMxMzIyZjMwMzEzMjMzMzQzNTM2MzczODM5MzAzMTMyCmAKBQjQQRACEgYI-9QCEAEaT081NDU0NGQ1MzJmMzUzMTM3MzgyZjUwNDY0ZjJmMmYzNzJmMzIzMDMyMzUzMDM2MzEzMjJmMzAzMTMyMzMzNDM1MzYzNzM4MzkzMDMxMzIKIgoFCJgqEAESBQjQMhABGhJEU1JNLTEyMjktNDZyMjIxMDIKIQoFCIgnEAESBQjwLhABGhFEU1JNLTEyMjktMnIyMjEwMQojCgUIoB8QARIFCJAmEAEaE0RTUlUtMTIyOS1VQkVaQkFTSUMYzQkojh8yBgiuuWYQATgC|XTOP|Mnx8",
+    "ad": [],
+    "ap": [],
+    "ct": 54,
+    "vi": 1086729861,
+    "ah": 2,
+    "gds": false,
+    "bo": {
+      "possible": true,
+      "date": "2025-01-21 20:19:19",
+      "change": "cancel"
+    }
+  },
+  "hotelId": 8317,
+  "originalHotelName": "Four Seasons (Limassol)"
+}
