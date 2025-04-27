@@ -40,13 +40,13 @@ async function fetchData() {
       
       try {
         // // Отримуємо зображення з інтернету
-        const { data: imageBuffer } = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
-          responseType: 'arraybuffer'
-        });
-
-        // Зберігаємо та оптимізуємо зображення
-        const imageName = `${item.tournament}-${item.name}.png`;
-        await optimizeAndSaveImage(imageBuffer, imageName);
+        // const { data: imageBuffer } = await axios.get(`https://api.steamapis.com/image/item/730/${encodeURIComponent(item.nameForFetch)}`, {
+        //   responseType: 'arraybuffer'
+        // });
+        //
+        // // Зберігаємо та оптимізуємо зображення
+        // const imageName = `${item.tournament}-${item.name}.png`;
+        // await optimizeAndSaveImage(imageBuffer, imageName);
 
         // Оновлюємо об'єкт елементу в itemsArray, додаючи ключ "price"
         item.price = Number(price.lowest_price.substring(1));
