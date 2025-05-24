@@ -17,6 +17,7 @@ jobs:
         with:
           # Full git history is needed to get a proper list of changed files
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
