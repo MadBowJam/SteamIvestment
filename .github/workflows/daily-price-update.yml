@@ -1,0 +1,48 @@
+name: Daily Price Update
+
+on:
+  schedule:
+    # Run at 00:00 UTC every day
+    - cron: '0 0 * * *'
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run SteamPriceCheck.js
+        run: node src/SteamPriceCheck.js
+        env:
+          TINIFY_API_KEY: ${{ secrets.TINIFY_API_KEY }}
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git status
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git commit -m "Auto-update prices $(date +'%Y-%m-%d')"
+          git push
