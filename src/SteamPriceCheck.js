@@ -33,11 +33,11 @@ const steamClient = new SteamApiClient({
   maxRetries: 3,
   retryDelay: 2000,
   timeout: 10000,
-  initialDelay: 3500,    // Start with a safe delay
-  minDelay: 2800,        // Don't go below this delay
+  initialDelay: 2800,    // Start with a safe delay
+  minDelay: 2500,        // Don't go below this delay
   maxDelay: 5000,        // Don't go above this delay
-  batchSize: 10,         // Process 10 items at a time
-  delayBetweenBatches: 5000  // Pause between batches
+  batchSize: 50,         // Process 10 items at a time
+  delayBetweenBatches: 2500  // Pause between batches
 });
 
 /**
