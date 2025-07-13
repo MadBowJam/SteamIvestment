@@ -1,5 +1,25 @@
 [
   {
+    "nameForFetch": "MAC-10 | Curse",
+    "tournament": "Case",
+    "name": "MAC-10 | Curse",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": 0,
+    "currency": "USD",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Operation Hydra Case Key",
+    "tournament": "Case",
+    "name": "Operation Hydra Case Key",
+    "quantity": 12,
+    "spendOnBuy": 0,
+    "price": 0,
+    "currency": "USD",
+    "total": "0"
+  },
+  {
     "nameForFetch": "Prisma Case",
     "tournament": "Case",
     "name": "Prisma",
@@ -16,6 +36,15 @@
     "quantity": 12,
     "spendOnBuy": 0,
     "price": 0.61,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Operation Broken Fang Case",
+    "tournament": "Case",
+    "name": "Operation Broken Fang",
+    "quantity": 1,
+    "spendOnBuy": 0,
+    "price": 0,
     "currency": "USD"
   },
   {
@@ -382,7 +411,7 @@
     "nameForFetch": "Antwerp 2022 Legends Autograph Capsule",
     "tournament": "Antwerp 2022",
     "name": "Legends Autograph Capsule",
-    "quantity": 20,
+    "quantity": 25,
     "spendOnBuy": 0.25,
     "price": 0.42,
     "currency": "USD"
