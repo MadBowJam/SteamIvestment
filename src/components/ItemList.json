@@ -1,15 +1,5 @@
 [
   {
-    "nameForFetch": "MAC-10 | Curse",
-    "tournament": "Case",
-    "name": "MAC-10 | Curse",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 0,
-    "currency": "USD",
-    "total": "0"
-  },
-  {
     "nameForFetch": "Operation Hydra Case Key",
     "tournament": "Case",
     "name": "Operation Hydra Case Key",
@@ -44,7 +34,7 @@
     "name": "Operation Broken Fang",
     "quantity": 1,
     "spendOnBuy": 0,
-    "price": 13.35,
+    "price": 13.350000000000001,
     "currency": "USD"
   },
   {
@@ -107,7 +97,7 @@
     "name": "Recoil",
     "quantity": 39,
     "spendOnBuy": 0.26,
-    "price": 0.48,
+    "price": 0.4799999999999999,
     "currency": "USD"
   },
   {
@@ -161,7 +151,7 @@
     "name": "Natus Vincere",
     "quantity": 12,
     "spendOnBuy": 0.25,
-    "price": 1.95,
+    "price": 1.9499999999999997,
     "currency": "USD"
   },
   {
@@ -188,7 +178,7 @@
     "name": "Legends Sticker Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.23,
+    "price": 0.22999999999999998,
     "currency": "USD"
   },
   {
@@ -215,7 +205,7 @@
     "name": "Legends Sticker Capsule",
     "quantity": 200,
     "spendOnBuy": 0.25,
-    "price": 1.58,
+    "price": 1.5800000000000003,
     "currency": "USD"
   },
   {
@@ -278,7 +268,7 @@
     "name": "Natus Vincere (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 3.5,
+    "price": 3.5000000000000004,
     "currency": "USD"
   },
   {
@@ -367,7 +357,7 @@
     "tournament": "Stockholm 2021",
     "name": "s1mple",
     "quantity": 210,
-    "spendOnBuy": 0.12,
+    "spendOnBuy": 0.11999999999999998,
     "price": 0.1,
     "currency": "USD"
   },
@@ -431,7 +421,7 @@
     "name": "Contenders Autograph Capsule",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.99,
+    "price": 0.9899999999999999,
     "currency": "USD"
   },
   {
@@ -457,7 +447,7 @@
     "tournament": "Antwerp 2022",
     "name": "Cloud9",
     "quantity": 17,
-    "spendOnBuy": 0.24,
+    "spendOnBuy": 0.23999999999999996,
     "price": 0.07,
     "currency": "USD"
   },
@@ -503,7 +493,7 @@
     "name": "Outsiders",
     "quantity": 3,
     "spendOnBuy": 0.15,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -557,7 +547,7 @@
     "name": "IHC",
     "quantity": 5,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -593,7 +583,7 @@
     "name": "Eternal Fire (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.15,
-    "price": 14.58,
+    "price": 14.579999999999998,
     "currency": "USD"
   },
   {
@@ -602,7 +592,7 @@
     "name": "Renegades",
     "quantity": 5,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -620,7 +610,7 @@
     "name": "Liquid",
     "quantity": 2,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -629,7 +619,7 @@
     "name": "PGL",
     "quantity": 4,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -638,7 +628,7 @@
     "name": "PGL (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.15,
-    "price": 0.46,
+    "price": 0.45999999999999996,
     "currency": "USD"
   },
   {
@@ -737,7 +727,7 @@
     "name": "Legends Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.23,
+    "price": 0.22999999999999998,
     "currency": "USD"
   },
   {
@@ -764,7 +754,7 @@
     "name": "Champions Autograph Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
-    "price": 0.24,
+    "price": 0.23999999999999996,
     "currency": "USD"
   },
   {
@@ -773,7 +763,7 @@
     "name": "GamerLegion",
     "quantity": 30,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -800,7 +790,7 @@
     "name": "Ninjas in Pyjamas",
     "quantity": 32,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -818,7 +808,7 @@
     "name": "Apeks",
     "quantity": 18,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -836,7 +826,7 @@
     "name": "BLAST.tv",
     "quantity": 20,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -845,7 +835,7 @@
     "name": "BLAST.tv (Glitter)",
     "quantity": 4,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -854,7 +844,7 @@
     "name": "forZe eSports",
     "quantity": 27,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -872,7 +862,7 @@
     "name": "forZe eSports (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.15,
-    "price": 0.89,
+    "price": 0.8899999999999999,
     "currency": "USD"
   },
   {
@@ -881,7 +871,7 @@
     "name": "forZe eSports (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.15,
-    "price": 0.92,
+    "price": 0.9199999999999999,
     "currency": "USD"
   },
   {
@@ -890,7 +880,7 @@
     "name": "Monte",
     "quantity": 24,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -917,7 +907,7 @@
     "name": "G2 Esports",
     "quantity": 17,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -935,7 +925,7 @@
     "name": "OG",
     "quantity": 19,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -953,7 +943,7 @@
     "name": "OG (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.15,
-    "price": 0.83,
+    "price": 0.8300000000000001,
     "currency": "USD"
   },
   {
@@ -962,7 +952,7 @@
     "name": "paiN Gaming",
     "quantity": 17,
     "spendOnBuy": 0.15,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -971,7 +961,7 @@
     "name": "paiN Gaming (Glitter)",
     "quantity": 6,
     "spendOnBuy": 0.15,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -998,7 +988,7 @@
     "name": "Legends Sticker Capsule",
     "quantity": 60,
     "spendOnBuy": 0.25,
-    "price": 0.46,
+    "price": 0.45999999999999996,
     "currency": "USD"
   },
   {
@@ -1025,7 +1015,7 @@
     "name": "Legends Autograph Capsule",
     "quantity": 20,
     "spendOnBuy": 0.25,
-    "price": 0.43,
+    "price": 0.43000000000000005,
     "currency": "USD"
   },
   {
@@ -1061,7 +1051,7 @@
     "name": "AMKAL ESPORTS",
     "quantity": 58,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1079,7 +1069,7 @@
     "name": "AMKAL ESPORTS (Holo)",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 1.69,
+    "price": 1.6900000000000002,
     "currency": "USD"
   },
   {
@@ -1088,7 +1078,7 @@
     "name": "PGL",
     "quantity": 71,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1124,7 +1114,7 @@
     "name": "KOI",
     "quantity": 54,
     "spendOnBuy": 0.25,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -1142,7 +1132,7 @@
     "name": "KOI (Holo)",
     "quantity": 4,
     "spendOnBuy": 0.25,
-    "price": 25.09,
+    "price": 25.089999999999996,
     "currency": "USD"
   },
   {
@@ -1169,7 +1159,7 @@
     "name": "paiN Gaming (Gold)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.38,
+    "price": 3.3800000000000003,
     "currency": "USD"
   },
   {
@@ -1178,7 +1168,7 @@
     "name": "The MongolZ",
     "quantity": 49,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1214,7 +1204,7 @@
     "name": "Lynn Vision (Glitter)",
     "quantity": 5,
     "spendOnBuy": 0.25,
-    "price": 0.92,
+    "price": 0.9199999999999999,
     "currency": "USD"
   },
   {
@@ -1232,7 +1222,7 @@
     "name": "Eternal Fire",
     "quantity": 27,
     "spendOnBuy": 0.25,
-    "price": 0.12,
+    "price": 0.11999999999999998,
     "currency": "USD"
   },
   {
@@ -1277,7 +1267,7 @@
     "name": "ECSTATIC",
     "quantity": 41,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1313,7 +1303,7 @@
     "name": "FURIA",
     "quantity": 23,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1358,7 +1348,7 @@
     "name": "Legacy",
     "quantity": 57,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1394,7 +1384,7 @@
     "name": "Virtus.pro (Glitter)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 0.24,
+    "price": 0.23999999999999996,
     "currency": "USD"
   },
   {
@@ -1403,7 +1393,7 @@
     "name": "GamerLegion",
     "quantity": 13,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1448,7 +1438,7 @@
     "name": "Team Spirit (Holo)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 3.73,
+    "price": 3.7299999999999995,
     "currency": "USD"
   },
   {
@@ -1457,7 +1447,7 @@
     "name": "Natus Vincere",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -1475,7 +1465,7 @@
     "name": "Heroic",
     "quantity": 17,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1493,7 +1483,7 @@
     "name": "Vitality",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1511,7 +1501,7 @@
     "name": "MOUZ",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -1520,7 +1510,7 @@
     "name": "MOUZ (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 0.43,
+    "price": 0.43000000000000005,
     "currency": "USD"
   },
   {
@@ -1529,7 +1519,7 @@
     "name": "G2 Esports",
     "quantity": 4,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1538,7 +1528,7 @@
     "name": "ENCE",
     "quantity": 21,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1547,7 +1537,7 @@
     "name": "ENCE (Glitter)",
     "quantity": 4,
     "spendOnBuy": 0.25,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -1592,7 +1582,7 @@
     "name": "Complexity Gaming",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1673,7 +1663,7 @@
     "name": "MIBR",
     "quantity": 14,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1691,7 +1681,7 @@
     "name": "MIBR (Holo)",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 3.16,
+    "price": 3.1600000000000006,
     "currency": "USD"
   },
   {
@@ -1700,7 +1690,7 @@
     "name": "Passion UA ",
     "quantity": 10,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1718,7 +1708,7 @@
     "name": "Imperial Esports ",
     "quantity": 8,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1736,7 +1726,7 @@
     "name": "GamerLegion",
     "quantity": 13,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1772,7 +1762,7 @@
     "name": "Wildcard",
     "quantity": 16,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1781,7 +1771,7 @@
     "name": "Wildcard (Glitter)",
     "quantity": 9,
     "spendOnBuy": 0.25,
-    "price": 0.24,
+    "price": 0.23999999999999996,
     "currency": "USD"
   },
   {
@@ -1835,7 +1825,7 @@
     "name": "FURIA",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1907,7 +1897,7 @@
     "name": "BIG",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1916,7 +1906,7 @@
     "name": "paiN Gaming ",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1934,7 +1924,7 @@
     "name": "FaZe Clan",
     "quantity": 3,
     "spendOnBuy": 0.25,
-    "price": 0.06,
+    "price": 0.05999999999999999,
     "currency": "USD"
   },
   {
@@ -1943,7 +1933,7 @@
     "name": "HEROIC",
     "quantity": 2,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1970,7 +1960,7 @@
     "name": "Vitality",
     "quantity": 5,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -1979,7 +1969,7 @@
     "name": "G2 Esports",
     "quantity": 5,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {
@@ -2042,7 +2032,7 @@
     "name": "3DMAX (Glitter)",
     "quantity": 1,
     "spendOnBuy": 0.25,
-    "price": 0.46,
+    "price": 0.45999999999999996,
     "currency": "USD"
   },
   {
@@ -2051,7 +2041,7 @@
     "name": "Perfect World",
     "quantity": 19,
     "spendOnBuy": 0.25,
-    "price": 0.03,
+    "price": 0.029999999999999995,
     "currency": "USD"
   },
   {

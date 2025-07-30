@@ -1,10 +1,18 @@
 const express = require('express');
 const fs = require('fs');
 const axios = require('axios');
+const cors = require('cors'); // Add this line
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-const { searchCSGO } = require('./test_steam_market_search');
+const PORT = process.env.PORT || 8000;
+const { searchCSGO } = require('./test_steam_market_search.js');
+
+// Add CORS middleware
+app.use(cors({
+  origin: 'http://localhost:3000', // Allow requests from your React app
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 

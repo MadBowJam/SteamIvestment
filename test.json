@@ -1,121 +1,1482 @@
 {
-  "hotelId": 8317,
-  "offer": {
-    "i": "2361620800820124",
-    "v": "toptur",
-    "hi": 8317,
-    "oi": 3456,
-    "os": {
-      "code": "XTOP",
-      "name": "TOP Touristik"
-    },
-    "ti": 0,
-    "tn": " ",
-    "o": [
-      "transfer",
-      "insurance",
-      "touristax",
-      "noluggage"
-    ],
-    "s": "",
-    "c": 1517,
-    "d": "2025-06-12",
-    "dt": "2025-06-19",
-    "y": "dbl",
-    "a": 2,
-    "h": 0,
-    "ha": "",
-    "ci": 834,
-    "l": 8,
-    "n": 7,
-    "nh": 7,
-    "f": "bb",
-    "fn": "Breakfast",
-    "ri": 4940,
-    "r": "Pokój, Superior, Widok Na Morze, Balkon",
-    "p": 16785.1,
-    "pl": 16785.1,
-    "plo": 178257.76,
-    "pto": 16785.1,
-    "u": "pln",
-    "ul": "pln",
-    "ur": 1,
-    "uo": 1,
-    "t": "air",
-    "to": {
-      "from": [
-        {
-          "code": "FR",
-          "line": "Ryanair",
-          "portFr": "WRO",
-          "portTo": "PFO",
-          "begin": "2025-06-12 08:50",
-          "end": "2025-06-12 13:05",
-          "place": 10,
-          "seats": "yes",
-          "portFrDetails": {
-            "name": "Copernicus Airport",
-            "timezone": "Europe/Warsaw",
-            "cityId": 1517,
-            "cityName": "Вроцлав",
-            "countryId": 98,
-            "countryName": "Польща"
+  "user": {
+    "id": 35119,
+    "email": "travelbestrivne@gmail.com",
+    "username": "Адмін  Ольга",
+    "tf": {
+      "atc_key": "c73d6142",
+      "curator": null,
+      "locale": "uk_UA",
+      "logo_image_url": "files/tf_files/logos/33e8c2dcd080ec40af52ecc0b4cfb65f.png",
+      "og_image_url": null,
+      "search_onsite": true,
+      "id": 28139,
+      "title": "КВИТКИ У ЛІТО Travel-Best",
+      "alt_title": "",
+      "phones": [],
+      "date": "2021-07-01T13:27:34+00:00",
+      "email": "travelbestrivne@gmail.com",
+      "url": "https://travel-best.com.ua/",
+      "office_edit": false,
+      "sms_name": "TRAVELBEST",
+      "sms_name_approved": true,
+      "detail_more": false,
+      "limit_emails": 2000,
+      "limit_mailing": 1,
+      "ideal_delivery": false,
+      "apikey": "2a43e-e34bf-f77dd-e02a3-10fd4",
+      "apikeycharters": "2a43e-e34bf-f77dd-e02a3-10fd4",
+      "hotel_url_source": "site",
+      "search_url": "https://travel-best.com.ua/poshuk-turiv/",
+      "fin_scenario": "1",
+      "client_number_required": false,
+      "client_email_required": false,
+      "claim_source_required": false,
+      "auto_bootstrap_booking_claims": true,
+      "auto_parse_booking_claims": true,
+      "city": {
+        "id": 1981,
+        "name": "Рівне",
+        "timezone": "Europe/Kiev",
+        "longtime": 2.0,
+        "otpusk_id": 1981,
+        "otpusk_region_id": 2622,
+        "country": {
+          "available_locales": [
+            "uk_UA",
+            "en",
+            "ru",
+            "pl"
+          ],
+          "id": 116,
+          "code": "ua",
+          "name": "Україна",
+          "currency_code": "uah",
+          "currency": "грн",
+          "translations": [
+            {
+              "locale": "en",
+              "name": "Ukraine"
+            },
+            {
+              "locale": "pl",
+              "name": "Ukraina"
+            },
+            {
+              "locale": "ru",
+              "name": "Украина"
+            },
+            {
+              "locale": "uk_UA",
+              "name": "Україна"
+            }
+          ]
+        },
+        "translations": [
+          {
+            "locale": "en",
+            "name": "Rivne"
           },
-          "portToDetails": {
-            "name": "International",
-            "timezone": "Asia/Nicosia",
-            "cityId": 835,
-            "cityName": "Пафос",
-            "countryId": 54,
-            "countryName": "Кіпр"
+          {
+            "locale": "pl",
+            "name": "Gładki"
+          },
+          {
+            "locale": "ru",
+            "name": "Ровно"
+          },
+          {
+            "locale": "uk_UA",
+            "name": "Рівне"
           }
+        ]
+      },
+      "split_bonus_between_managers": false,
+      "scenarios": [
+        {
+          "id": 226000,
+          "name": "Тур",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 1,
+          "steps": [
+            {
+              "id": 1740841,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740842,
+              "name": "Тур",
+              "name_action": "Step Tour Action",
+              "name_lenta": "Step Tour Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 40,
+              "marker": "tour",
+              "translations": []
+            },
+            {
+              "id": 1740843,
+              "name": "Туристи",
+              "name_action": "Step Tourists Action",
+              "name_lenta": "Step Tourists Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 5,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740844,
+              "name": "Договір",
+              "name_action": "Step Contract Action",
+              "name_lenta": "Step Contract Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 10,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740845,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740846,
+              "name": "Заявка",
+              "name_action": "Step Booking Action",
+              "name_lenta": "Step Booking Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "bron",
+              "translations": []
+            },
+            {
+              "id": 1740847,
+              "name": "Готель",
+              "name_action": "Step Hotel Action",
+              "name_lenta": "Step Hotel Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "hotel",
+              "translations": []
+            },
+            {
+              "id": 1740848,
+              "name": "Доки",
+              "name_action": "Step Docs Action",
+              "name_lenta": "Step Docs Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "docs",
+              "translations": []
+            },
+            {
+              "id": 1740849,
+              "name": "Виліт",
+              "name_action": "Step Departure Action",
+              "name_lenta": "Step Departure Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "fly",
+              "translations": []
+            },
+            {
+              "id": 1740850,
+              "name": "OK!",
+              "name_action": "Step OK! ACtion",
+              "name_lenta": "Step OK! Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 5,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226001,
+          "name": "Візовий тур",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 2,
+          "steps": [
+            {
+              "id": 1740851,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740852,
+              "name": "Тур",
+              "name_action": "Step Tour Action",
+              "name_lenta": "Step Tour Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 40,
+              "marker": "tour",
+              "translations": []
+            },
+            {
+              "id": 1740853,
+              "name": "Туристи",
+              "name_action": "Step Tourists Action",
+              "name_lenta": "Step Tourists Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 5,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740854,
+              "name": "Договір",
+              "name_action": "Step Contract Action",
+              "name_lenta": "Step Contract Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 10,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740855,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740856,
+              "name": "Заявка",
+              "name_action": "Step Booking Action",
+              "name_lenta": "Step Booking Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "bron",
+              "translations": []
+            },
+            {
+              "id": 1740857,
+              "name": "Готель",
+              "name_action": "Step Hotel Action",
+              "name_lenta": "Step Hotel Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "hotel",
+              "translations": []
+            },
+            {
+              "id": 1740858,
+              "name": "Віза",
+              "name_action": "Step Visa Action",
+              "name_lenta": "Step Visa Lenta",
+              "mail": "",
+              "form": "visa",
+              "percent": 10,
+              "marker": "visa",
+              "translations": []
+            },
+            {
+              "id": 1740859,
+              "name": "Доки",
+              "name_action": "Step Docs Action",
+              "name_lenta": "Step Docs Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "docs",
+              "translations": []
+            },
+            {
+              "id": 1740860,
+              "name": "Виліт",
+              "name_action": "Step Departure Action",
+              "name_lenta": "Step Departure Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "fly",
+              "translations": []
+            },
+            {
+              "id": 1740861,
+              "name": "OK!",
+              "name_action": "Step OK! ACtion",
+              "name_lenta": "Step OK! Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 5,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226002,
+          "name": "Екскурсійний тур",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 3,
+          "steps": [
+            {
+              "id": 1740862,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740863,
+              "name": "Тур",
+              "name_action": "Step Tour Action",
+              "name_lenta": "Step Tour Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 40,
+              "marker": "tour",
+              "translations": []
+            },
+            {
+              "id": 1740864,
+              "name": "Туристи",
+              "name_action": "Step Tourists Action",
+              "name_lenta": "Step Tourists Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 5,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740865,
+              "name": "Договір",
+              "name_action": "Step Contract Action",
+              "name_lenta": "Step Contract Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 10,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740866,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740867,
+              "name": "Заявка",
+              "name_action": "Step Booking Action",
+              "name_lenta": "Step Booking Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "bron",
+              "translations": []
+            },
+            {
+              "id": 1740868,
+              "name": "Підтвердження туру",
+              "name_action": "Step Tour confirmation Action",
+              "name_lenta": "Step Tour confirmation Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "hotel",
+              "translations": []
+            },
+            {
+              "id": 1740869,
+              "name": "Віза",
+              "name_action": "Step Visa Action",
+              "name_lenta": "Step Visa Lenta",
+              "mail": "",
+              "form": "visa",
+              "percent": 10,
+              "marker": "visa",
+              "translations": []
+            },
+            {
+              "id": 1740870,
+              "name": "Доки",
+              "name_action": "Step Docs Action",
+              "name_lenta": "Step Docs Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "docs",
+              "translations": []
+            },
+            {
+              "id": 1740871,
+              "name": "Виліт",
+              "name_action": "Step Departure Action",
+              "name_lenta": "Step Departure Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 5,
+              "marker": "fly",
+              "translations": []
+            },
+            {
+              "id": 1740872,
+              "name": "OK!",
+              "name_action": "Step OK! ACtion",
+              "name_lenta": "Step OK! Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 5,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226003,
+          "name": "Квитки",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 4,
+          "steps": [
+            {
+              "id": 1740873,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740874,
+              "name": "Підбір квитків",
+              "name_action": "Step Ticket selection Action",
+              "name_lenta": "Step Ticket selection Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 50,
+              "marker": "tour",
+              "translations": []
+            },
+            {
+              "id": 1740875,
+              "name": "Туристи",
+              "name_action": "Step Tourists Action",
+              "name_lenta": "Step Tourists Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 5,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740876,
+              "name": "Вартість",
+              "name_action": "Step Price Action",
+              "name_lenta": "Step Price Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 5,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740877,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740878,
+              "name": "Виписка",
+              "name_action": "Step Extraction Action",
+              "name_lenta": "Step Extraction Lenta",
+              "mail": "",
+              "form": "bron",
+              "percent": 10,
+              "marker": "bron",
+              "translations": []
+            },
+            {
+              "id": 1740879,
+              "name": "Видача",
+              "name_action": "Step Issuing Action",
+              "name_lenta": "Step Issuing Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 0,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226004,
+          "name": "Страховка",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 5,
+          "steps": [
+            {
+              "id": 1740880,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740881,
+              "name": "Застраховані",
+              "name_action": "Step Insured Action",
+              "name_lenta": "Step Insured Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 0,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740882,
+              "name": "Вартість",
+              "name_action": "Step Price Action",
+              "name_lenta": "Step Price Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 5,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740883,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740884,
+              "name": "Видача",
+              "name_action": "Step Issuing Action",
+              "name_lenta": "Step Issuing Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 0,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226005,
+          "name": "SIM",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 6,
+          "steps": [
+            {
+              "id": 1740885,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740886,
+              "name": "Вартість",
+              "name_action": "Step Price Action",
+              "name_lenta": "Step Price Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 5,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740887,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740888,
+              "name": "Видача",
+              "name_action": "Step Issuing Action",
+              "name_lenta": "Step Issuing Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 0,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
+        },
+        {
+          "id": 226006,
+          "name": "Інша",
+          "active": true,
+          "created": "2025-01-15T20:16:31+00:00",
+          "config_id": 7,
+          "steps": [
+            {
+              "id": 1740889,
+              "name": "Замовлення",
+              "name_action": "Step Order Action",
+              "name_lenta": "Step Order Lenta",
+              "mail": "",
+              "form": "order",
+              "percent": 20,
+              "marker": "order",
+              "translations": []
+            },
+            {
+              "id": 1740890,
+              "name": "Підбір",
+              "name_action": "Step Selection Action",
+              "name_lenta": "Step Selection Lenta",
+              "mail": "",
+              "form": "",
+              "percent": 20,
+              "marker": "tour",
+              "translations": []
+            },
+            {
+              "id": 1740891,
+              "name": "Туристи",
+              "name_action": "Step Tourists Action",
+              "name_lenta": "Step Tourists Lenta",
+              "mail": "",
+              "form": "docs",
+              "percent": 5,
+              "marker": "passport",
+              "translations": []
+            },
+            {
+              "id": 1740892,
+              "name": "Договір",
+              "name_action": "Step Contract Action",
+              "name_lenta": "Step Contract Lenta",
+              "mail": "",
+              "form": "dogovor",
+              "percent": 10,
+              "marker": "dogovor",
+              "translations": []
+            },
+            {
+              "id": 1740893,
+              "name": "Оплата",
+              "name_action": "Step Payment Action",
+              "name_lenta": "Step Payment Lenta",
+              "mail": "",
+              "form": "pay",
+              "percent": 20,
+              "marker": "pay",
+              "translations": []
+            },
+            {
+              "id": 1740894,
+              "name": "OK!",
+              "name_action": "Step OK! ACtion",
+              "name_lenta": "Step OK! Lenta",
+              "mail": "",
+              "form": "ok",
+              "percent": 5,
+              "marker": "ok",
+              "translations": []
+            }
+          ],
+          "translations": []
         }
       ],
-      "to": [
+      "login_limit": {
+        "number": 2
+      },
+      "tf_groups": [],
+      "counterparties": [],
+      "contract_number_template": "%m/%y-%n",
+      "next_contract_number": 11208,
+      "subscriptions": [
         {
-          "code": "",
-          "line": null,
-          "portFr": "PFO",
-          "portTo": "WRO",
-          "begin": "2025-06-19 13:30",
-          "end": "2025-06-19 16:00",
-          "place": 10,
-          "seats": "yes",
-          "portFrDetails": {
-            "name": "International",
-            "timezone": "Asia/Nicosia",
-            "cityId": 835,
-            "cityName": "Пафос",
-            "countryId": 54,
-            "countryName": "Кіпр"
-          },
-          "portToDetails": {
-            "name": "Copernicus Airport",
-            "timezone": "Europe/Warsaw",
-            "cityId": 1517,
-            "cityName": "Вроцлав",
-            "countryId": 98,
-            "countryName": "Польща"
-          }
+          "id": 572,
+          "created": "2023-05-01T11:31:50+00:00",
+          "updated": "2023-06-01T11:41:45+00:00",
+          "period": 1,
+          "is_active": false
         }
+      ],
+      "facebooks": [],
+      "finished_cooperation": false
+    },
+    "show_operator_credential": true,
+    "allowed_view_finances": true,
+    "autologin": true,
+    "default_remind_state": false,
+    "limit_client_views": null,
+    "show_nobody_claim": true,
+    "auto_bookings_processing": false,
+    "client_view_data": {
+      "date": "2025-06-05T07:11:05+00:00",
+      "ids": [
+        2066205
       ]
     },
-    "ss": {
-      "avia": 10,
-      "aviaBack": 10,
-      "hotel": 8
+    "locale": "uk_UA",
+    "roles": [
+      {
+        "name": "manager",
+        "description": "Менеджер",
+        "permissions": [
+          {
+            "description": "Розділ з клієнтами та замовленями",
+            "name": "claims"
+          },
+          {
+            "description": "Розділ Турсканера",
+            "name": "tourscanner"
+          },
+          {
+            "description": "Свої платежі",
+            "name": "own_payments"
+          },
+          {
+            "description": "Статистика премій лише своїх даних",
+            "name": "stat_own_bonuses"
+          },
+          {
+            "description": "Свої дзвінки на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+            "name": "own_calls"
+          },
+          {
+            "description": "Статистика по власним замовленням",
+            "name": "claim_stat_own"
+          },
+          {
+            "description": "Право знімати свої відмітки про завершеність кроку замовлення",
+            "name": "remove_own_done_step"
+          },
+          {
+            "description": null,
+            "name": "documentation"
+          },
+          {
+            "description": "Доступ до даних дочірніх ТФ",
+            "name": "child_tf"
+          },
+          {
+            "description": "Причини закриття ТФ",
+            "name": "tf_closing_reasons"
+          },
+          {
+            "description": "Доступ до біржі перегляд",
+            "name": "birzha_view"
+          }
+        ],
+        "translations": [
+          {
+            "locale": "en",
+            "description": "Manager"
+          },
+          {
+            "locale": "pl",
+            "description": "Menadżer"
+          },
+          {
+            "locale": "ru",
+            "description": "Менеджер"
+          },
+          {
+            "locale": "uk_UA",
+            "description": "Менеджер"
+          }
+        ]
+      },
+      {
+        "name": "marketing",
+        "description": "Маркетолог",
+        "permissions": [
+          {
+            "description": "Розділ з клієнтами та замовленями",
+            "name": "claims"
+          },
+          {
+            "description": "Розділ Турсканера",
+            "name": "tourscanner"
+          },
+          {
+            "description": "Свої дзвінки на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+            "name": "own_calls"
+          },
+          {
+            "description": "Розділ розсилок",
+            "name": "mailing"
+          },
+          {
+            "description": "Перегляд та редагування шаблонів та налаштувань повідомлень клієнтам",
+            "name": "notify"
+          },
+          {
+            "description": "Налаштування офісів та регіонів",
+            "name": "regions_offices"
+          },
+          {
+            "description": "Статистика по власним замовленням",
+            "name": "claim_stat_own"
+          },
+          {
+            "description": "Право знімати свої відмітки про завершеність кроку замовлення",
+            "name": "remove_own_done_step"
+          },
+          {
+            "description": "Причини закриття ТФ",
+            "name": "tf_closing_reasons"
+          }
+        ],
+        "translations": [
+          {
+            "locale": "en",
+            "description": "Marketer"
+          },
+          {
+            "locale": "pl",
+            "description": "Marketingowiec"
+          },
+          {
+            "locale": "ru",
+            "description": "Маркетолог"
+          },
+          {
+            "locale": "uk_UA",
+            "description": "Маркетолог"
+          }
+        ]
+      },
+      {
+        "name": "clerk",
+        "description": "Бухгалтер",
+        "permissions": [
+          {
+            "description": "Розділ з клієнтами та замовленями",
+            "name": "claims"
+          },
+          {
+            "description": "Розділ Турсканера",
+            "name": "tourscanner"
+          },
+          {
+            "description": "Свої платежі",
+            "name": "own_payments"
+          },
+          {
+            "description": "Платежі всіх співробітників",
+            "name": "all_payments"
+          },
+          {
+            "description": "Розділ білінгу",
+            "name": "billing"
+          },
+          {
+            "description": "Налаштування полів в договорах та профілів клієнтів",
+            "name": "fields"
+          },
+          {
+            "description": "Налаштування офісів та регіонів",
+            "name": "regions_offices"
+          },
+          {
+            "description": "Статистика по власним замовленням",
+            "name": "claim_stat_own"
+          },
+          {
+            "description": "Статистика по замовленням всіх співробітників",
+            "name": "claim_stat_all"
+          },
+          {
+            "description": "Право знімати свої відмітки про завершеність кроку замовлення",
+            "name": "remove_own_done_step"
+          },
+          {
+            "description": "Право підтвержувати оплати",
+            "name": "confirm_payment"
+          },
+          {
+            "description": "Редагування та видалення реквізитів для договору",
+            "name": "edit_tf_details"
+          },
+          {
+            "description": "Причини закриття ТФ",
+            "name": "tf_closing_reasons"
+          },
+          {
+            "description": "Доступ до біржі",
+            "name": "birzha_full"
+          }
+        ],
+        "translations": [
+          {
+            "locale": "en",
+            "description": "Accountant"
+          },
+          {
+            "locale": "pl",
+            "description": "Księgowy"
+          },
+          {
+            "locale": "ru",
+            "description": "Бухгалтер"
+          },
+          {
+            "locale": "uk_UA",
+            "description": "Бухгалтер"
+          }
+        ]
+      },
+      {
+        "name": "director",
+        "description": "Директор",
+        "permissions": [
+          {
+            "description": "Розділ з клієнтами та замовленями",
+            "name": "claims"
+          },
+          {
+            "description": "Розділ Турсканера",
+            "name": "tourscanner"
+          },
+          {
+            "description": "Свої платежі",
+            "name": "own_payments"
+          },
+          {
+            "description": "Платежі всіх співробітників",
+            "name": "all_payments"
+          },
+          {
+            "description": "Статистика премій лише своїх даних",
+            "name": "stat_own_bonuses"
+          },
+          {
+            "description": "Статистика премій всіх співробітників",
+            "name": "stat_all_bonuses"
+          },
+          {
+            "description": "Статистика продажів",
+            "name": "stat_sales"
+          },
+          {
+            "description": "Журнал дій користувачів",
+            "name": "user_logs"
+          },
+          {
+            "description": "Свої дзвінки на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+            "name": "own_calls"
+          },
+          {
+            "description": "Дзвінки всіх співробітників на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+            "name": "all_calls"
+          },
+          {
+            "description": "Розділ розсилок",
+            "name": "mailing"
+          },
+          {
+            "description": "Перегляд та редагування даних всіх співробітників",
+            "name": "all_users"
+          },
+          {
+            "description": "Редагування та додавання шаблонів договорів. Не впливає на можливість створити договір з туристом в замовленні",
+            "name": "docs"
+          },
+          {
+            "description": "Перегляд та редагування шаблонів та налаштувань повідомлень клієнтам",
+            "name": "notify"
+          },
+          {
+            "description": "Профіль ТФ",
+            "name": "profile"
+          },
+          {
+            "description": "Повний імпорт",
+            "name": "import"
+          },
+          {
+            "description": "Повний експорт",
+            "name": "export"
+          },
+          {
+            "description": "Розділ білінгу",
+            "name": "billing"
+          },
+          {
+            "description": "Налаштування полів в договорах та профілів клієнтів",
+            "name": "fields"
+          },
+          {
+            "description": "Налаштування офісів та регіонів",
+            "name": "regions_offices"
+          },
+          {
+            "description": "Теги ТФ",
+            "name": "tags"
+          },
+          {
+            "description": "Статистика по власним замовленням",
+            "name": "claim_stat_own"
+          },
+          {
+            "description": "Статистика по замовленням всіх співробітників",
+            "name": "claim_stat_all"
+          },
+          {
+            "description": "Право знімати свої відмітки про завершеність кроку замовлення",
+            "name": "remove_own_done_step"
+          },
+          {
+            "description": "Право знімати відмітки всіх співробітників про завершеність кроку замовлення",
+            "name": "remove_all_done_step"
+          },
+          {
+            "description": null,
+            "name": "documentation"
+          },
+          {
+            "description": "Право підтвержувати оплати",
+            "name": "confirm_payment"
+          },
+          {
+            "description": "Редагування всіх шаблонів ТФ окрім шаблонів договорів та нагадувань клієнтам",
+            "name": "tf_templates"
+          },
+          {
+            "description": "Перегляд та редагування доступів до ТО",
+            "name": "tf_operator_credentials"
+          },
+          {
+            "description": "Перегляд та редагування API ключів",
+            "name": "api_keys"
+          },
+          {
+            "description": "Зміна налаштувань розподілення нових замовлень, що створюються автоматично",
+            "name": "edit_new_claim_delegating_settings"
+          },
+          {
+            "description": "Доступ до даних дочірніх ТФ",
+            "name": "child_tf"
+          },
+          {
+            "description": "Редагування та видалення реквізитів для договору",
+            "name": "edit_tf_details"
+          },
+          {
+            "description": "Редагування мерчантів ТФ",
+            "name": "edit_tf_merchants"
+          },
+          {
+            "description": "Причини закриття ТФ",
+            "name": "tf_closing_reasons"
+          },
+          {
+            "description": "Доступ до біржі",
+            "name": "birzha_full"
+          },
+          {
+            "description": "Видалення повідомлення",
+            "name": "delete_message"
+          }
+        ],
+        "translations": [
+          {
+            "locale": "en",
+            "description": "Director"
+          },
+          {
+            "locale": "pl",
+            "description": "Dyrektor"
+          },
+          {
+            "locale": "ru",
+            "description": "Директор"
+          },
+          {
+            "locale": "uk_UA",
+            "description": "Директор"
+          }
+        ]
+      },
+      {
+        "name": "access_to_docs",
+        "description": "Редактирование шаблонов договоров и счетов",
+        "permissions": [
+          {
+            "description": "Редагування та додавання шаблонів договорів. Не впливає на можливість створити договір з туристом в замовленні",
+            "name": "docs"
+          },
+          {
+            "description": "Редагування всіх шаблонів ТФ окрім шаблонів договорів та нагадувань клієнтам",
+            "name": "tf_templates"
+          }
+        ],
+        "translations": [
+          {
+            "locale": "en",
+            "description": "Editing contract and invoice templates"
+          },
+          {
+            "locale": "pl",
+            "description": "Edycja szablonów umów i faktur"
+          },
+          {
+            "locale": "ru",
+            "description": "Редактирование шаблонов договоров и счетов"
+          },
+          {
+            "locale": "uk_UA",
+            "description": "Редагування шаблонів договорів і рахунків"
+          }
+        ]
+      }
+    ],
+    "phones": [
+      "0969163189"
+    ],
+    "telegram_data": {
+      "id": 762078325,
+      "name": "Volodymyr_Tretiak АН Real-Best",
+      "username": "Volodymyr_Tretiak",
+      "locale": "uk_UA",
+      "is_active": true
     },
-    "last": "2025-01-21 17:08:17+0200",
-    "b": "https://b2b.merlinx.eu/dl/trip/reserve.php?hash=XTOP29f2fbX_wYAAHNOYVBwWQH2AQChAh9xCpABCgYIgOsGEAESBgj4wggQARp-TVBVVzJHRjIzTjFWNkpNVzVLSUdTQTJXQ01MRUNJTFoyVllTQ1FMM0NZMEYxVE5SRkZLSUoySldMM1pEQ0JKMVlITUJZQVJDWElWQlFGVjcyQUxXWlc3VTdWNUkwVktOTUVET0pNV0E4ODZGNzNGOEZOMFZQMUpBS1ZKVDhTCn8KBgidrhEQAhIGCOuZWhABGm1PNTQ1NDRkNTMyZjQxNGQ1NDUzNDM1OTMxNWE0MjU3MmY1MjRkNTM1MDMwMzA1MzU2NDIzMDJmNDI0MjJmMzcyZjMyMzAzMjM1MzAzNjMxMzIyZjMwMzEzMjMzMzQzNTM2MzczODM5MzAzMTMyCmAKBQjQQRACEgYI-9QCEAEaT081NDU0NGQ1MzJmMzUzMTM3MzgyZjUwNDY0ZjJmMmYzNzJmMzIzMDMyMzUzMDM2MzEzMjJmMzAzMTMyMzMzNDM1MzYzNzM4MzkzMDMxMzIKIgoFCJgqEAESBQjQMhABGhJEU1JNLTEyMjktNDZyMjIxMDIKIQoFCIgnEAESBQjwLhABGhFEU1JNLTEyMjktMnIyMjEwMQojCgUIoB8QARIFCJAmEAEaE0RTUlUtMTIyOS1VQkVaQkFTSUMYzQkojh8yBgiuuWYQATgC|XTOP|Mnx8&info=2||",
-    "bh": "XTOP29f2fbX_wYAAHNOYVBwWQH2AQChAh9xCpABCgYIgOsGEAESBgj4wggQARp-TVBVVzJHRjIzTjFWNkpNVzVLSUdTQTJXQ01MRUNJTFoyVllTQ1FMM0NZMEYxVE5SRkZLSUoySldMM1pEQ0JKMVlITUJZQVJDWElWQlFGVjcyQUxXWlc3VTdWNUkwVktOTUVET0pNV0E4ODZGNzNGOEZOMFZQMUpBS1ZKVDhTCn8KBgidrhEQAhIGCOuZWhABGm1PNTQ1NDRkNTMyZjQxNGQ1NDUzNDM1OTMxNWE0MjU3MmY1MjRkNTM1MDMwMzA1MzU2NDIzMDJmNDI0MjJmMzcyZjMyMzAzMjM1MzAzNjMxMzIyZjMwMzEzMjMzMzQzNTM2MzczODM5MzAzMTMyCmAKBQjQQRACEgYI-9QCEAEaT081NDU0NGQ1MzJmMzUzMTM3MzgyZjUwNDY0ZjJmMmYzNzJmMzIzMDMyMzUzMDM2MzEzMjJmMzAzMTMyMzMzNDM1MzYzNzM4MzkzMDMxMzIKIgoFCJgqEAESBQjQMhABGhJEU1JNLTEyMjktNDZyMjIxMDIKIQoFCIgnEAESBQjwLhABGhFEU1JNLTEyMjktMnIyMjEwMQojCgUIoB8QARIFCJAmEAEaE0RTUlUtMTIyOS1VQkVaQkFTSUMYzQkojh8yBgiuuWYQATgC|XTOP|Mnx8",
-    "ad": [],
-    "ap": [],
-    "ct": 54,
-    "vi": 1086727099,
-    "ah": 2,
-    "gds": false
+    "commission": {
+      "ticket_percent": 10.0
+    },
+    "foster_key": null
   },
-  "originalHotelName": "Four Seasons (Limassol)",
-  "api_version": "2.6",
-  "time": 0.0144
+  "locale": "uk_UA",
+  "activeUsersCount": 4,
+  "subscription": {
+    "is_crm": true,
+    "is_charters": true,
+    "is_birzha": false,
+    "id": 66600,
+    "plan_id": 8,
+    "cnt_man": 4,
+    "def_cnt_man": 0,
+    "tourscanner": 1,
+    "date_start": "2025-05-19T00:00:00+00:00",
+    "date_stop": "2025-09-28T23:59:59+00:00",
+    "left_days": 115
+  },
+  "permissions": [
+    {
+      "description": "Редагування та додавання шаблонів договорів. Не впливає на можливість створити договір з туристом в замовленні",
+      "name": "docs"
+    },
+    {
+      "description": "Редагування всіх шаблонів ТФ окрім шаблонів договорів та нагадувань клієнтам",
+      "name": "tf_templates"
+    },
+    {
+      "description": "Розділ з клієнтами та замовленями",
+      "name": "claims"
+    },
+    {
+      "description": "Розділ Турсканера",
+      "name": "tourscanner"
+    },
+    {
+      "description": "Свої платежі",
+      "name": "own_payments"
+    },
+    {
+      "description": "Платежі всіх співробітників",
+      "name": "all_payments"
+    },
+    {
+      "description": "Розділ білінгу",
+      "name": "billing"
+    },
+    {
+      "description": "Налаштування полів в договорах та профілів клієнтів",
+      "name": "fields"
+    },
+    {
+      "description": "Налаштування офісів та регіонів",
+      "name": "regions_offices"
+    },
+    {
+      "description": "Статистика по власним замовленням",
+      "name": "claim_stat_own"
+    },
+    {
+      "description": "Статистика по замовленням всіх співробітників",
+      "name": "claim_stat_all"
+    },
+    {
+      "description": "Право знімати свої відмітки про завершеність кроку замовлення",
+      "name": "remove_own_done_step"
+    },
+    {
+      "description": "Право підтвержувати оплати",
+      "name": "confirm_payment"
+    },
+    {
+      "description": "Редагування та видалення реквізитів для договору",
+      "name": "edit_tf_details"
+    },
+    {
+      "description": "Причини закриття ТФ",
+      "name": "tf_closing_reasons"
+    },
+    {
+      "description": "Доступ до біржі",
+      "name": "birzha_full"
+    },
+    {
+      "description": "Статистика премій лише своїх даних",
+      "name": "stat_own_bonuses"
+    },
+    {
+      "description": "Статистика премій всіх співробітників",
+      "name": "stat_all_bonuses"
+    },
+    {
+      "description": "Статистика продажів",
+      "name": "stat_sales"
+    },
+    {
+      "description": "Журнал дій користувачів",
+      "name": "user_logs"
+    },
+    {
+      "description": "Свої дзвінки на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+      "name": "own_calls"
+    },
+    {
+      "description": "Дзвінки всіх співробітників на сторінках \"Справи\", заявки (в коментарях), в статистиці",
+      "name": "all_calls"
+    },
+    {
+      "description": "Розділ розсилок",
+      "name": "mailing"
+    },
+    {
+      "description": "Перегляд та редагування даних всіх співробітників",
+      "name": "all_users"
+    },
+    {
+      "description": "Перегляд та редагування шаблонів та налаштувань повідомлень клієнтам",
+      "name": "notify"
+    },
+    {
+      "description": "Профіль ТФ",
+      "name": "profile"
+    },
+    {
+      "description": "Повний імпорт",
+      "name": "import"
+    },
+    {
+      "description": "Повний експорт",
+      "name": "export"
+    },
+    {
+      "description": "Теги ТФ",
+      "name": "tags"
+    },
+    {
+      "description": "Право знімати відмітки всіх співробітників про завершеність кроку замовлення",
+      "name": "remove_all_done_step"
+    },
+    {
+      "description": null,
+      "name": "documentation"
+    },
+    {
+      "description": "Перегляд та редагування доступів до ТО",
+      "name": "tf_operator_credentials"
+    },
+    {
+      "description": "Перегляд та редагування API ключів",
+      "name": "api_keys"
+    },
+    {
+      "description": "Зміна налаштувань розподілення нових замовлень, що створюються автоматично",
+      "name": "edit_new_claim_delegating_settings"
+    },
+    {
+      "description": "Доступ до даних дочірніх ТФ",
+      "name": "child_tf"
+    },
+    {
+      "description": "Редагування мерчантів ТФ",
+      "name": "edit_tf_merchants"
+    },
+    {
+      "description": "Видалення повідомлення",
+      "name": "delete_message"
+    },
+    {
+      "description": "Доступ до біржі перегляд",
+      "name": "birzha_view"
+    }
+  ],
+  "currencies": {
+    "usd": {
+      "iso": "USD",
+      "symbol": "USD-$",
+      "order": 1,
+      "active": true
+    },
+    "eur": {
+      "iso": "EUR",
+      "symbol": "EUR-€",
+      "order": 2,
+      "active": true
+    },
+    "hrn": {
+      "iso": "HRN",
+      "symbol": "UAH-₴",
+      "order": 0,
+      "active": true
+    },
+    "kzt": {
+      "iso": "KZT",
+      "symbol": "KZT-₸",
+      "order": 4,
+      "active": false
+    },
+    "byn": {
+      "iso": "BYN",
+      "symbol": "BYN-р.",
+      "order": 5,
+      "active": false
+    },
+    "azn": {
+      "iso": "AZN",
+      "symbol": "AZN-₼",
+      "order": 6,
+      "active": false
+    },
+    "uzs": {
+      "iso": "UZS",
+      "symbol": "UZS-сўм",
+      "order": 7,
+      "active": false
+    },
+    "tjs": {
+      "iso": "TJS",
+      "symbol": "TJS-с.",
+      "order": 8,
+      "active": false
+    },
+    "kgs": {
+      "iso": "KGS",
+      "symbol": "KGS-сом",
+      "order": 9,
+      "active": false
+    },
+    "mdl": {
+      "iso": "MDL",
+      "symbol": "MDL-лей",
+      "order": 10,
+      "active": false
+    },
+    "pln": {
+      "iso": "PLN",
+      "symbol": "PLN-Zł",
+      "order": 12,
+      "active": false
+    },
+    "rub": {
+      "iso": "RUB",
+      "symbol": "RUB-р.",
+      "order": 3,
+      "active": false
+    },
+    "bgn": {
+      "iso": "BGN",
+      "symbol": "BGN-лв.",
+      "order": 13,
+      "active": false
+    }
+  },
+  "collections_api": {
+    "api_key": "0c0efabdbc6a04601e4abe098c7a18190bd80e3b",
+    "x_user_id": "695adff2a9f9aa5856b0320358c74488",
+    "x_tf_id": "e5be9860f6b946a4a15d7803433fda56",
+    "x_project_id": "moituristy2-1"
+  },
+  "keys": {
+    "tourscanner": "2a43e-e34bf-f77dd-e02a3-10fd4",
+    "charters": "2a43e-e34bf-f77dd-e02a3-10fd4"
+  }
 }

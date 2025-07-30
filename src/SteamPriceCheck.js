@@ -6,6 +6,7 @@ require('dotenv').config();
 
 const path = require('path');
 const fs = require('fs').promises;
+const fsSync = require('fs');
 const tinify = require("tinify");
 const SteamApiClient = require('./api/SteamApiClient');
 const itemsArray = require('./components/ItemList.json');
@@ -49,10 +50,11 @@ const steamClient = new SteamApiClient({
 async function optimizeAndSaveImage(imageBuffer, imageName) {
   try {
     // Optimize image using TinyPNG
-    const optimizedImage = await tinify.fromBuffer(imageBuffer).toBuffer();
+    // const optimizedImage = await tinify.fromBuffer(imageBuffer).toBuffer();
 
     // Save optimized image to disk
-    await fs.writeFile(path.join(rootDir, 'images', imageName), optimizedImage);
+    // await fs.writeFile(path.join(rootDir, 'images', imageName), optimizedImage);
+    await fs.writeFile(path.join(rootDir, 'images', imageName));
 
     console.log(`Image saved as ${imageName}`);
   } catch (error) {
@@ -98,12 +100,25 @@ async function fetchData() {
         item.currency = "USD";
 
         // Uncomment to enable image saving
-        /*
+
+        // if (result.image) {
+        //   const imageName = `${item.tournament}-${item.name}.png`;
+        //   await optimizeAndSaveImage(result.image, imageName);
+        // }
+
+
         if (result.image) {
           const imageName = `${item.tournament}-${item.name}.png`;
-          await optimizeAndSaveImage(result.image, imageName);
+          const imagePath = path.join(rootDir, 'images', imageName);
+
+          // Check if the image already exists
+          if (!fsSync.existsSync(imagePath)) {
+            console.log(`Image for ${item.name} doesn't exist. Saving it now...`);
+            await optimizeAndSaveImage(result.image, imageName);
+          } else {
+            console.log(`Image for ${item.name} already exists. Skipping...`);
+          }
         }
-        */
 
         updatedCount++;
       } else {
