@@ -106,18 +106,18 @@ async function fetchData() {
         // }
 
 
-        if (result.image) {
-          const imageName = `${item.tournament}-${item.name}.png`;
-          const imagePath = path.join(rootDir, 'images', imageName);
-
-          // Check if the image already exists
-          if (!fsSync.existsSync(imagePath)) {
-            console.log(`Image for ${item.name} doesn't exist. Saving it now...`);
-            await optimizeAndSaveImage(result.image, imageName);
-          } else {
-            console.log(`Image for ${item.name} already exists. Skipping...`);
-          }
-        }
+        // if (result.image) {
+        //   const imageName = `${item.tournament}-${item.name}.png`;
+        //   const imagePath = path.join(rootDir, 'images', imageName);
+        //
+        //   // Check if the image already exists
+        //   if (!fsSync.existsSync(imagePath)) {
+        //     console.log(`Image for ${item.name} doesn't exist. Saving it now...`);
+        //     await optimizeAndSaveImage(result.image, imageName);
+        //   } else {
+        //     console.log(`Image for ${item.name} already exists. Skipping...`);
+        //   }
+        // }
 
         updatedCount++;
       } else {
