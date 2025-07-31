@@ -42,24 +42,23 @@ const steamClient = new SteamApiClient({
 });
 
 /**
- * Optimizes an image using TinyPNG API and saves it to disk
+ * Saves an image to disk (temporarily without TinyPNG optimization)
  * @param {Buffer} imageBuffer - The image data as a buffer
  * @param {string} imageName - The name to save the image as
  * @returns {Promise<void>}
  */
 async function optimizeAndSaveImage(imageBuffer, imageName) {
   try {
-    // Optimize image using TinyPNG
-    // const optimizedImage = await tinify.fromBuffer(imageBuffer).toBuffer();
+    // Temporarily skip TinyPNG optimization and save the original image buffer directly
+    // Original code: const optimizedImage = await tinify.fromBuffer(imageBuffer).toBuffer();
+    
+    // Save image to disk without optimization
+    await fs.writeFile(path.join(rootDir, 'images', imageName), imageBuffer);
 
-    // Save optimized image to disk
-    // await fs.writeFile(path.join(rootDir, 'images', imageName), optimizedImage);
-    await fs.writeFile(path.join(rootDir, 'images', imageName));
-
-    console.log(`Image saved as ${imageName}`);
+    console.log(`Image saved as ${imageName} (without optimization)`);
   } catch (error) {
-    console.error(`Error optimizing and saving image: ${error}`);
-    throw new Error(`Image optimization failed: ${error.message}`);
+    console.error(`Error saving image: ${error}`);
+    throw new Error(`Image saving failed: ${error.message}`);
   }
 }
 
