@@ -59,8 +59,8 @@
     "nameForFetch": "Clutch Case",
     "tournament": "Case",
     "name": "Clutch",
-    "quantity": 2,
-    "spendOnBuy": 0,
+    "quantity": 17,
+    "spendOnBuy": 1.55,
     "price": 1.42,
     "currency": "USD"
   },
@@ -77,8 +77,8 @@
     "nameForFetch": "Snakebite Case",
     "tournament": "Case",
     "name": "Snakebite",
-    "quantity": 1,
-    "spendOnBuy": 0,
+    "quantity": 31,
+    "spendOnBuy": 0.95,
     "price": 0.92,
     "currency": "USD"
   },
