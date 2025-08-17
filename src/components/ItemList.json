@@ -2061,5 +2061,545 @@
     "spendOnBuy": 0.25,
     "price": 44.99,
     "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Legends Sticker Capsule",
+    "tournament": "Austin 2025",
+    "name": "Legends Sticker Capsule",
+    "quantity": 250,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Legends Autograph Capsule",
+    "tournament": "Austin 2025",
+    "name": "Legends Autograph Capsule",
+    "quantity": 25,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Challengers Sticker Capsule",
+    "tournament": "Austin 2025",
+    "name": "Challengers Sticker Capsule",
+    "quantity": 300,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Challengers Autograph Capsule",
+    "tournament": "Austin 2025",
+    "name": "Challengers Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Contenders Sticker Capsule",
+    "tournament": "Austin 2025",
+    "name": "Contenders Sticker Capsule",
+    "quantity": 300,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Contenders Autograph Capsule",
+    "tournament": "Austin 2025",
+    "name": "Contenders Autograph Capsule",
+    "quantity": 50,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Austin 2025 Champions Autograph Capsule",
+    "tournament": "Austin 2025",
+    "name": "Champions Autograph Capsule",
+    "quantity": 25,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | OG | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "OG",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Metizport | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Metizport",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Metizport (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Metizport (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | BLAST.tv | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "BLAST.tv",
+    "quantity": 10,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | BLAST.tv (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "BLAST.tv (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | NRG | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "NRG",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | NRG (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "NRG (Foil)",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | OG | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "OG",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | NRG (Holo) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "NRG (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Wildcard | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Wildcard",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Fluxo | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Fluxo",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Fluxo (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Fluxo (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | FlyQuest | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "FlyQuest",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | FlyQuest (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "FlyQuest (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Complexity Gaming | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Complexity Gaming",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Legacy | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Legacy",
+    "quantity": 6,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | BetBoom | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "BetBoom",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | B8 (Gold) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "B8 (Gold)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | TYLOO | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "TYLOO",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | TYLOO (Holo) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "TYLOO (Holo)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Nemiga | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Nemiga",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Lynn Vision | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Lynn Vision",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Lynn Vision (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Lynn Vision (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Imperial Esports | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Imperial Esports",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | HEROIC | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "HEROIC",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MIBR | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "MIBR",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MIBR (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "MIBR (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MIBR (Holo) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "MIBR (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | paiN Gaming | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "paiN Gaming",
+    "quantity": 7,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | FURIA | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "FURIA",
+    "quantity": 5,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Falcons | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Falcons",
+    "quantity": 5,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | FaZe Clan | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "FaZe Clan",
+    "quantity": 9,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | FaZe Clan (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "FaZe Clan (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Virtus.Pro | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Virtus.Pro",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Virtus.Pro (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Virtus.Pro (Foil)",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Virtus.Pro (Holo) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Virtus.Pro (Holo)",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | M80 | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "M80",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | M80 (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "M80 (Foil)",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | 3DMAX | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "3DMAX",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | 3DMAX (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "3DMAX (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | G2 Esports | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "G2 Esports",
+    "quantity": 7,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | G2 Esports (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "G2 Esports (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Natus Vincere | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Natus Vincere",
+    "quantity": 2,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Team Spirit | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Team Spirit",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Team Spirit (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Team Spirit (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Team Liquid | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Team Liquid",
+    "quantity": 5,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Team Liquid (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Team Liquid (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Vitality | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Vitality",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Vitality (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Vitality (Foil)",
+    "quantity": 3,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | The Mongolz | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "The Mongolz",
+    "quantity": 5,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | Aurora | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "Aurora",
+    "quantity": 4,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MOUZ | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "MOUZ",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
+  },
+  {
+    "nameForFetch": "Sticker | MOUZ (Foil) | Austin 2025",
+    "tournament": "Austin 2025",
+    "name": "MOUZ (Foil)",
+    "quantity": 1,
+    "spendOnBuy": 0.25,
+    "price": 0,
+    "currency": "USD"
   }
 ]
