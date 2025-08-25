@@ -42,7 +42,7 @@ const TableHeadComponent = ({ handleSort, sortedColumn }) => {
     'price',
     'quantity',
     'total',
-    'spend_on_buy'
+    'spendOnBuy'
   ];
   
   return (

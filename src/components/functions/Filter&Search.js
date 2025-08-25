@@ -52,7 +52,7 @@ const useTableFilter = (createItemsData) => {
     if (sortedColumn && sortDirection) {
       return createItemsData()
         .sort((a, b) => {
-          if (['price', 'quantity', 'total', 'spend_on_buy'].includes(sortedColumn)) {
+          if (['price', 'quantity', 'total', 'spendOnBuy'].includes(sortedColumn)) {
             return sortDirection === 'asc' ? a[sortedColumn] - b[sortedColumn] : b[sortedColumn] - a[sortedColumn];
           } else {
             return sortDirection === 'asc' ? a[sortedColumn].localeCompare(b[sortedColumn]) : b[sortedColumn].localeCompare(a[sortedColumn]);
