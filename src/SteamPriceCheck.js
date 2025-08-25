@@ -105,10 +105,10 @@ async function fetchData() {
 
         // Uncomment to enable image saving
 
-        if (result.image) {
-          const imageName = `${item.tournament}-${item.name}.png`;
-          await optimizeAndSaveImage(result.image, imageName);
-        }
+        // if (result.image) {
+        //   const imageName = `${item.tournament}-${item.name}.png`;
+        //   await optimizeAndSaveImage(result.image, imageName);
+        // }
 
 
         // if (result.image) {
