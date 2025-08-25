@@ -52,8 +52,13 @@ async function optimizeAndSaveImage(imageBuffer, imageName) {
     // Temporarily skip TinyPNG optimization and save the original image buffer directly
     // Original code: const optimizedImage = await tinify.fromBuffer(imageBuffer).toBuffer();
     
-    // Save image to disk without optimization
-    await fs.writeFile(path.join(rootDir, 'images', imageName), imageBuffer);
+    // // Save image to disk without optimization
+    // await fs.writeFile(path.join(rootDir, 'images', imageName), imageBuffer);
+
+      // Save image to disk without optimization
+      const imagesDir = path.join(__dirname, 'images');
+      await fs.mkdir(imagesDir, { recursive: true });
+      await fs.writeFile(path.join(imagesDir, imageName), imageBuffer);
 
     console.log(`Image saved as ${imageName} (without optimization)`);
   } catch (error) {
@@ -100,15 +105,15 @@ async function fetchData() {
 
         // Uncomment to enable image saving
 
-        // if (result.image) {
-        //   const imageName = `${item.tournament}-${item.name}.png`;
-        //   await optimizeAndSaveImage(result.image, imageName);
-        // }
+        if (result.image) {
+          const imageName = `${item.tournament}-${item.name}.png`;
+          await optimizeAndSaveImage(result.image, imageName);
+        }
 
 
         // if (result.image) {
         //   const imageName = `${item.tournament}-${item.name}.png`;
-        //   const imagePath = path.join(rootDir, 'images', imageName);
+        //   const imagePath = path.join(__dirname, 'images', imageName);
         //
         //   // Check if the image already exists
         //   if (!fsSync.existsSync(imagePath)) {
