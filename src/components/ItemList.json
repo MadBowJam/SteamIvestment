@@ -113,7 +113,7 @@
     "nameForFetch": "eSports 2013 Winter Case",
     "tournament": "Case",
     "name": "eSports 2013 Winter Case",
-    "quantity": 1,
+    "quantity": 1000,
     "spendOnBuy": 0,
     "price": 15.29,
     "currency": "USD"
@@ -122,7 +122,7 @@
     "nameForFetch": "eSports 2014 Summer Case",
     "tournament": "Case",
     "name": "eSports 2014 Summer Case",
-    "quantity": 1,
+    "quantity": 1000,
     "spendOnBuy": 0,
     "price": 15.27,
     "currency": "USD"
@@ -212,7 +212,7 @@
     "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
     "tournament": "Stockholm 2021",
     "name": "Legends Sticker Capsule",
-    "quantity": 200,
+    "quantity": 2000,
     "spendOnBuy": 0.25,
     "price": 1.99,
     "currency": "USD"
@@ -221,7 +221,7 @@
     "nameForFetch": "Stockholm 2021 Challengers Sticker Capsule",
     "tournament": "Stockholm 2021",
     "name": "Challengers Sticker Capsule",
-    "quantity": 20,
+    "quantity": 2000,
     "spendOnBuy": 0.25,
     "price": 3.31,
     "currency": "USD"
@@ -230,7 +230,7 @@
     "nameForFetch": "Stockholm 2021 Contenders Sticker Capsule",
     "tournament": "Stockholm 2021",
     "name": "Contenders Sticker Capsule",
-    "quantity": 20,
+    "quantity": 2000,
     "spendOnBuy": 0.25,
     "price": 3.77,
     "currency": "USD"
