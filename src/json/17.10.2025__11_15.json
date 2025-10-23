@@ -183,7 +183,7 @@
   },
   {
     "nameForFetch": "Sticker | Ninjas in Pyjamas | London 2018",
-    "tournament": "2018-2020",
+    "tournament": "London 2018",
     "name": "Ninjas in Pyjamas",
     "quantity": 1,
     "spendOnBuy": 0,
@@ -192,7 +192,7 @@
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Katowice 2019",
-    "tournament": "2018-2020",
+    "tournament": "Katowice 2019",
     "name": "Natus Vincere",
     "quantity": 12,
     "spendOnBuy": 0.25,
@@ -201,7 +201,7 @@
   },
   {
     "nameForFetch": "Sticker | FaZe Clan | Katowice 2019",
-    "tournament": "2018-2020",
+    "tournament": "Katowice 2019",
     "name": "FaZe Clan",
     "quantity": 5,
     "spendOnBuy": 0.25,
@@ -210,7 +210,7 @@
   },
   {
     "nameForFetch": "Sticker | Natus Vincere | Berlin 2019",
-    "tournament": "2018-2020",
+    "tournament": "Berlin 2019",
     "name": "Natus Vincere",
     "quantity": 3,
     "spendOnBuy": 0,
@@ -219,7 +219,7 @@
   },
   {
     "nameForFetch": "2020 RMR Legends",
-    "tournament": "2018-2020",
+    "tournament": "2020 RMR",
     "name": "Legends Sticker Capsule",
     "quantity": 50,
     "spendOnBuy": 0.25,
@@ -228,7 +228,7 @@
   },
   {
     "nameForFetch": "2020 RMR Challengers",
-    "tournament": "2018-2020",
+    "tournament": "2020 RMR",
     "name": "Challengers Sticker Capsule",
     "quantity": 30,
     "spendOnBuy": 0.25,
@@ -237,7 +237,7 @@
   },
   {
     "nameForFetch": "2020 RMR Contenders",
-    "tournament": "2018-2020",
+    "tournament": "2020 RMR",
     "name": "Contenders Sticker Capsule",
     "quantity": 40,
     "spendOnBuy": 0.25,
