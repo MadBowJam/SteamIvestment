@@ -1,25 +1,402 @@
-<style>
-    .exs_search-form {
-        background-color: #db2723 !important;
-    }
-    #exs_container {
-        padding: unset !important;
-    }
-    #exs_container #exs_search-container input.exs_search-submit {
-        background-color: #fff !important;
-        border: 2px solid #fff;
-        color: #000 !important;
-    }
-    .exs_r-item-price,  .exs_r-item-price strong {
-        color: #db2723 !important;
-    }
-    .exs_r-item:hover .exs_r-item-geo, .exs_r-item-geo {
-        background-color: #db2723 !important;
-    }
-    .exs_r-item-top-info {
-        background-color: rgba(219,39,35,.4) !important;
-    }
-    .exs_r-more-results-btn {
-        background-color: #db2723 !important;
-    }
-</style>
+<div class="WordSection1">
+    <p style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>ДОГОВІР №{doc-number}</strong></span><br />
+<span style="color:#000000"><strong>на туристичне обслуговування</strong></span></strong></span></span></p>
+
+    <div dir="ltr" style="float:left">
+        <table border="0" cellpadding="3" cellspacing="1" style="width:100%">
+            <tbody>
+            <tr>
+                <td><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">{tf-city}</span></span></td>
+                <td style="text-align:right"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">{doc-date}</span></span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p dir="ltr" style="text-align:justify">&nbsp;</p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">{tf-name}, назване у подальшому &laquo;Турагент&raquo; (розмір фінансової гарантії відповідальності Турагента складає еквівалент суми {Сума банківської гарантії} Євро, яка надана {tf-guarantee-bank}, згідно Договору про надання банківської гарантії виконання зобов&rsquo;язань №{tf-guarantee-num} від {tf-guarantee-date}), в особі {tf-director}, який діє на підставі&nbsp; Агентського договору з Уповноваженим турагентом.</span><br />
+<span style="color:#000000">Уповноважений турагент: ТОВ &quot;ТУРИСТИЧНЕ АГЕНТСТВО ТУРС-ТІКЕТС&quot; (код 39895487, Україна, 04071, м. Київ, вул. Воздвиженська, буд. 56) в особі директора Антиховича Олександра Васильовича, який діє на підставі Статуту та Агентського договору з Туроператором.</span><br />
+<span style="color:#000000">Туроператор: ТОВ &laquo;ДМ-тур сервіс&raquo;, назване у подальшому &laquo;Туроператор&raquo;, в особі&nbsp; директора Зака Дмитра, що діє на підставі Статуту, та ліцензії на провадження тур операторської діяльності серія АГ №580850, видана ДЕРЖТУРИЗМКУРОРТІВ України &laquo;22&raquo; лютого 2012 року, номер в ліцензійному реєстрі 61/2012, укладає цей Договір з одного боку, та Громадянин(ка) (Турист/Замовник) {tourist-full-name}, паспорт {tourist-passport}, що проживає: {tourist-address}, що діє на підставі особистого волевиявлення, який (а) діє від свого імені, надалі - &quot;Турист&quot;, з другого боку, а разом надалі - &quot;Сторони&quot;, уклали цей договір, про наступне:</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>1. Предмет договору</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">1.1. Турагент зобов&rsquo;язується відповідно до замовлення Туриста забезпечити надання комплексу туристичних послуг Туристу (туристичний продукт), а Турист зобов&rsquo;язується на умовах даного Договору прийняти та оплатити їх.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">1.2. Турист здійснює вибір туристичних послуг із запропонованих Турагентом на свій розсуд і за своїм побажанням.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">1.3. Турагент/Туроператор виступає як посередник між Туристом, з одного боку, і транспортними, страховими компаніями, готелями й іншими підприємствами, установами, з іншого боку.</span></span></span></p>
+
+    <p style="text-align:center"><strong>2. Умови та строки туристичної подорожі (замовлення)</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">2.1. Туристична подорож здійснюється у складі {doc-tourist-list}</span><br />
+<span style="color:#000000">2.2. Країна та місце призначення: {doc-country}</span></span></span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">2.3. Термін подорожі:&nbsp; </span><span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">{doc-tour-nights}</span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">2.4. Транспортне обслуговування*: {doc-transport}/</span></span></span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">2.5. Розміщення в готелі (в т.ч. транзитне): {doc-hotels-list}</span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">2.6. Поселення до готелю** {Дата поселення до готелю} Виселення з готелю** {Дата виселення з готелю}</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">2.7. Трансфер:&nbsp; </span></span></span>{doc-transfer-services}<br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">Харчування:&nbsp; </span></span></span>{doc-food}<br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">2.8. Додаткові або інші умови подорожі, додаткові послуги (побажання**): </span></span></span>{doc-other-services}</p>
+
+    <p style="text-align:center"><strong>3. Вартість туристичних послуг&nbsp;</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">3.1. Загальна вартість туристичних послуг, замовлених Туристом становить: </span></span></span>{doc-price}<br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">У вартість входить:&nbsp;<br />
+а) Отель+харчування {Вартість готелю та харчування}<br />
+б) Проїзд {Вартість проїзду}&nbsp;</span><br />
+<span style="color:#000000">в) Медичне страхування {Вартість медичного страхування}&nbsp;</span><br />
+<span style="color:#000000">г) Віза {Вартість візи}<br />
+д) Віза (пільгова) {Вартість візи (пільгова)}</span></span></span>&nbsp;<br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">*Вартість туру може змінюватись залежно від курсу&nbsp;&nbsp;</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>4. Права сторін</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1. <u>Турагент має право</u>:</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1.1. Внести зміни у зміст туру та графік руху за маршрутом; змінити аеропорт, дату та час вильоту, тип літака або інші характеристики турпродукту.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1.2. Змінити вартість туристичного продукту, погодженої Cторонами, при цьому перевищення ціни туристичного продукту не повинно бути більше ніж 5% від його первісної ціни. У разі перевищення&nbsp; ціни туристичного продукту більше ніж 5 відсотків первісної ціни турист має право відмовитися від виконання договору, а Турагент зобов&#39;язаний повернути йому всі раніше сплачені кошти.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1.3. Замінити замовлений готель або інший об&rsquo;єкт розміщення (в тому числі і під час туру), за умови, що новий готель (об&rsquo;єкт розміщення) буде аналогічного або вищого класу. Категорія готелю визначається офіційними органами країни розташування готелю. В цьому випадку, обов&rsquo;язки Турагента з розміщення Туриста вважаються виконаними і Турист не має права на пред&rsquo;явлення будь-яких претензій щодо умов його розташування та оплати.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1.4. Розірвати даний Договір без відшкодування Туристу матеріальних і моральних збитків, у випадку не оформлення в&rsquo;їздних віз Туристу Посольством країни слідування.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.1.5. Відмовити в наданні туристичних послуг, в разі неповної або несвоєчасної оплати туру.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.2. <u>Турист має право</u>:</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.2.1. Отримати туристичні послуги, а також отримувати інформацію, консультації протягом туристичної подорожі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">4.2.2. Відмовитися від замовленого Турпродукту. Заява про відмову Туриста від туристичних послуг в письмовій формі приймається Турагентом до виконання з дня отримання такої заяви. В даному випадку для Туриста настають наслідки передбачені п. 6.1 Договору.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">* Графік руху за маршрутом; аеропорт, дату та час вильоту, тип літака або інші характеристики можуть буди змінені Туроператором.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">** Поселення та виселення з готелю (звільнення номеру) здійснюється в залежності від часу вильоту літака та з урахуванням розрахункової години, передбаченої готелем за місцевим часом. Турист самостійно сплачує всі витрати, що виникли внаслідок порушення ним розрахункової години.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">*** Додаткові побажання приймаються, але не гарантуються.&nbsp;</span></span></span></p>
+
+    <p style="text-align:center"><strong>5. Обовʼязки сторін&nbsp;</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.<u>Турагент зобов&rsquo;язується</u>:</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.1.Надати Туристу повну та достовірну інформацію, передбачену чинним законодавством України та зокрема ст.20 Закону України &laquo;Про туризм&raquo;.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.2. Забезпечити бронювання туристичних послуг відповідно до п. 2 Договору.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.3. Організувати оформлення документів.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.4. Забезпечити Туриста необхідними документами: ваучерами, страховими полісами, авіаквитками на авіарейси згідно з графіком відправлення за маршрутом, вказаними у п. 2 Договору.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.5. Негайно інформувати Туриста про зміни в замовлених послугах, при їх наявності.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.1.6. Перевіряти у Туриста наявність та правильність оформлення необхідних паспортних та візових документів.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2. <u>Турист зобов&rsquo;язується:&nbsp;</u></span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.1. Оплатити вартість туристичного продукту протягом 3 днів (годин) з моменту підписання даного Договору.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.2. Своєчасно надати документи, які необхідні для оформлення поїздки (Туру). Документи повинні бути оформлені у встановленому законодавством порядку і надані Турагенту не пізніше , ніж за&nbsp; 3 днів до початку подорожі. Турагент не несе відповідальності за правильність оформлення закордонного паспорту Туриста.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.3. Прибути до аеропорту за дві години до офіційно повідомленого часу вильоту літака.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.4. Дотримуватись вимог чинного законодавства України щодо перетину Державного кордону України, а також прикордонних, митних правил та правил в&rsquo;їзду/виїзду до/з країни тимчасового перебування, санітарних правил; поважати звичаї, традиції місцевого населення, політичний та соціальний лад країни перебування; не порушувати суспільний порядок та вимоги законів, чинних на території країни тимчасового перебування;&nbsp; не порушувати права та законні інтереси інших громадян; дотримуватись правил поведінки на борту літака, дотримуватись правил внутрішнього розпорядку та протипожежної безпеки в місцях розміщення та перебування. Виконувати інші обов&rsquo;язки, передбачені чинним законодавством України та законодавством країни тимчасового перебування.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.5. Оплатити вартість в&rsquo;їзної візи при проходженні паспортного контролю, якщо віза не була оформлена заздалегідь.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.6. У випадку виникнення у Туриста претензій, щодо якості послуг які надаються, Турист зобов&rsquo;язаний негайно в письмовій формі надати претензію представнику сторони, яка приймає, та повідомити про це Турагента протягом доби. Усі пред&prime;явлені претензії Туристів повинні містити: прізвище, ім&#39;я та по-батькові Туриста, період і місце його перебування, а також супроводжуватися актом, складеним Туристом, уповноваженим працівником організації, що надавала послуги Туристу, та завіреним підписом представника Туроператора в країні перебування. Претензії повинні бути направлені Туроператору не пізніше 14 календарних днів із дня закінчення Туру. Разом з претензією Туроператору надається копія Договору Турагента з Туристом, інші документи, що мають відношення до інциденту.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.7. Надати достовірні дані про порушення&nbsp; законодавства, митного та візового режиму, якщо такі мали місце в минулому. В разі виникнення негативних наслідків з причини надання&nbsp; недостовірних, недійсних, невірно оформлених та підроблених даних чи документів і виникнення в зв&rsquo;язку з цим матеріальних збитків Турагента, Турист компенсує всі понесені збитки.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.8. Самостійно сплачувати додаткові послуги, що обрані ним (Туристом) за власним бажанням: транспортні послуги (не передбачені умовами договору), обслуговування за кордоном України (не передбачене умовами договору), а також інші послуги, що не передбачені умовами Договору в місцях проживання та перебування.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.9. Повернутися до України в терміни, передбачені умовами туру та чинною візою.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.10. Виконувати умови та правила, передбачені цим Договором.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.11. Під час здійснення туристичної подорожі, дотримуватись правил особистої безпеки та збереження особистого майна.&nbsp;&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.12. Пройти профілактику у відповідності до міжнародних медичних вимог, в разі здійснення подорожі до країни (місця) тимчасового перебування, в якій існує високий ризик захворювання на інфекційну хворобу.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.13. Сплатити штрафні санкції у випадку відмови від даного Договору до початку поїздки згідно з п.6.1 даного Договору.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">5.2.14. Відшкодувати Турагенту/Туроператору збитки, заподіяні своїми неправомірними діями, у тому числі, але не обмежуючись:</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- через порушення, пов&rsquo;язані з неналежним оформленням документів для&nbsp; перетину Державного кордону України;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- через порушення Туристом візового режиму в країні перебування, виплатити Турагенту/Туроператору штрафні санкції імміграційних служб країни перебування Туриста і всі можливі витрати по його депортації.</span></span></span></p>
+
+    <p style="text-align:center"><strong>6. Відповідальність сторін&nbsp;</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">6.1. За відмову Туриста від придбання Турпродукту з будь-яких причин, порушення або невиконання умов даного Договору, що призвело до неможливості здійснення подорожі, Турист сплачує штраф у таких розмірах:</span></strong></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>БОЛГАРІЯ</strong> &ndash; НАЗЕМНЕ ОБСЛУГОВАННЯ</span></strong></span></span></p>
+
+    <div dir="ltr" style="float:left">
+        <table cellspacing="0" style="border-collapse:collapse; border:medium; width:100%">
+            <tbody>
+            <tr>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Строк відмови до початку туру</strong></span></strong></span></span></p>
+                </td>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="margin-right:7px; text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Штраф</strong></span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 31 (тридцяти одного) і більше днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Фіксований тариф 500 (П&rsquo;ятсот) грн. /Заявка</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:87px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 30(тридцяти) до 15(п&rsquo;ятнадцяти ) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">15% (п&rsquo;ятнадцять відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 14 (чотирнадцяти) до 5 (п&rsquo;яти) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">30% (тридцять відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 4 (чотирьох) днів і менше</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">50% (п&rsquo;ятдесять відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    &nbsp;<span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px"><strong>ІНШІ НАПРЯМКИ &ndash; НАЗЕМНЕ ОБСЛУГОВАННЯ</strong></span>
+
+    <div dir="ltr" style="float:left">
+        <table cellspacing="0" style="border-collapse:collapse; border:medium; width:100%">
+            <tbody>
+            <tr>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Строк відмови до початку туру</strong></span></strong></span></span></p>
+                </td>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="margin-right:7px; text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Штраф</strong></span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 31 (тридцяти одного) і більше днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Фіксований тариф 500 (п&rsquo;ятсот) грн../&nbsp; Заявка</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:87px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 30(тридцяти) до 15(п&rsquo;ятнадцяти ) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">30% (тридцять відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 14 (чотирнадцяти) до 7 (семи) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">80% (вісімдесять відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 6 (шести) днів і менше</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr" style="margin-right:7px"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">100% (сто відсотків) від вартості Турпродукта</span></strong></span></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    &nbsp;<span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px"><strong>ТРАНСПОРТНЕ&nbsp; ОБСЛУГОВАННЯ (Автобусний чартер)</strong></span>
+
+    <div dir="ltr" style="float:left">
+        <table cellspacing="0" style="border-collapse:collapse; border:medium; width:100%">
+            <tbody>
+            <tr>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Строк відмови до початку туру</strong></span></strong></span></span></p>
+                </td>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Штраф</strong></span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 31 (тридцяти одного) дня і більше&nbsp;</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Без штрафів</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від&nbsp; 30(тридцяти) днів до 21 (двадцять одного) дня</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">25% (двадцять п&rsquo;ять&nbsp; відсотків) від вартості&nbsp;</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 20 (двадцяти) днів до 10 (десяти) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">50% (п&rsquo;ятдесят&nbsp; відсотків) від вартості&nbsp;</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 9 (дев&rsquo;яти) днів і менше</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">100% (сто відсотків) від вартості</span></strong></span></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    &nbsp;<span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px"><strong>АВТОБУСНІ ТУРИ В ЄВРОПУ</strong></span>
+
+    <div dir="ltr" style="float:left; margin-left:-8px">
+        <table cellspacing="0" style="border-collapse:collapse; border:medium; width:100%">
+            <tbody>
+            <tr>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Строк відмови до початку туру</strong></span></strong></span></span></p>
+                </td>
+                <td style="border-color:#000000; border-style:solid; border-width:1px; vertical-align:top; width:50%">
+                    <p dir="ltr" style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000"><strong>Штраф</strong></span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 31 (тридцяти одного) дня і більше&nbsp;</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Фіксований тариф 350 (Триста п&rsquo;ятдесят) грн../&nbsp; Заявка</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від&nbsp; 30(тридцяти) днів до 21 (двадцять одного) дня</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">25% (двадцять п&rsquo;ять&nbsp; відсотків) від вартості&nbsp;</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 20 (двадцяти) днів до 10 (десяти) днів</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">50% (п&rsquo;ятдесят&nbsp; відсотків) від вартості&nbsp;</span></strong></span></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">Від 9 (дев&rsquo;яти) днів і менше</span></strong></span></span></p>
+                </td>
+                <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top">
+                    <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><strong><span style="color:#000000">100% (сто відсотків) від вартості</span></strong></span></span></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p style="text-align:justify">&nbsp;&nbsp;<span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px"><strong>Ізраїль</strong> -&nbsp; тури та відпочинок на морі:</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.1.1 - Незалежно від строку відмови одержання туристичних послуг штраф в гривнях у сумі еквівалентній&nbsp; <strong>20$ (двадцять)</strong> доларів USA, що сплачується згідно комерційного курсу Туроператора на день відмови від туру Турагента/Туриста від одержання туристичних послуг</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- за 14 (чотирнадцяти) і більше діб до початку поїздки &ndash; 15%</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- в термін від 14 (чотирнадцяти) до 7 (семи) діб до початку подорожі 50% (п&rsquo;ятдесят) від вартості туру.&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- в термін від 6 (шести) до 3 (трьох) діб до початку подорожі 80% (вісімдесят) від вартості туру.&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- в термін менше ніж за 2 (дві) доби до початку подорожі 100% (сто) від вартості туру.&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.1.2 у любому випадку 100% штрафів, які зазначені в правилах бронювання отелей, авіаквитків та інших обслуговуючих компаніях.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.1.3 Під відмовою від підтвердженого турпродукту сторони розуміють:&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- одержання письмового (електронного) повідомлення про Ануляції Заявки;&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- відсутність оплати турпродукту, або інші дії туриста, що свідчать про відмову від підтвердженого турпродукту;&nbsp;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- відмова у в&#39;їзній візі або несвоєчасне відкриття в&#39;їзної візи клієнтові й (або) наступної з ним особам, зазначеним у путівці, Консульством й консульськими службами інших іноземних держав і неможливість здійснення поїздки або переносу строків подорожі у зв&#39;язку із цим.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">Штрафні санкції сплачуються на підставі рахунку, виставленого Туроператором.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.1.4 При відмові від Туру незалежно від строку, що лишився до початку туру, який співпадає в часі з періодом проведення, на території здійснення туристичної подорожі Новорічних, Різдвяних, Травневих, тобто турів у період орієнтовано: з 22 грудня по 10 січня, з 25 квітня по 10 травня, а також релігійних, етнічних, національних свят, спортивних змагань, та інших державних свят, який характеризується підвищеним попитом на туристичні послуги, Турист сплачує розмір штрафних санкцій складає 100 % вартості Туру</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.2. Початком Туру вважається день відльоту літака.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.3. Якщо до складу Туру входить в&rsquo;їзна віза то, на доповнення до п. 6.1, настає додаткова відповідальність за відмову від Туру:</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- якщо документи Туриста не надавались до посольства, вартість послуг з оформлення візи повертається в повному обсязі;</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">- якщо до моменту відмови від туру віза проставлена в паспорті, вартість фактичних витрат з її оформлення не повертається.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.4. Зміна умов Туру за ініціативою Туриста після його сплати, а також несвоєчасне надання Туристом Турагенту необхідних документів прирівнюється до відмови від туру і породжує наслідки, передбачені п.6.1 даного Договору.</span><br />
+        <span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">6.5. Турист несе відповідальність за пошкодження майна або здійснення протиправних дій під час поїздки, згідно з чинним законодавством країни тимчасового перебування.</span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.6. Турагент/Туроператор не несе відповідальності та не сплачує будь-які компенсації за можливі порушення та дії, які не належать до його компетенції, а саме:&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- за зміну розкладу, відміну, затримку авіарейсу, заміну літака одного типу на інший, закриття аеропортів, з метереологічних, технічних та інших причин, що призвело до зміни програми Туру, за транспортне перевезення Туриста, збереження документів та особистих речей Туриста, втрату або псування багажу під час перевезення. В даному випадку відповідальність за вищевикладене несе Перевізник. Взаємовідносини між пасажиром (Туристом) та Перевізником регулюються договором на перевезення, підтвердженням якого є виданий Туристу квиток, згідно чинного законодавства України;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- за неможливість здійснення Туристом подорожі, перенесення її на більш пізніші терміни, призупинення подорожі, шкоду, що викликана діями консульської, митної та іміґраційної служб України та зарубіжних країн;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- відшкодування витрат при настанні страхових випадків, що передбачені договором страхування. При настанні страхового випадку Турист зобов&rsquo;язаний діяти у відповідності до інструкції, яка викладена у страховому полісі;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- за готельне обслуговування (несмачна їжа, висока вартість додаткових послуг, відключення води та електропостачання, прибирання кімнат і території та таке інше) та негативні наслідки споживчих послуг, самостійно придбаних туристом у будь-яких суб&rsquo;єктів ринку туристичних послуг у країні перебування/відпочинку туриста.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.7. Турагент не приймає претензії та не несе відповідальності по претензіях, які пов&rsquo;язані з деякими відхиленнями щодо обслуговування, яке надають готелі, мотелі, пансіонати (несмачна їжа, висока вартість додаткових послуг, відключення води та електропостачання, прибирання кімнат і території та таке інше) та негативними наслідками споживчих послуг, самостійно придбання туристом у будь-яких суб&rsquo;єктів ринку туристичних послуг у країні перебування/відпочинку туриста.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.8. У випадку порушення Туристом програми обслуговування, норм та правил поведінки в країні перебування, правил митного та прикордонного контролю, правил поведінки на борту літака, транспортних перевезень (порушення правопорядку у стані алкогольного або наркотичного сп&rsquo;яніння), а також порушення інших загальноприйнятих правил поведінки, що стало причиною зняття Туриста з рейсу, затримки компетентними органами, доставлення (перебування) Туриста до (в) медичних закладів країни перебування, з вищевказаних причин, що призвело до додаткових матеріальних витрат Туриста, Турагент не несе відповідальності, вартість Туру не повертається, будь-які інші компенсації не виплачуються.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.9 За невиконання або неналежне виконання умов даного Договору, винна Сторона сплачує іншій Стороні завдані цим, документально підтверджені збитки.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.10. У випадку анулювання подорожі з вини Турагента Туристу повертається повна вартість сплачених останнім послуг протягом 14 днів.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.11. Турагент/Туроператор не несе відповідальності по відшкодуванню матеріальних затрат Туриста за сплачені туристичні послуги, якщо Турист під час туристичної подорожі, керуючись особистими інтересами, не скористався всіма або частиною наданих Турагентом туристичних послуг, достроково припинив термін перебування в Турі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.12. Турагент/Туроператор (сторона яка приймає Туриста в країні тимчасового перебування), не несуть відповідальності за втрату, пропажу цінностей, документів, особистих речей Туриста під час здійснення туристичної подорожі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.13. Турист, що підписав Договір, представляє інтереси всіх туристів, про яких зроблене замовлення, несе відповідальність перед Турагентом та цими туристами, за вибір послуг, правильність повідомлених даних, своєчасну оплату послуг та виплату штрафів, в разі відмови від подорожі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.14. Турагент/Туроператор не несе відповідальності за рішення (дії) прикордонних, митних служб країн, через (до) які (яких) подорожує Турист, а також інших установ щодо неможливості в&rsquo;їзду Туриста або осіб що подорожують разом з ним, відповідно до умов цього Договору та заявки, на територію цих країн. В даному випадку Турист самостійно сплачує витрати пов&rsquo;язані з депортацією (вартість транспортного перевезення, адміністративні штрафи, пеня та інші платежі). Будь-які компенсації не виплачуються.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.15. У випадку відмови в&rsquo;їзду на територію країни туристичної подорожі одному із туристів, що подорожує групою, відповідно до умов цього Договору з причин передбачених п. 6.13 Договору, Договір не припиняється для інших туристів в групі (такі туристи продовжують подорож відповідно до умов Договору). В даному випадку претензії на дії відповідних органів країн подорожі для розгляду не приймаються, компенсації не виплачуються.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.16. Турагент не несе відповідальності за неналежне виконання умов Договору, якщо це сталося внаслідок надання Туристом Турагенту документів та відомостей з пороками змісту (неповнота, недостовірність, неправильність оформлення документів та інш.).</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.17. У випадку невиїзду Туриста внаслідок втрати документів, запізнення на рейс на початку та в кінці туристичної подорожі з причин особистого характеру та інш., Турагент/Туроператор не несе відповідальності і компенсації не сплачує.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.18. Турагент/Туроператор не несе відповідальність за будь-які незручності, завдані Туристу в зв&#39;язку з проведенням на території країни перебування будівельних та ремонтних робіт, які відбуваються за рішенням або з відома місцевих влад будь-якими державними або приватними особами.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.19. При порушенні Туристом Правил перевезення пасажирів та багажу, до нього (Туриста) застосовуються штрафні санкції передбачені Перевізником.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.20. За заміну або зміну в написанні прізвища Туриста в авіаквитку, Туристом вноситься додаткова плата в розмірі 25 дол. США за кожний новий бланк. В разі втрати Туристом авіаквитка на чартерний рейс, Турист сплачує вартість виписки його дублікату в розмірі 50 у.о. Оплата здійснюється в національній валюті за курсом долара США, встановленим НБ України на день внесення змін або виписки дубліката. В разі втрати авіаквитка в країні перебування оплата здійснюється в іноземній валюті.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.21. У випадку невиконання зобов&#39;язань по оплаті Туру (п. 5.2.1) Турист зобов&#39;язаний сплатити Турагенту пеню в розмірі 0.3% від вартості Туру (п. 3.1), за кожен день прострочки платежу до моменту сплати.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">6.22. Турагент не несе відповідальність за підвищення вартості авіаквитків та зобов&rsquo;язується інформувати Туриста про зміну вартості авіаквитків, відразу після отримання інформації від Туроператора.</span></span></span></p>
+
+    <p style="text-align:center"><strong>7. Порядок вирішення суперечок&nbsp;</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">7.1. Всі суперечки, які можуть виникнути в ході виконання даного Договору, Сторони зобов&rsquo;язуються&nbsp; вирішувати шляхом переговорів, а у випадку недосягнення згоди &ndash; згідно чинного законодавства України.</span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">7.2. У випадку визнання претензій Туриста та відшкодування йому з боку Турагента спричиненої шкоди, Турист підписує відповідні фінансові документи про це, а також письмову заяву про відмову від пред&rsquo;явлення майнових та інших претензій до Турагента.</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>8. Додаткові умови&nbsp;</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:12px">8.1. Заміна готелю або номеру за власним бажанням Туриста може бути здійснена тільки за додаткову плату.</span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.2. В разі задоволення претензій з якими звертається Турист в країні перебування, відповідно до п. 5.2.6, шляхом надання компенсуючих послуг, і турист ними не скористався, то вважається що Турагент і сторона, яка приймає, виконали свої зобов&rsquo;язання належним чином і претензії по тому ж самому питанню до розгляду не приймаються.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.3. Претензії та заяви Турагент приймає безпосередньо від особи, що підписала Договір.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.4. Претензії стосовно клімату, місцевих традицій, тривалості авіаперельоту до розгляду не приймаються.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.5. У випадку настання страхового випадку, претензії по збитках Турист пред&rsquo;являє в страхову компанію, вказану в страховому полісі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.6. Адміністрація готелів країни перебування може тимчасово змінювати склад устаткування номерів, змінювати харчування, особливо на початку та в кінці сезону. Деякі розваги, що рекламуються, враховуючи використання спортивного устаткування, можуть бути оплатними. Устаткування, що зображене на рекламних фотографіях, необов&rsquo;язково може бути в наявності протягом сезону. Турагент не володіє інформацією про можливі плани адміністрації готелів щодо проведення&nbsp; будівельних та ремонтних робіт в курортній зоні.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.7. Квитки, які придбані за чартерною програмою поверненню не підлягають.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.8. Для зміни зворотної дати вильоту за чартерною програмою Турист має звернутись до гіда в країні перебування за придбанням нового квитка на іншу дату вильоту. Вартість невикористаного квитка не повертається.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">8.9. Зміна умов Туру тягне за собою скасування попереднього замовлення та подання нового. В даному випадку Турист сплачує штраф передбачений п. 6.1 Договору.&nbsp;&nbsp;</span></span></span></p>
+
+    <p style="text-align:center"><strong>9. Форс-мажорні обставини&nbsp;</strong></p>
+
+    <p dir="ltr" style="margin-right:7px; text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">9.1. Сторони звільняються від майнової відповідальності за невиконання зобов&prime;язань, передбачених Договором, при виникненні форс-мажорних обставин, а саме:</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- Повінь, землетрус, цунамі, епідемії й інші стихійні явища природи;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- Пожежі, вибухи, виходи з ладу чи ушкодження комп&rsquo;ютерної техніки, каналів зв&rsquo;язку, транспортних засобів;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- Страйк, саботаж, локаут і інші непередбачені ситуації, що безпосередньо вплинули на виконання умов даного Договору та унеможливлюють це;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- Оголошена чи неоголошена війна, революція, масові безладдя;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">- Законні чи незаконні дії органів державної влади.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">9.2. Сторона, для якої створилася неможливість виконання прийнятих на себе зобов&#39;язань, внаслідок дії форс-мажорних обставин, зобов&#39;язана протягом 24 годин в письмовій формі повідомити іншу Сторону про час настання і припинення дії даних обставин.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">9.3. Належним доказом настання форс мажорних обставин та терміну їхньої дії є наявність довідки, виданої відповідними компетентними органами відповідної країни. </span></span></span></p>
+
+    <p dir="ltr" style="margin-right:7px; text-align:center"><strong>10. Розірвання, зміни та доповнення договору</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">10.1. Кожна зі сторін Договору може вимагати розірвання Договору або внесення змін та доповнень до нього в зв&rsquo;язку з істотними змінами обставин, з яких вони виходили при укладенні Договору.&nbsp; Побажання Туриста щодо змін умов Туру, або про відмову від туру приймаються до розгляду в письмовій формі.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">10.2. Турист вправі відмовитись від виконання Договору до початку туристичної подорожі за умови сплати Турагенту фактичних витрат в повному обсязі за послуги, які були надані до отримання повідомлення про відмову, а також сплати штрафних санкцій у відповідності до п. 6.1 Договору.&nbsp;&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">10.3. Турагент вправі відмовитись від виконання Договору тільки за умови повного відшкодування Туристу вартості сплаченого ним Туру.&nbsp;</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">10.4. Турагент вправі розірвати Договір при невиконанні Туристом умов передбачених п. 5.2.1&nbsp; Договору.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">10.5. Всі зміни та доповнення до Договору укладаються в письмовій формі за взаємною згодою та підписами Сторін.</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>11. Заключні положення</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">11.1. Факт підписання Договору свідчить про те, що Турист отримав інформацію щодо туристичного обслуговування за Договором в повному обсязі, яка була йому надана у відповідності з вимогами Закону України &laquo;Про туризм&raquo;, законодавства про захист прав споживачів.</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>12. Строк дії договору</strong></p>
+
+    <p dir="ltr" style="text-align:justify"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">12.1. Даний Договір набирає чинності з моменту підписання його сторонами і діє до моменту виконання сторонами своїх зобов&rsquo;язань.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">12.2. Зобов&rsquo;язання Турагента щодо виконання умов Договору виникає тільки після сплати Туристом вартості туристичного обслуговування в повному обсязі та надання всіх необхідних для оформлення туристичної подорожі&nbsp; документів та відомостей.</span></span></span><br />
+        <span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif"><span style="color:#000000">12.3. Даний Договір укладений в двох примірниках українською мовою, що мають однакову юридичну силу, по одному примірнику для кожної Сторони.</span></span></span></p>
+
+    <p dir="ltr" style="text-align:center"><strong>13. Реквізити та підписи сторін</strong></p>
+
+    <table border="1" cellpadding="1" cellspacing="0" style="border-collapse:collapse; border:medium; width:100%">
+        <tbody>
+        <tr>
+            <td style="text-align:center; vertical-align:top; width:50%"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">ТУРАГЕНТ</span></span></td>
+            <td style="text-align:center; vertical-align:top"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">ТУРИСТ</span></span></td>
+        </tr>
+        <tr>
+            <td style="vertical-align:top">
+                <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">{tf-full}</span></span></p>
+            </td>
+            <td style="vertical-align:top">
+                <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">{tourist-payer-full}</span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:top">
+                <p dir="ltr"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">Підпис ______________________________</span></span></p>
+
+                <p dir="ltr" style="text-align:center"><span style="font-size:12px"><span style="font-family:Arial,Helvetica,sans-serif">{tf-stamp}</span></span></p>
+            </td>
+            <td style="vertical-align:top">{tourist-doc-sign-info}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
