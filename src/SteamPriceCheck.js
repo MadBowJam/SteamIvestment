@@ -80,7 +80,7 @@ async function fetchData() {
 
     // Fetch data for all items using the optimized batch strategy
     console.time('Total fetch time');
-    const results = await steamClient.getItemsDataOptimized(730, itemNames, 1);
+    const results = await steamClient.getItemsDataOptimized(730, itemNames, 18);
     console.timeEnd('Total fetch time');
 
     // Create a map of results for easy lookup
