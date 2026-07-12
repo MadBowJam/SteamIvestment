@@ -56,7 +56,7 @@ class SteamApiClient {
         throw new Error(`Request for item '${itemname}' failed.`);
       }
 
-      return response.data;
+      console.log(`API Response for ${itemname}:`, response.data); return response.data;
     } catch (error) {
       // Handle rate limiting (HTTP 429)
       if (error.response && error.response.status === 429 && retryCount < this.maxRetries) {
@@ -108,13 +108,13 @@ class SteamApiClient {
    */
   async getItemData(appid, itemname, currency) {
     try {
-      // Fetch price and image in parallel
-      const [price, image] = await Promise.all([
-        this.getItemPrice(appid, itemname, currency),
-        this.getItemImage(appid, itemname)
-      ]);
-
-      // Include the itemname in the result for easier mapping
+      const price = await this.getItemPrice(appid, itemname, currency);
+      let image = null;
+      try {
+        image = await this.getItemImage(appid, itemname);
+      } catch (imgError) {
+        console.warn(`Could not fetch image for ${itemname}: ${imgError.message}`);
+      }
       return { price, image, itemname };
     } catch (error) {
       throw new Error(`Error fetching data for '${itemname}': ${error.message}`);
@@ -193,7 +193,7 @@ class SteamApiClient {
           consecutiveSuccesses = 0;
         } else {
           // For other errors, log and continue
-          console.error(`Error processing item ${itemname}: ${error.message}`);
+          console.error(`Error processing item ${itemname}: ${error.message}`); console.error(error.stack);
           // Add a placeholder for the failed item
           batchResults.push({ itemname, error: error.message });
         }

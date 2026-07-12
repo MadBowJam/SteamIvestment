@@ -84,7 +84,7 @@ async function fetchData() {
     console.timeEnd('Total fetch time');
 
     // Create a map of results for easy lookup
-    const resultMap = new Map();
+    const resultMap = new Map(); results.forEach(r => { if(r.itemname) resultMap.set(r.itemname.trim(), r); }); console.log("Map keys:", Array.from(resultMap.keys())); results.forEach(r => { if(r.itemname) resultMap.set(r.itemname, r); }); console.log("Map size:", resultMap.size); console.log("API item names raw:", results.map(r => JSON.stringify(r.itemname))); console.log("JSON item names raw:", itemsArray.map(i => JSON.stringify(i.nameForFetch))); console.log("API item names:", results.map(r => `[${r.itemname}]`)); console.log("JSON item names:", itemsArray.map(i => `[${i.nameForFetch}]`)); console.log("Results from API:", results.map(r => ({name: r.itemname, success: !!r.price, error: r.error})));
     results.forEach(result => {
       if (result && result.price && !result.error) {
         resultMap.set(result.itemname || '', result);
@@ -96,15 +96,21 @@ async function fetchData() {
     let errorCount = 0;
 
     for (const item of itemsArray) {
-      const result = resultMap.get(item.nameForFetch);
+      const result = resultMap.get(item.nameForFetch.trim()); console.log(`Checking ${item.nameForFetch}: result found? ${!!result}, has price? ${result && !!result.price}, lowest_price? ${result && result.price && result.price.lowest_price}`);
 
-      if (result && result.price && result.price.lowest_price) {
-        // Витягуємо тільки цифри та крапку/кому, замінюємо кому на крапку для коректного перетворення в число
-        const priceString = result.price.lowest_price;
-        const numericPrice = priceString.replace(/[^\d,.]/g, '').replace(',', '.');
+// Шукаємо будь-яку доступну ціну (спочатку мінімальну, потім середню)
+      const priceData = result.price.lowest_price || result.price.median_price;
+
+      if (result && result.price && priceData) {
+        // Витягуємо тільки цифри та крапку/кому
+        const numericPrice = priceData.replace(/[^\d,.]/g, '').replace(',', '.');
 
         item.price = Number(numericPrice);
-        item.currency = "UAH"; // Або залишайте "USD", якщо SteamApiClient викликається з кодом 1
+        item.currency = "UAH";
+
+        if (!result.price.lowest_price) {
+          console.log(`Note: Using median price for ${item.nameForFetch} as lowest_price was missing.`);
+        }
 
         // Uncomment to enable image saving
 
@@ -129,7 +135,7 @@ async function fetchData() {
 
         updatedCount++;
       } else {
-        console.error(`Failed to update item: ${item.nameForFetch}`); // Додайте цей рядок
+        const result = results.find(r => r.itemname === item.nameForFetch); console.error(`Failed to update item: ${item.nameForFetch}. Error: ${result ? result.error : "No result found in resultMap"}`);
         errorCount++;
       }
     }
