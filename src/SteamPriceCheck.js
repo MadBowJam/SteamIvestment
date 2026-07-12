@@ -129,6 +129,7 @@ async function fetchData() {
 
         updatedCount++;
       } else {
+        console.error(`Failed to update item: ${item.nameForFetch}`); // Додайте цей рядок
         errorCount++;
       }
     }
