@@ -1,355 +1,72 @@
 [
   {
-    "nameForFetch": "Operation Hydra Case Key",
-    "tournament": "Case",
-    "name": "Operation Hydra Case Key",
-    "quantity": 12,
-    "spendOnBuy": 0,
-    "price": 3.11,
-    "currency": "USD",
-    "total": "0"
-  },
-  {
-    "nameForFetch": "Prisma Case",
-    "tournament": "Case",
-    "name": "Prisma",
-    "quantity": 7,
-    "spendOnBuy": 0,
-    "price": 2.64,
-    "currency": "USD",
-    "total": "4.90"
-  },
-  {
     "nameForFetch": "Fracture Case",
     "tournament": "Case",
     "name": "Fracture",
-    "quantity": 12,
-    "spendOnBuy": 0,
-    "price": 1,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Operation Broken Fang Case",
-    "tournament": "Case",
-    "name": "Operation Broken Fang",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 11.43,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Prisma 2 Case",
-    "tournament": "Case",
-    "name": "Prisma 2",
-    "quantity": 3,
-    "spendOnBuy": 0,
-    "price": 2.66,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Danger Zone Case",
-    "tournament": "Case",
-    "name": "Danger Zone",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 2.57,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Clutch Case",
-    "tournament": "Case",
-    "name": "Clutch",
-    "quantity": 17,
-    "spendOnBuy": 1.55,
-    "price": 1.22,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Dreams & Nightmares Case",
-    "tournament": "Case",
-    "name": "Dreams & Nightmares",
-    "quantity": 5,
-    "spendOnBuy": 0,
-    "price": 2.24,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Snakebite Case",
-    "tournament": "Case",
-    "name": "Snakebite",
-    "quantity": 31,
-    "spendOnBuy": 0.95,
-    "price": 1.01,
-    "currency": "USD"
+    "quantity": 20,
+    "spendOnBuy": 23.59,
+    "price": 0,
+    "currency": "UAH",
+    "total": "0"
   },
   {
     "nameForFetch": "Revolution Case",
     "tournament": "Case",
     "name": "Revolution",
-    "quantity": 7,
-    "spendOnBuy": 0,
-    "price": 0.48,
-    "currency": "USD"
+    "quantity": 20,
+    "spendOnBuy": 13.55,
+    "price": 0,
+    "currency": "UAH",
+    "total": "0"
   },
   {
     "nameForFetch": "Recoil Case",
     "tournament": "Case",
-    "name": "Recoil",
-    "quantity": 39,
-    "spendOnBuy": 0.26,
-    "price": 0.63,
-    "currency": "USD"
+    "name": "Fracture",
+    "quantity": 40,
+    "spendOnBuy": 14.69,
+    "price": 0.49,
+    "currency": "UAH",
+    "total": "0"
   },
   {
-    "nameForFetch": "Sticker Capsule",
+    "nameForFetch": "Dreams & Nightmares Case",
     "tournament": "Case",
-    "name": "Sticker Capsule",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 1.01,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "eSports 2013 Winter Case",
-    "tournament": "Case",
-    "name": "eSports 2013 Winter Case",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 28.7,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "eSports 2014 Summer Case",
-    "tournament": "Case",
-    "name": "eSports 2014 Summer Case",
-    "quantity": 1,
-    "spendOnBuy": 0,
-    "price": 28.42,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Kilowatt Case",
-    "tournament": "Case",
-    "name": "Kilowatt",
-    "quantity": 3,
-    "spendOnBuy": 0,
-    "price": 0.37,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Gallery Case",
-    "tournament": "Case",
-    "name": "Gallery",
-    "quantity": 5,
-    "spendOnBuy": 1.5,
-    "price": 1.64,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
-    "tournament": "Stockholm 2021",
-    "name": "Legends Sticker Capsule",
-    "quantity": 200,
-    "spendOnBuy": 0.25,
-    "price": 2.14,
-    "currency": "USD"
+    "name": "Dreams & Nightmares",
+    "quantity": 10,
+    "spendOnBuy": 82,
+    "price": 0,
+    "currency": "UAH",
+    "total": "0"
   },
   {
     "nameForFetch": "Stockholm 2021 Challengers Sticker Capsule",
     "tournament": "Stockholm 2021",
     "name": "Challengers Sticker Capsule",
-    "quantity": 20,
-    "spendOnBuy": 0.25,
-    "price": 4.18,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Stockholm 2021 Contenders Sticker Capsule",
-    "tournament": "Stockholm 2021",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 20,
-    "spendOnBuy": 0.25,
-    "price": 3.08,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Stockholm 2021 Legends Patch Pack",
-    "tournament": "Stockholm 2021",
-    "name": "Legends Patch Pack",
-    "quantity": 6,
-    "spendOnBuy": 2.5,
-    "price": 5.12,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Patch | Natus Vincere | Stockholm 2021",
-    "tournament": "Stockholm 2021",
-    "name": "Patch Natus Vincere",
-    "quantity": 5,
-    "spendOnBuy": 4,
-    "price": 7.06,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Antwerp 2022 Legends Sticker Capsule",
-    "tournament": "Antwerp 2022",
-    "name": "Legends Sticker Capsule",
-    "quantity": 122,
-    "spendOnBuy": 0.25,
-    "price": 0.65,
-    "currency": "USD"
+    "quantity": 10,
+    "spendOnBuy": 132.5,
+    "price": 0,
+    "currency": "UAH",
+    "total": "0"
   },
   {
     "nameForFetch": "Antwerp 2022 Challengers Sticker Capsule",
     "tournament": "Antwerp 2022",
     "name": "Challengers Sticker Capsule",
-    "quantity": 50,
-    "spendOnBuy": 0.25,
-    "price": 0.48,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Antwerp 2022 Contenders Sticker Capsule",
-    "tournament": "Antwerp 2022",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 30,
-    "spendOnBuy": 0.25,
-    "price": 0.81,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Rio 2022 Legends Sticker Capsule",
-    "tournament": "Rio 2022",
-    "name": "Legends Sticker Capsule",
-    "quantity": 60,
-    "spendOnBuy": 0.25,
-    "price": 0.3,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Rio 2022 Challengers Sticker Capsule",
-    "tournament": "Rio 2022",
-    "name": "Challengers Sticker Capsule",
-    "quantity": 30,
-    "spendOnBuy": 0.25,
-    "price": 0.32,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Rio 2022 Contenders Sticker Capsule",
-    "tournament": "Rio 2022",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 20,
-    "spendOnBuy": 0.25,
-    "price": 0.34,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Paris 2023 Legends Sticker Capsule",
-    "tournament": "2023 Paris",
-    "name": "Legends Sticker Capsule",
-    "quantity": 400,
-    "spendOnBuy": 0.25,
-    "price": 0.16,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Paris 2023 Challengers Sticker Capsule",
-    "tournament": "2023 Paris",
-    "name": "Challengers Sticker Capsule",
-    "quantity": 420,
-    "spendOnBuy": 0.25,
-    "price": 0.13,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Paris 2023 Contenders Sticker Capsule",
-    "tournament": "2023 Paris",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 300,
-    "spendOnBuy": 0.25,
-    "price": 0.13,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Copenhagen 2024 Legends Sticker Capsule",
-    "tournament": "Copenhagen 2024",
-    "name": "Legends Sticker Capsule",
-    "quantity": 60,
-    "spendOnBuy": 0.25,
-    "price": 0.64,
-    "currency": "USD"
+    "quantity": 40,
+    "spendOnBuy": 19,
+    "price": 0.39,
+    "currency": "UAH",
+    "total": "0"
   },
   {
     "nameForFetch": "Copenhagen 2024 Challengers Sticker Capsule",
     "tournament": "Copenhagen 2024",
     "name": "Challengers Sticker Capsule",
-    "quantity": 160,
-    "spendOnBuy": 0.25,
-    "price": 0.77,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Copenhagen 2024 Contenders Sticker Capsule",
-    "tournament": "Copenhagen 2024",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 220,
-    "spendOnBuy": 0.25,
-    "price": 0.58,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Shanghai 2024 Legends Sticker Capsule",
-    "tournament": "Shanghai 2024",
-    "name": "Legends Sticker Capsule",
-    "quantity": 10,
-    "spendOnBuy": 0.25,
-    "price": 0.93,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Shanghai 2024 Challengers Sticker Capsule",
-    "tournament": "Shanghai 2024",
-    "name": "Challengers Sticker Capsule",
-    "quantity": 10,
-    "spendOnBuy": 0.25,
-    "price": 0.75,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Shanghai 2024 Contenders Sticker Capsule",
-    "tournament": "Shanghai 2024",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 40,
-    "spendOnBuy": 0.25,
-    "price": 1.33,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Austin 2025 Legends Sticker Capsule",
-    "tournament": "Austin 2025",
-    "name": "Legends Sticker Capsule",
-    "quantity": 250,
-    "spendOnBuy": 0.25,
-    "price": 0.34,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Austin 2025 Challengers Sticker Capsule",
-    "tournament": "Austin 2025",
-    "name": "Challengers Sticker Capsule",
-    "quantity": 300,
-    "spendOnBuy": 0.25,
-    "price": 0.41,
-    "currency": "USD"
-  },
-  {
-    "nameForFetch": "Austin 2025 Contenders Sticker Capsule",
-    "tournament": "Austin 2025",
-    "name": "Contenders Sticker Capsule",
-    "quantity": 300,
-    "spendOnBuy": 0.25,
-    "price": 0.43,
-    "currency": "USD"
+    "quantity": 20,
+    "spendOnBuy": 37,
+    "price": 0.8,
+    "currency": "UAH",
+    "total": "0"
   }
 ]

@@ -98,10 +98,13 @@ async function fetchData() {
     for (const item of itemsArray) {
       const result = resultMap.get(item.nameForFetch);
 
-      if (result && result.price) {
-        // Update price data
-        item.price = Number(result.price.lowest_price.substring(1));
-        item.currency = "USD";
+      if (result && result.price && result.price.lowest_price) {
+        // Витягуємо тільки цифри та крапку/кому, замінюємо кому на крапку для коректного перетворення в число
+        const priceString = result.price.lowest_price;
+        const numericPrice = priceString.replace(/[^\d,.]/g, '').replace(',', '.');
+
+        item.price = Number(numericPrice);
+        item.currency = "UAH"; // Або залишайте "USD", якщо SteamApiClient викликається з кодом 1
 
         // Uncomment to enable image saving
 
