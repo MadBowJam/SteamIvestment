@@ -31,14 +31,12 @@ tinify.key = process.env.TINIFY_API_KEY;
 
 // Create Steam API client with optimized configuration
 const steamClient = new SteamApiClient({
-  maxRetries: 3,
-  retryDelay: 2000,
-  timeout: 10000,
-  initialDelay: 2800,    // Start with a safe delay
-  minDelay: 2500,        // Don't go below this delay
-  maxDelay: 5000,        // Don't go above this delay
-  batchSize: 50,         // Process 10 items at a time
-  delayBetweenBatches: 2500  // Pause between batches
+  maxRetries: 10,
+  initialDelay: 5000,    // Збільшуємо до 5 секунд
+  minDelay: 4000,        // Мінімально 4 секунди між запитами
+  maxDelay: 15000,       // Максимально до 15 секунд, якщо почне блокувати
+  batchSize: 1,          // Для надійності краще обробляти по 1 предмету
+  delayBetweenBatches: 5000
 });
 
 /**
@@ -96,46 +94,44 @@ async function fetchData() {
     let errorCount = 0;
 
     for (const item of itemsArray) {
-      const result = resultMap.get(item.nameForFetch.trim()); console.log(`Checking ${item.nameForFetch}: result found? ${!!result}, has price? ${result && !!result.price}, lowest_price? ${result && result.price && result.price.lowest_price}`);
+      const result = resultMap.get(item.nameForFetch.trim());
+      console.log(`Checking ${item.nameForFetch}: result found? ${!!result}, has price? ${result && !!result.price}`);
 
-// Шукаємо будь-яку доступну ціну (спочатку мінімальну, потім середню)
-      const priceData = result.price.lowest_price || result.price.median_price;
+      // 1. Перевіряємо, чи отримали ми взагалі результат та ціну для цього предмета
+      if (result && result.price) {
+        const priceData = result.price.lowest_price || result.price.median_price;
 
-      if (result && result.price && priceData) {
-        // Витягуємо тільки цифри та крапку/кому
-        const numericPrice = priceData.replace(/[^\d,.]/g, '').replace(',', '.');
+        if (priceData) {
+          // 2. Витягуємо тільки цифри та крапку/кому, перетворюємо на число
+          const numericPrice = priceData.replace(/[^\d,.]/g, '').replace(',', '.');
+          item.price = Number(numericPrice);
+          item.currency = "UAH";
 
-        item.price = Number(numericPrice);
-        item.currency = "UAH";
-
-        if (!result.price.lowest_price) {
-          console.log(`Note: Using median price for ${item.nameForFetch} as lowest_price was missing.`);
-        }
-
-        // Uncomment to enable image saving
-
-        // if (result.image) {
-        //   const imageName = `${item.tournament}-${item.name}.png`;
-        //   await optimizeAndSaveImage(result.image, imageName);
-        // }
-
-
-        if (result.image) {
-          const imageName = `${item.tournament}-${item.name}.png`;
-          const imagePath = path.join(__dirname, 'images', imageName);
-
-          // Check if the image already exists
-          if (!fsSync.existsSync(imagePath)) {
-            console.log(`Image for ${item.name} doesn't exist. Saving it now...`);
-            await optimizeAndSaveImage(result.image, imageName);
-          } else {
-            console.log(`Image for ${item.name} already exists. Skipping...`);
+          if (!result.price.lowest_price) {
+            console.log(`Note: Using median price for ${item.nameForFetch} as lowest_price was missing.`);
           }
-        }
 
-        updatedCount++;
+          // 3. Обробка зображення (якщо воно є і ще не збережене)
+          if (result.image) {
+            const imageName = `${item.tournament}-${item.name}.png`;
+            const imagesDir = path.join(__dirname, 'images');
+            const imagePath = path.join(imagesDir, imageName);
+
+            if (!fsSync.existsSync(imagePath)) {
+              console.log(`Image for ${item.name} doesn't exist. Saving it now...`);
+              await optimizeAndSaveImage(result.image, imageName);
+            }
+          }
+
+          updatedCount++;
+        } else {
+          console.error(`Price data is empty for ${item.nameForFetch}`);
+          errorCount++;
+        }
       } else {
-        const result = results.find(r => r.itemname === item.nameForFetch); console.error(`Failed to update item: ${item.nameForFetch}. Error: ${result ? result.error : "No result found in resultMap"}`);
+        // 4. Якщо результат не знайдено або він помилковий
+        const apiResult = results.find(r => r.itemname === item.nameForFetch);
+        console.error(`Failed to update item: ${item.nameForFetch}. Error: ${apiResult ? apiResult.error : "No result found in resultMap"}`);
         errorCount++;
       }
     }

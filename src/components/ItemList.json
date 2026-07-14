@@ -5,7 +5,7 @@
     "name": "Fracture",
     "quantity": 20,
     "spendOnBuy": 23.59,
-    "price": 35.65,
+    "price": 35.89,
     "currency": "UAH",
     "total": "0"
   },
@@ -15,7 +15,7 @@
     "name": "Revolution",
     "quantity": 20,
     "spendOnBuy": 13.55,
-    "price": 19,
+    "price": 19.29,
     "currency": "UAH",
     "total": "0"
   },
@@ -25,7 +25,7 @@
     "name": "Recoil",
     "quantity": 40,
     "spendOnBuy": 14.69,
-    "price": 21.61,
+    "price": 22,
     "currency": "UAH",
     "total": "0"
   },
@@ -35,7 +35,7 @@
     "name": "Dreams & Nightmares",
     "quantity": 10,
     "spendOnBuy": 82,
-    "price": 81,
+    "price": 83,
     "currency": "UAH",
     "total": "0"
   },
@@ -45,7 +45,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 10,
     "spendOnBuy": 132.5,
-    "price": 135,
+    "price": 141,
     "currency": "UAH",
     "total": "0"
   },
@@ -55,7 +55,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 40,
     "spendOnBuy": 19,
-    "price": 19,
+    "price": 18,
     "currency": "UAH",
     "total": "0"
   },
@@ -65,7 +65,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 37,
-    "price": 37,
+    "price": 36,
     "currency": "UAH",
     "total": "0"
   }

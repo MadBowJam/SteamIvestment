@@ -30,7 +30,20 @@ class SteamApiClient {
 
     // Create axios instance with default configuration
     this.client = axios.create({
-      timeout: this.timeout
+      timeout: this.timeout,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://steamcommunity.com/market/',
+        'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"Windows"',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'Connection': 'keep-alive'
+      }
     });
   }
 
@@ -59,11 +72,11 @@ class SteamApiClient {
       console.log(`API Response for ${itemname}:`, response.data); return response.data;
     } catch (error) {
       // Handle rate limiting (HTTP 429)
-      if (error.response && error.response.status === 429 && retryCount < this.maxRetries) {
-        console.warn(`Rate limited when fetching ${itemname}. Retrying in ${this.retryDelay}ms...`);
-        await new Promise(resolve => setTimeout(resolve, this.retryDelay));
-        return this.getItemPrice(appid, itemname, currency, retryCount + 1);
-      }
+      // if (error.response && error.response.status === 429 && retryCount < this.maxRetries) {
+      //   console.warn(`Rate limited when fetching ${itemname}. Retrying in ${this.retryDelay}ms...`);
+      //   await new Promise(resolve => setTimeout(resolve, this.retryDelay));
+      //   return this.getItemPrice(appid, itemname, currency, retryCount + 1);
+      // }
 
       // Handle other errors or max retries reached
       throw new Error(`Error fetching price for '${itemname}': ${error.message}`);
@@ -152,54 +165,50 @@ class SteamApiClient {
 
     for (let i = 0; i < batch.length; i++) {
       const itemname = batch[i];
-      const delayWithJitter = this._getDelayWithJitter(newDelay);
+      let retryAttemptsPerItem = 0;
+      const maxRetriesPerItem = 5;
+      
+      while (retryAttemptsPerItem < maxRetriesPerItem) {
+        const delayWithJitter = this._getDelayWithJitter(newDelay);
 
-      try {
-        // Wait before making the request (except for the first item in the batch)
-        if (i > 0) {
-          await new Promise(resolve => setTimeout(resolve, delayWithJitter));
-        }
+        try {
+          if (i > 0 || retryAttemptsPerItem > 0) {
+            await new Promise(resolve => setTimeout(resolve, delayWithJitter));
+          }
 
-        // Fetch data for this item
-        const itemData = await this.getItemData(appid, itemname, currency);
-        batchResults.push(itemData);
+          const itemData = await this.getItemData(appid, itemname, currency);
+          batchResults.push(itemData);
+          consecutiveSuccesses++;
 
-        // Track consecutive successes for potential delay reduction
-        consecutiveSuccesses++;
-
-        // If we've had several consecutive successes, slightly reduce the delay
-        if (consecutiveSuccesses >= 5) {
-          // Reduce delay by 50ms, but not below minDelay
-          newDelay = Math.max(this.minDelay, newDelay - 50);
-          consecutiveSuccesses = 0; // Reset counter
-          console.log(`Reducing delay to ${newDelay}ms after consecutive successes`);
-        }
-      } catch (error) {
-        // Check if this was a rate limit error
-        if (error.message.includes('429') || error.message.toLowerCase().includes('rate limit')) {
-          rateLimitHits++;
-
-          // Increase delay based on how many rate limit hits we've had
-          const increase = 200 * rateLimitHits;
-          newDelay = Math.min(this.maxDelay, newDelay + increase);
-
-          console.warn(`Rate limit hit. Increasing delay to ${newDelay}ms`);
-
-          // Add an extra pause after hitting a rate limit
-          await new Promise(resolve => setTimeout(resolve, 2000));
-
-          // Try this item again (decrement i to retry)
-          i--;
-          consecutiveSuccesses = 0;
-        } else {
-          // For other errors, log and continue
-          console.error(`Error processing item ${itemname}: ${error.message}`); console.error(error.stack);
-          // Add a placeholder for the failed item
-          batchResults.push({ itemname, error: error.message });
+          if (consecutiveSuccesses >= 5) {
+            newDelay = Math.max(this.minDelay, newDelay - 50);
+            consecutiveSuccesses = 0;
+            console.log("Reducing delay to " + newDelay + "ms after consecutive successes");
+          }
+          break;
+        } catch (error) {
+          if (error.message.includes("429") || error.message.toLowerCase().includes("rate limit")) {
+            rateLimitHits++;
+            retryAttemptsPerItem++;
+            const increase = 200 * rateLimitHits;
+            newDelay = Math.min(this.maxDelay, newDelay + increase);
+            console.warn("Rate limit hit for " + itemname + " (Attempt " + retryAttemptsPerItem + "/" + maxRetriesPerItem + "). Increasing delay to " + newDelay + "ms");
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            consecutiveSuccesses = 0;
+            
+            if (retryAttemptsPerItem >= maxRetriesPerItem) {
+              console.error("Skipping " + itemname + " after " + maxRetriesPerItem + " failed attempts due to rate limiting.");
+              batchResults.push({ itemname, error: "Max retries reached due to rate limiting" });
+              break;
+            }
+          } else {
+            console.error("Error processing item " + itemname + ": " + error.message);
+            batchResults.push({ itemname, error: error.message });
+            break;
+          }
         }
       }
     }
-
     return { results: batchResults, newDelay };
   }
 
@@ -212,7 +221,6 @@ class SteamApiClient {
    * @returns {Promise<Object[]>} - Array of objects containing price and image data
    */
   async getItemsDataOptimized(appid, itemnames, currency, initialDelay = null) {
-    // Validate input parameters
     if (typeof appid !== 'number' || isNaN(appid)) {
       throw new Error('Appid must be a valid number.');
     }
@@ -223,45 +231,29 @@ class SteamApiClient {
       throw new Error('Itemnames must be a non-empty array of strings.');
     }
 
-    // Use provided initialDelay or the class property
     const startingDelay = initialDelay || this.initialDelay;
-
-    // Split items into batches
     const batches = [];
     for (let i = 0; i < itemnames.length; i += this.batchSize) {
       batches.push(itemnames.slice(i, i + this.batchSize));
     }
 
-    console.log(`Processing ${itemnames.length} items in ${batches.length} batches of up to ${this.batchSize} items each`);
+    console.log("Processing " + itemnames.length + " items in " + batches.length + " batches of up to " + this.batchSize + " items each");
 
     const allResults = [];
     let currentDelay = startingDelay;
 
-    // Process each batch
     for (let i = 0; i < batches.length; i++) {
-      console.log(`Processing batch ${i + 1}/${batches.length} with delay ${currentDelay}ms`);
-
-      const { results, newDelay } = await this._processBatchWithAdaptiveDelay(
-        appid, 
-        batches[i], 
-        currency, 
-        currentDelay
-      );
-
-      // Add results from this batch to the overall results
+      console.log("Processing batch " + (i + 1) + "/" + batches.length + " with delay " + currentDelay + "ms");
+      const { results, newDelay } = await this._processBatchWithAdaptiveDelay(appid, batches[i], currency, currentDelay);
       allResults.push(...results);
-
-      // Update the delay for the next batch
       currentDelay = newDelay;
 
-      // Add a longer pause between batches (except after the last batch)
       if (i < batches.length - 1) {
         const batchPauseWithJitter = this._getDelayWithJitter(this.delayBetweenBatches, 0.1);
-        console.log(`Pausing for ${batchPauseWithJitter}ms before next batch`);
+        console.log("Pausing for " + batchPauseWithJitter + "ms before next batch");
         await new Promise(resolve => setTimeout(resolve, batchPauseWithJitter));
       }
     }
-
     return allResults;
   }
 
@@ -274,7 +266,6 @@ class SteamApiClient {
    * @returns {Promise<Object[]>} - Array of objects containing price and image data
    */
   async getItemsData(appid, itemnames, currency, delayBetweenRequests = 1000) {
-    // Validate input parameters
     if (typeof appid !== 'number' || isNaN(appid)) {
       throw new Error('Appid must be a valid number.');
     }
@@ -287,19 +278,16 @@ class SteamApiClient {
 
     const results = [];
 
-    // Process items sequentially with delay to avoid rate limiting
     for (let i = 0; i < itemnames.length; i++) {
       try {
         const itemData = await this.getItemData(appid, itemnames[i], currency);
         results.push(itemData);
 
-        // Add delay between requests (except after the last one)
         if (i < itemnames.length - 1) {
           await new Promise(resolve => setTimeout(resolve, delayBetweenRequests));
         }
       } catch (error) {
         console.error(`Error processing item ${itemnames[i]}: ${error.message}`);
-        // Continue with next item instead of failing the whole batch
       }
     }
 
