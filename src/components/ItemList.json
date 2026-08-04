@@ -25,7 +25,7 @@
     "name": "Recoil",
     "quantity": 40,
     "spendOnBuy": 14.69,
-    "price": 24,
+    "price": 23,
     "currency": "UAH",
     "total": "0"
   },
@@ -35,7 +35,67 @@
     "name": "Dreams & Nightmares",
     "quantity": 10,
     "spendOnBuy": 82,
-    "price": 84,
+    "price": 83,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "CS:GO Weapon Case 2",
+    "tournament": "Case",
+    "name": "CS:GO Weapon Case 2",
+    "quantity": 1,
+    "spendOnBuy": 1161.31,
+    "price": 1752,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Operation Hydra Case",
+    "tournament": "Case",
+    "name": "Operation Hydra",
+    "quantity": 1,
+    "spendOnBuy": 1493.31,
+    "price": 2065,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Operation Broken Fang Case",
+    "tournament": "Case",
+    "name": "Operation Broken Fang",
+    "quantity": 1,
+    "spendOnBuy": 291.56,
+    "price": 430,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Operation Wildfire Case",
+    "tournament": "Case",
+    "name": "Operation Wildfire",
+    "quantity": 5,
+    "spendOnBuy": 153.19,
+    "price": 227,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Operation Riptide Case",
+    "tournament": "Case",
+    "name": "Operation Riptide",
+    "quantity": 1,
+    "spendOnBuy": 405.67,
+    "price": 640,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Huntsman Weapon Case",
+    "tournament": "Case",
+    "name": "Huntsman Weapon",
+    "quantity": 2,
+    "spendOnBuy": 418.7,
+    "price": 605,
     "currency": "UAH",
     "total": "0"
   },
@@ -46,6 +106,16 @@
     "quantity": 10,
     "spendOnBuy": 132.5,
     "price": 123,
+    "currency": "UAH",
+    "total": "0"
+  },
+  {
+    "nameForFetch": "Stockholm 2021 Legends Sticker Capsule",
+    "tournament": "Stockholm 2021",
+    "name": "Legends Sticker Capsule",
+    "quantity": 3,
+    "spendOnBuy": 54.46,
+    "price": 76,
     "currency": "UAH",
     "total": "0"
   },
