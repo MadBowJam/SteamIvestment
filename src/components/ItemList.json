@@ -35,7 +35,7 @@
     "name": "Dreams & Nightmares",
     "quantity": 10,
     "spendOnBuy": 82,
-    "price": 56,
+    "price": 55,
     "currency": "UAH",
     "total": "0"
   },
@@ -45,7 +45,7 @@
     "name": "CS:GO Weapon Case 2",
     "quantity": 1,
     "spendOnBuy": 1161.31,
-    "price": 1176,
+    "price": 1126,
     "currency": "UAH",
     "total": "0"
   },
@@ -55,7 +55,7 @@
     "name": "Operation Hydra",
     "quantity": 1,
     "spendOnBuy": 1493.31,
-    "price": 1381,
+    "price": 1429,
     "currency": "UAH",
     "total": "0"
   },
@@ -65,7 +65,7 @@
     "name": "Operation Broken Fang",
     "quantity": 1,
     "spendOnBuy": 291.56,
-    "price": 334,
+    "price": 341,
     "currency": "UAH",
     "total": "0"
   },
@@ -75,7 +75,7 @@
     "name": "Operation Wildfire",
     "quantity": 5,
     "spendOnBuy": 153.19,
-    "price": 164,
+    "price": 157,
     "currency": "UAH",
     "total": "0"
   },
@@ -85,7 +85,7 @@
     "name": "Operation Riptide",
     "quantity": 1,
     "spendOnBuy": 405.67,
-    "price": 422,
+    "price": 433,
     "currency": "UAH",
     "total": "0"
   },
@@ -95,7 +95,7 @@
     "name": "Huntsman Weapon",
     "quantity": 2,
     "spendOnBuy": 418.7,
-    "price": 462,
+    "price": 446,
     "currency": "UAH",
     "total": "0"
   },
@@ -125,7 +125,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 40,
     "spendOnBuy": 19,
-    "price": 12,
+    "price": 13,
     "currency": "UAH",
     "total": "0"
   },
@@ -135,7 +135,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 37,
-    "price": 25,
+    "price": 23,
     "currency": "UAH",
     "total": "0"
   }
