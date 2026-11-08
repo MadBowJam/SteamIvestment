@@ -85,7 +85,7 @@
     "name": "Operation Riptide",
     "quantity": 1,
     "spendOnBuy": 405.67,
-    "price": 377,
+    "price": 378,
     "currency": "UAH",
     "total": "0"
   },
@@ -95,7 +95,7 @@
     "name": "Huntsman Weapon",
     "quantity": 2,
     "spendOnBuy": 418.7,
-    "price": 457,
+    "price": 443,
     "currency": "UAH",
     "total": "0"
   },
@@ -105,7 +105,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 10,
     "spendOnBuy": 132.5,
-    "price": 105,
+    "price": 107,
     "currency": "UAH",
     "total": "0"
   },
@@ -115,7 +115,7 @@
     "name": "Legends Sticker Capsule",
     "quantity": 3,
     "spendOnBuy": 54.46,
-    "price": 64,
+    "price": 61,
     "currency": "UAH",
     "total": "0"
   },
@@ -135,7 +135,7 @@
     "name": "Challengers Sticker Capsule",
     "quantity": 20,
     "spendOnBuy": 37,
-    "price": 26,
+    "price": 27,
     "currency": "UAH",
     "total": "0"
   }
